@@ -68,11 +68,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Building Material</a>
+                            <a class="nav-link text-white" href="materials.php">Building Material</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">About</a>
+                            <a class="nav-link text-white" href="about.php">About</a>
                         </li>
 
                         <!-- <li class="nav-item dropdown">
@@ -112,7 +112,7 @@
                         </li> -->
 
                         <li class="nav-item ms-lg-3">
-                            <a class="site-header-cta" href="#">Contact Us</a>
+                            <a class="site-header-cta" href="contact.php">Contact Us</a>
                         </li>
                     </ul>
                 </div>
