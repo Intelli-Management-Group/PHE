@@ -127,22 +127,22 @@ include 'inc/header.php';
                                 </div>
 
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="img/australia/pacific_1.jpg" alt="Project 1" class="projects-feature-media-img">
+                                    <img src="img/projects/australia/pacific_1.jpg" alt="Project 1" class="projects-feature-media-img">
                                 </div>
                             </div>
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="img/australia/pacific_2.jpg" alt="Project 2" class="img-fluid w-100">
+                                    <img src="img/projects/australia/pacific_2.jpg" alt="Project 2" class="img-fluid w-100">
                                 </div>
                             </div>
 
                             <div class="projects-gallery-images d-none">
-                                <img src="img/australia/pacific_3.jpg" alt="Pacific House - Interior 1">
-                                <img src="img/australia/pacific_4.jpg" alt="Pacific House - Exterior Detail">
-                                <img src="img/australia/pacific_5.jpg" alt="Pacific House - Living Area">
-                                <img src="img/australia/pacific_6.jpg" alt="Pacific House - Interior 1">
-                                <img src="img/australia/pacific_7.jpg" alt="Pacific House - Exterior Detail">                            
+                                <img src="img/projects/australia/pacific_3.jpg" alt="Pacific House - Interior 1">
+                                <img src="img/projects/australia/pacific_4.jpg" alt="Pacific House - Exterior Detail">
+                                <img src="img/projects/australia/pacific_5.jpg" alt="Pacific House - Living Area">
+                                <img src="img/projects/australia/pacific_6.jpg" alt="Pacific House - Interior 1">
+                                <img src="img/projects/australia/pacific_7.jpg" alt="Pacific House - Exterior Detail">                            
                             </div>
                         </div>
 
@@ -157,7 +157,7 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg">
                                 <div class="col-lg-5">
-                                    <img src="img/australia/ballara_house_1.jpg" alt="Project 3" class="img-fluid w-100">
+                                    <img src="img/projects/australia/ballara_house_1.jpg" alt="Project 3" class="img-fluid w-100">
                                 </div>
                                 <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
                                     <div>
@@ -168,11 +168,11 @@ include 'inc/header.php';
                             </div>
 
                             <div class="projects-gallery-images d-none">
-                                <img src="img/australia/ballara_house_2.jpg" alt="ballara House - Interior 1">
-                                <img src="img/australia/ballara_house_3.jpg" alt="ballara House - Exterior Detail">
-                                <img src="img/australia/ballara_house_4.jpg" alt="ballara House - Living Area">
-                                <img src="img/australia/ballara_house_5.jpg" alt="ballara House - Interior 1">
-                                <img src="img/australia/ballara_house_6.jpg" alt="ballara House - Exterior Detail">                            
+                                <img src="img/projects/australia/ballara_house_2.jpg" alt="ballara House - Interior 1">
+                                <img src="img/projects/australia/ballara_house_3.jpg" alt="ballara House - Exterior Detail">
+                                <img src="img/projects/australia/ballara_house_4.jpg" alt="ballara House - Living Area">
+                                <img src="img/projects/australia/ballara_house_5.jpg" alt="ballara House - Interior 1">
+                                <img src="img/projects/australia/ballara_house_6.jpg" alt="ballara House - Exterior Detail">                            
                             </div>
                         </div>
 
@@ -180,7 +180,7 @@ include 'inc/header.php';
                         <div class="projects-block" data-country="australia" data-type="commercial">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="img/australia/granny_flat_1.jpg" alt="Granny Flats" class="projects-feature-media-img">
+                                    <img src="img/projects/australia/granny_flat_1.jpg" alt="Granny Flats" class="projects-feature-media-img">
                                 </div>
 
                                 <div class="col-lg-7">
@@ -197,12 +197,12 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="img/australia/granny_flat_2.jpg" alt="Granny Flats" class="img-fluid w-100">
+                                    <img src="img/projects/australia/granny_flat_2.jpg" alt="Granny Flats" class="img-fluid w-100">
                                 </div>
                             </div>
                             <div class="projects-gallery-images d-none">
-                                <img src="img/australia/granny_flat_3.jpg" alt="Granny Flats - 3">
-                                <img src="img/australia/granny_flat_4.jpg" alt="Granny Flats - 4">                                
+                                <img src="img/projects/australia/granny_flat_3.jpg" alt="Granny Flats - 3">
+                                <img src="img/projects/australia/granny_flat_4.jpg" alt="Granny Flats - 4">                                
                             </div>
                         </div>
 
@@ -244,18 +244,18 @@ include 'inc/header.php';
                                 </div>
 
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="img/australia/site_office_1.jpg" alt="Site Office" class="projects-feature-media-img">
+                                    <img src="img/projects/australia/site_office_1.jpg" alt="Site Office" class="projects-feature-media-img">
                                 </div>
                             </div>
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="img/australia/site_office_2.jpg" alt="Site Office" class="img-fluid w-100">
+                                    <img src="img/projects/australia/site_office_2.jpg" alt="Site Office" class="img-fluid w-100">
                                 </div>
                             </div>
                             <div class="projects-gallery-images d-none">
-                                <img src="img/australia/site_office_3.jpg" alt="Site Office - 3">
-                                <img src="img/australia/site_office_4.jpg" alt="Site Office - 4">                                
+                                <img src="img/projects/australia/site_office_3.jpg" alt="Site Office - 3">
+                                <img src="img/projects/australia/site_office_4.jpg" alt="Site Office - 4">                                
                             </div>
 
                         </div>
@@ -286,7 +286,7 @@ include 'inc/header.php';
                         <div class="projects-block" data-country="australia" data-type="amenities">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="img/australia/club_canteen_1.jpg" alt="Canteen Facility" class="projects-feature-media-img">
+                                    <img src="img/projects/australia/club_canteen_1.jpg" alt="Canteen Facility" class="projects-feature-media-img">
                                 </div>
 
                                 <div class="col-lg-7">
@@ -303,12 +303,12 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="img/australia/club_canteen_2.jpg" alt="Canteen Facility" class="img-fluid w-100">
+                                    <img src="img/projects/australia/club_canteen_2.jpg" alt="Canteen Facility" class="img-fluid w-100">
                                 </div>
                             </div>
                             <div class="projects-gallery-images d-none">
-                                <img src="img/australia/club_canteen_3.jpg" alt="Canteen Facility - 3">
-                                <img src="img/australia/club_canteen_4.jpg" alt="Canteen Facility - 4">                                
+                                <img src="img/projects/australia/club_canteen_3.jpg" alt="Canteen Facility - 3">
+                                <img src="img/projects/australia/club_canteen_4.jpg" alt="Canteen Facility - 4">                                
                             </div>
                         </div>
 
@@ -330,21 +330,21 @@ include 'inc/header.php';
                                 </div>
 
                                 <div class="col-lg-5 offset-lg-1">
-                                    <img src="img/australia/tamborine_1.jpg" alt="Portable Washrooms" class="img-fluid w-100">
+                                    <img src="img/projects/australia/tamborine_1.jpg" alt="Portable Washrooms" class="img-fluid w-100">
                                 </div>
                             </div>
                              <div class="projects-gallery-images d-none">
-                                <img src="img/australia/tamborine_1-1.jpg" alt="Portable Washrooms - 1-1">
-                                <img src="img/australia/tamborine_2.jpg" alt="Portable Washrooms - 2">     
-                                <img src="img/australia/tamborine_2-1.jpg" alt="Portable Washrooms - 2-1">   
-                                <img src="img/australia/tamborine_3.jpg" alt="Portable Washrooms - 3">
-                                <img src="img/australia/tamborine_4.jpg" alt="Portable Washrooms - 4">
-                                <img src="img/australia/tamborine_5.jpg" alt="Portable Washrooms - 5">
-                                <img src="img/australia/tamborine_6.jpg" alt="Portable Washrooms - 6">
-                                <img src="img/australia/tamborine_7.jpg" alt="Portable Washrooms - 7">
-                                <img src="img/australia/tamborine_8.jpg" alt="Portable Washrooms - 8">
-                                <img src="img/australia/tamborine_9.jpg" alt="Portable Washrooms - 9">
-                                <img src="img/australia/tamborine_10.jpg" alt="Portable Washrooms - 10">                                
+                                <img src="img/projects/australia/tamborine_1-1.jpg" alt="Portable Washrooms - 1-1">
+                                <img src="img/projects/australia/tamborine_2.jpg" alt="Portable Washrooms - 2">     
+                                <img src="img/projects/australia/tamborine_2-1.jpg" alt="Portable Washrooms - 2-1">   
+                                <img src="img/projects/australia/tamborine_3.jpg" alt="Portable Washrooms - 3">
+                                <img src="img/projects/australia/tamborine_4.jpg" alt="Portable Washrooms - 4">
+                                <img src="img/projects/australia/tamborine_5.jpg" alt="Portable Washrooms - 5">
+                                <img src="img/projects/australia/tamborine_6.jpg" alt="Portable Washrooms - 6">
+                                <img src="img/projects/australia/tamborine_7.jpg" alt="Portable Washrooms - 7">
+                                <img src="img/projects/australia/tamborine_8.jpg" alt="Portable Washrooms - 8">
+                                <img src="img/projects/australia/tamborine_9.jpg" alt="Portable Washrooms - 9">
+                                <img src="img/projects/australia/tamborine_10.jpg" alt="Portable Washrooms - 10">                                
                             </div>
                         </div>
 
@@ -385,7 +385,7 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg">
                                 <div class="col-lg-5">
-                                    <img src="img/australia/warwick_farm_1.jpg" alt="Warwick Farm Structure" class="img-fluid w-100">
+                                    <img src="img/projects/australia/warwick_farm_1.jpg" alt="Warwick Farm Structure" class="img-fluid w-100">
                                 </div>
                                 <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
                                     <div>
@@ -395,11 +395,11 @@ include 'inc/header.php';
                                 </div>
                             </div>
                             <div class="projects-gallery-images d-none">                                
-                                <img src="img/australia/warwick_farm_2.jpg" alt="Warwick Farm Structure - 2">                                     
-                                <img src="img/australia/warwick_farm_3.jpg" alt="Warwick Farm Structure - 3">
-                                <img src="img/australia/warwick_farm_4.jpg" alt="Warwick Farm Structure - 4">
-                                <img src="img/australia/warwick_farm_5.jpg" alt="Warwick Farm Structure - 5">
-                                <img src="img/australia/warwick_farm_6.jpg" alt="Warwick Farm Structure - 6">                             
+                                <img src="img/projects/australia/warwick_farm_2.jpg" alt="Warwick Farm Structure - 2">                                     
+                                <img src="img/projects/australia/warwick_farm_3.jpg" alt="Warwick Farm Structure - 3">
+                                <img src="img/projects/australia/warwick_farm_4.jpg" alt="Warwick Farm Structure - 4">
+                                <img src="img/projects/australia/warwick_farm_5.jpg" alt="Warwick Farm Structure - 5">
+                                <img src="img/projects/australia/warwick_farm_6.jpg" alt="Warwick Farm Structure - 6">                             
                             </div>
                         </div>
 
@@ -467,17 +467,17 @@ include 'inc/header.php';
                                 </div>
 
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="img/africa/theodor_herzl_school_1.jpg" alt="Theodor Herzl School" class="projects-feature-media-img">
+                                    <img src="img/projects/africa/theodor_herzl_school_1.jpg" alt="Theodor Herzl School" class="projects-feature-media-img">
                                 </div>
                                 <div class="projects-gallery-images d-none">                                
-                                    <img src="img/africa/theodor_herzl_school_3.jpg" alt="Theodor Herzl School - 3">                                     
-                                    <img src="img/africa/theodor_herzl_school_4.jpg" alt="Theodor Herzl School - 4">                                                          
+                                    <img src="img/projects/africa/theodor_herzl_school_3.jpg" alt="Theodor Herzl School - 3">                                     
+                                    <img src="img/projects/africa/theodor_herzl_school_4.jpg" alt="Theodor Herzl School - 4">                                                          
                                 </div>
                             </div>
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="img/africa/theodor_herzl_school_2.jpg" alt="Theodor Herzl School" class="img-fluid w-100">
+                                    <img src="img/projects/africa/theodor_herzl_school_2.jpg" alt="Theodor Herzl School" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div>
@@ -493,7 +493,7 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg">
                                 <div class="col-lg-5">
-                                    <img src="img/africa/cornubia.jpg" alt="Cornubia House" class="img-fluid w-100">
+                                    <img src="img/projects/africa/cornubia.jpg" alt="Cornubia House" class="img-fluid w-100">
                                 </div>
                                 <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
                                     <div>
@@ -564,6 +564,42 @@ include 'inc/header.php';
             </div>
         </div>
     </section>
+
+
+    <!-- Project Value Section -->
+    <!-- <section class="project-value-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <h2 class="project-value-title" data-aos="fade-up" data-aos-duration="1000">Trusted Across Projects of Scale</h2>
+                    <p class="project-value-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">With current project values exceeding USD $28 million, PHE Luxwood continues to support residential, commercial, and institutional developments with scalable modular solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Closing Section -->
+    <!-- <section class="closing-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <h2 class="closing-title" data-aos="fade-up" data-aos-duration="1000">From Concept to Completion</h2>
+                    <p class="closing-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Whether delivering single-unit homes or multi-unit developments, PHE Luxwood provides a complete modular building system designed for efficiency, durability, and adaptability across global markets.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <!-- <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="cta-title" data-aos="fade-up" data-aos-duration="1000">Start Your Project with PHE Luxwood</h2>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <a href="contact.php" class="cta-button cta-button-primary">Contact Us</a>
+                <a href="contact.php" class="cta-button cta-button-secondary">Discuss Your Project</a>
+            </div>
+        </div>
+    </section> -->
 
     <!-- Gallery Modal -->
     <div id="gallery-modal" class="gallery-modal">
