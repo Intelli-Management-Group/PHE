@@ -6,11 +6,42 @@ include 'inc/header.php';
 ?>
 
 <main>
-    <section class="hero-section">
+    <section class="home-hero-section">
         <div class="hero-section-bg">
             <img src="img/home/banner_home.jpg" alt="PHE Hero" class="hero-section-bg-img">
         </div>
+
+           <div class="building-system-hero-section-wrap">
+                <div class="container">
+                    <div class="row align-items-end">
+                        <div class="col-lg-9">
+                            <h2 class="mb-0">OUR PROJECTS</h2>
+                        </div>
+                        <div class="col-lg-3">
+                            <h6>Proven modular building solutions delivered across diverse environments and
+                                global markets
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
+
+    <div class="slogan-stats-wrapper">
+        <section class="home-slogan-section d-flex-center">
+            <div class="container home-slogan-container">
+                <h2 class="home-slogan-text">Built. Delivered. Proven.</h2>
+                <h6 class="home-slogan-text mt-5">PHE Luxwood has successfully delivered modular 
+                    building solutions across multiple countries, supporting residential, commercial, 
+                    and community developments.
+                </h6>
+                <h6 class="home-slogan-text mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    From single-family homes to large-scale modular facilities, our projects demonstrate the
+                    speed, flexibility, and performance of our engineered building system. 
+                </h6>
+            </div>
+        </section>
+    </div>
 
     <section class="projects-section">
         <div class="container-fluid">
@@ -90,20 +121,28 @@ include 'inc/header.php';
                                     <div class="row">
                                         <div class="col-lg-5 offset-lg-5">
                                             <p>A modern modular home designed for efficient construction and comfortable living.</p>
-                                            <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main2.jpeg" alt="Project 1" class="projects-feature-media-img">
+                                    <img src="img/australia/pacific_1.jpg" alt="Project 1" class="projects-feature-media-img">
                                 </div>
                             </div>
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/slide2.jpeg" alt="Project 2" class="img-fluid w-100">
+                                    <img src="img/australia/pacific_2.jpg" alt="Project 2" class="img-fluid w-100">
                                 </div>
+                            </div>
+
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/australia/pacific_3.jpg" alt="Pacific House - Interior 1">
+                                <img src="img/australia/pacific_4.jpg" alt="Pacific House - Exterior Detail">
+                                <img src="img/australia/pacific_5.jpg" alt="Pacific House - Living Area">
+                                <img src="img/australia/pacific_6.jpg" alt="Pacific House - Interior 1">
+                                <img src="img/australia/pacific_7.jpg" alt="Pacific House - Exterior Detail">                            
                             </div>
                         </div>
 
@@ -118,14 +157,22 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg">
                                 <div class="col-lg-5">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main4.png" alt="Project 3" class="img-fluid w-100">
+                                    <img src="img/australia/ballara_house_1.jpg" alt="Project 3" class="img-fluid w-100">
                                 </div>
                                 <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
                                     <div>
                                         <p class="mb-4">A compact residential solution optimized for functionality and cost efficiency.</p>
-                                        <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/australia/ballara_house_2.jpg" alt="ballara House - Interior 1">
+                                <img src="img/australia/ballara_house_3.jpg" alt="ballara House - Exterior Detail">
+                                <img src="img/australia/ballara_house_4.jpg" alt="ballara House - Living Area">
+                                <img src="img/australia/ballara_house_5.jpg" alt="ballara House - Interior 1">
+                                <img src="img/australia/ballara_house_6.jpg" alt="ballara House - Exterior Detail">                            
                             </div>
                         </div>
 
@@ -133,7 +180,7 @@ include 'inc/header.php';
                         <div class="projects-block" data-country="australia" data-type="commercial">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main2.jpeg" alt="Project 1" class="projects-feature-media-img">
+                                    <img src="img/australia/granny_flat_1.jpg" alt="Granny Flats" class="projects-feature-media-img">
                                 </div>
 
                                 <div class="col-lg-7">
@@ -142,7 +189,7 @@ include 'inc/header.php';
                                     <div class="row">
                                         <div class="col-lg-5 offset-lg-5">
                                             <p>A large-scale modular housing project designed for rapid deployment and consistent build quality. </p>
-                                            <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
                                 </div>
@@ -150,8 +197,12 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/slide2.jpeg" alt="Project 2" class="img-fluid w-100">
+                                    <img src="img/australia/granny_flat_2.jpg" alt="Granny Flats" class="img-fluid w-100">
                                 </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/australia/granny_flat_3.jpg" alt="Granny Flats - 3">
+                                <img src="img/australia/granny_flat_4.jpg" alt="Granny Flats - 4">                                
                             </div>
                         </div>
 
@@ -168,7 +219,7 @@ include 'inc/header.php';
                                 <div class="col-lg-5 d-flex flex-column justify-content-center">
                                     <div>
                                         <p class="mb-4">Accommodation units developed for remote mining operations with fast installation capabilities. </p>
-                                        <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
 
@@ -179,7 +230,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 5 -->
-                        <div class="projects-block" data-country="australia" data-type="commercial">
+                        <div class="projects-block" data-country="australia" data-type="commercial">    
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Site Office</h2>
@@ -187,21 +238,26 @@ include 'inc/header.php';
                                     <div class="row">
                                         <div class="col-lg-5 offset-lg-5">
                                             <p>A rapidly deployed modular workspace designed to support on-site operations.</p>
-                                            <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main2.jpeg" alt="Site Office" class="projects-feature-media-img">
+                                    <img src="img/australia/site_office_1.jpg" alt="Site Office" class="projects-feature-media-img">
                                 </div>
                             </div>
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/slide2.jpeg" alt="Site Office" class="img-fluid w-100">
+                                    <img src="img/australia/site_office_2.jpg" alt="Site Office" class="img-fluid w-100">
                                 </div>
                             </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/australia/site_office_3.jpg" alt="Site Office - 3">
+                                <img src="img/australia/site_office_4.jpg" alt="Site Office - 4">                                
+                            </div>
+
                         </div>
 
                         <!-- Block 6 -->
@@ -220,7 +276,7 @@ include 'inc/header.php';
                                 <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
                                     <div>
                                         <p class="mb-4">A functional modular structure providing dining and communal space for workforce environments.</p>
-                                        <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
                             </div>
@@ -230,7 +286,7 @@ include 'inc/header.php';
                         <div class="projects-block" data-country="australia" data-type="amenities">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main2.jpeg" alt="Canteen Facility" class="projects-feature-media-img">
+                                    <img src="img/australia/club_canteen_1.jpg" alt="Canteen Facility" class="projects-feature-media-img">
                                 </div>
 
                                 <div class="col-lg-7">
@@ -239,7 +295,7 @@ include 'inc/header.php';
                                     <div class="row">
                                         <div class="col-lg-5 offset-lg-5">
                                             <p>Designed for efficient food service operations within remote or temporary sites.</p>
-                                            <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
                                 </div>
@@ -247,8 +303,12 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/slide2.jpeg" alt="Canteen Facility" class="img-fluid w-100">
+                                    <img src="img/australia/club_canteen_2.jpg" alt="Canteen Facility" class="img-fluid w-100">
                                 </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/australia/club_canteen_3.jpg" alt="Canteen Facility - 3">
+                                <img src="img/australia/club_canteen_4.jpg" alt="Canteen Facility - 4">                                
                             </div>
                         </div>
 
@@ -265,13 +325,26 @@ include 'inc/header.php';
                                 <div class="col-lg-5 d-flex flex-column justify-content-center">
                                     <div>
                                         <p class="mb-4">Prefabricated modular washroom facilities designed for hygiene, durability, and ease of deployment.</p>
-                                        <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-5 offset-lg-1">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main4.png" alt="Portable Washrooms" class="img-fluid w-100">
+                                    <img src="img/australia/tamborine_1.jpg" alt="Portable Washrooms" class="img-fluid w-100">
                                 </div>
+                            </div>
+                             <div class="projects-gallery-images d-none">
+                                <img src="img/australia/tamborine_1-1.jpg" alt="Portable Washrooms - 1-1">
+                                <img src="img/australia/tamborine_2.jpg" alt="Portable Washrooms - 2">     
+                                <img src="img/australia/tamborine_2-1.jpg" alt="Portable Washrooms - 2-1">   
+                                <img src="img/australia/tamborine_3.jpg" alt="Portable Washrooms - 3">
+                                <img src="img/australia/tamborine_4.jpg" alt="Portable Washrooms - 4">
+                                <img src="img/australia/tamborine_5.jpg" alt="Portable Washrooms - 5">
+                                <img src="img/australia/tamborine_6.jpg" alt="Portable Washrooms - 6">
+                                <img src="img/australia/tamborine_7.jpg" alt="Portable Washrooms - 7">
+                                <img src="img/australia/tamborine_8.jpg" alt="Portable Washrooms - 8">
+                                <img src="img/australia/tamborine_9.jpg" alt="Portable Washrooms - 9">
+                                <img src="img/australia/tamborine_10.jpg" alt="Portable Washrooms - 10">                                
                             </div>
                         </div>
 
@@ -284,7 +357,7 @@ include 'inc/header.php';
                                     <div class="row">
                                         <div class="col-lg-5 offset-lg-5">
                                             <p>Supporting infrastructure units designed for operational convenience in workforce environments.</p>
-                                            <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
                                 </div>
@@ -312,14 +385,21 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg">
                                 <div class="col-lg-5">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main4.png" alt="Warwick Farm Structure" class="img-fluid w-100">
+                                    <img src="img/australia/warwick_farm_1.jpg" alt="Warwick Farm Structure" class="img-fluid w-100">
                                 </div>
                                 <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
                                     <div>
                                         <p class="mb-4">A modular building solution applied within a farm setting, demonstrating system adaptability beyond residential and commercial use.</p>
-                                        <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">                                
+                                <img src="img/australia/warwick_farm_2.jpg" alt="Warwick Farm Structure - 2">                                     
+                                <img src="img/australia/warwick_farm_3.jpg" alt="Warwick Farm Structure - 3">
+                                <img src="img/australia/warwick_farm_4.jpg" alt="Warwick Farm Structure - 4">
+                                <img src="img/australia/warwick_farm_5.jpg" alt="Warwick Farm Structure - 5">
+                                <img src="img/australia/warwick_farm_6.jpg" alt="Warwick Farm Structure - 6">                             
                             </div>
                         </div>
 
@@ -336,7 +416,7 @@ include 'inc/header.php';
                                     <div class="row">
                                         <div class="col-lg-5 offset-lg-5">
                                             <p>A modular home built using Luxwood panels, combining structural performance with efficient construction methods.</p>
-                                            <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
                                 </div>
@@ -362,7 +442,7 @@ include 'inc/header.php';
                                 <div class="col-lg-5 d-flex flex-column justify-content-center">
                                     <div>
                                         <p class="mb-4">A compact modular housing solution demonstrating adaptability within urban environments.</p>
-                                        <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
 
@@ -381,19 +461,23 @@ include 'inc/header.php';
                                     <div class="row">
                                         <div class="col-lg-5 offset-lg-5">
                                             <p>A modular school development designed to accommodate over 100 students, showcasing the scalability and reliability of the Luxwood system in community infrastructure.</p>
-                                            <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main2.jpeg" alt="Theodor Herzl School" class="projects-feature-media-img">
+                                    <img src="img/africa/theodor_herzl_school_1.jpg" alt="Theodor Herzl School" class="projects-feature-media-img">
+                                </div>
+                                <div class="projects-gallery-images d-none">                                
+                                    <img src="img/africa/theodor_herzl_school_3.jpg" alt="Theodor Herzl School - 3">                                     
+                                    <img src="img/africa/theodor_herzl_school_4.jpg" alt="Theodor Herzl School - 4">                                                          
                                 </div>
                             </div>
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/slide2.jpeg" alt="Theodor Herzl School" class="img-fluid w-100">
+                                    <img src="img/africa/theodor_herzl_school_2.jpg" alt="Theodor Herzl School" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div>
@@ -409,12 +493,12 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg">
                                 <div class="col-lg-5">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main4.png" alt="Cornubia House" class="img-fluid w-100">
+                                    <img src="img/africa/cornubia.jpg" alt="Cornubia House" class="img-fluid w-100">
                                 </div>
                                 <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
                                     <div>
                                         <p class="mb-4">A multi-level residential project demonstrating structural strength and architectural flexibility.</p>
-                                        <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
                             </div>
@@ -433,7 +517,7 @@ include 'inc/header.php';
                                     <div class="row">
                                         <div class="col-lg-5 offset-lg-5">
                                             <p>A coastal residential development designed to perform in demanding environmental conditions.</p>
-                                            <a href="#" class="projects-more-details-link">MORE DETAILS</a>
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
                                 </div>
@@ -450,9 +534,212 @@ include 'inc/header.php';
             </div>
         </div>
     </section>
+
+    <!-- Global Impact Section -->
+    <section class="global-impact-section section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="global-impact-content">
+                        <h2 class="global-impact-title" data-aos="fade-up" data-aos-duration="1000">A Proven Global Track Record</h2>
+                        <p class="global-impact-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">PHE Luxwood systems have been applied across diverse climates and construction environments, consistently delivering performance, efficiency, and reliability.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="global-impact-stats">
+                        <div class="stat-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Years of Experience</div>
+                        </div>
+                        <div class="stat-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="stat-number">22</div>
+                            <div class="stat-label">Countries Served</div>
+                        </div>
+                        <div class="stat-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Completed Projects</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="gallery-modal">
+        <div class="gallery-modal-overlay"></div>
+        <div class="gallery-modal-content">
+            <button class="gallery-modal-close">&times;</button>
+            
+            <div id="main-carousel" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="https://placehold.co/1200x800?text=Project+Image+1" alt="Gallery Image 1">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://placehold.co/1200x800?text=Project+Image+2" alt="Gallery Image 2">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://placehold.co/1200x800?text=Project+Image+3" alt="Gallery Image 3">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://placehold.co/1200x800?text=Project+Image+4" alt="Gallery Image 4">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="thumbnail-carousel" class="splide mt-3">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="https://placehold.co/1200x800?text=Project+Image+1" alt="Thumbnail 1">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://placehold.co/1200x800?text=Project+Image+2" alt="Thumbnail 2">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://placehold.co/1200x800?text=Project+Image+3" alt="Thumbnail 3">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://placehold.co/1200x800?text=Project+Image+4" alt="Thumbnail 4">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <script>
+    // Gallery Modal - Dynamic Image Loading
+    document.addEventListener("DOMContentLoaded", () => {
+        const galleryModal = document.getElementById("gallery-modal");
+        const viewButtons = document.querySelectorAll(".view-gallery-btn");
+        const closeButton = document.querySelector(".gallery-modal-close");
+        const overlay = document.querySelector(".gallery-modal-overlay");
+
+        if (!galleryModal || viewButtons.length === 0) return;
+
+        let mainSplide, thumbnailSplide;
+
+        // Initialize Splide instances
+        function initializeSplide() {
+            // Destroy existing instances if they exist
+            if (mainSplide) mainSplide.destroy();
+            if (thumbnailSplide) thumbnailSplide.destroy();
+
+            // Initialize Main Splide
+            mainSplide = new Splide("#main-carousel", {
+                type: "fade",
+                rewind: true,
+                pagination: false,
+                arrows: true,
+            });
+
+            // Initialize Thumbnail Splide
+            thumbnailSplide = new Splide("#thumbnail-carousel", {
+                fixedWidth: 100,
+                fixedHeight: 60,
+                gap: 10,
+                rewind: true,
+                isNavigation: true,
+                pagination: false,
+                arrows: false,
+                breakpoints: {
+                    600: {
+                        fixedWidth: 60,
+                        fixedHeight: 44,
+                    },
+                },
+            });
+
+            // Sync carousels
+            mainSplide.sync(thumbnailSplide);
+            mainSplide.mount();
+            thumbnailSplide.mount();
+        }
+
+        // Populate gallery with project images
+        function populateGallery(projectBlock) {
+            // Get all visible images from the project block
+            const visibleImages = projectBlock.querySelectorAll("img:not(.d-none img)");
+            
+            // Get hidden gallery images if they exist
+            const hiddenGalleryContainer = projectBlock.querySelector(".projects-gallery-images");
+            const hiddenImages = hiddenGalleryContainer ? hiddenGalleryContainer.querySelectorAll("img") : [];
+            
+            // Combine all images
+            const allImages = [...visibleImages, ...hiddenImages];
+            
+            if (allImages.length === 0) return;
+
+            // Clear existing slides
+            const mainList = document.querySelector("#main-carousel .splide__list");
+            const thumbList = document.querySelector("#thumbnail-carousel .splide__list");
+
+            mainList.innerHTML = "";
+            thumbList.innerHTML = "";
+
+            // Add each image to both carousels
+            allImages.forEach((img, index) => {
+                const src = img.src;
+                const alt = img.alt || `Gallery Image ${index + 1}`;
+
+                // Main carousel slide
+                const mainSlide = document.createElement("li");
+                mainSlide.className = "splide__slide";
+                mainSlide.innerHTML = `<img src="${src}" alt="${alt}">`;
+                mainList.appendChild(mainSlide);
+
+                // Thumbnail carousel slide
+                const thumbSlide = document.createElement("li");
+                thumbSlide.className = "splide__slide";
+                thumbSlide.innerHTML = `<img src="${src}" alt="Thumbnail - ${alt}">`;
+                thumbList.appendChild(thumbSlide);
+            });
+
+            // Reinitialize Splide with new slides
+            initializeSplide();
+        }
+
+        // Open modal and populate with project images
+        viewButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                // Get the parent project block
+                const projectBlock = btn.closest(".projects-block");
+                
+                if (projectBlock) {
+                    populateGallery(projectBlock);
+                }
+
+                galleryModal.classList.add("active");
+                document.body.style.overflow = "hidden";
+            });
+        });
+
+        // Close modal
+        const closeModal = () => {
+            galleryModal.classList.remove("active");
+            document.body.style.overflow = "";
+        };
+
+        closeButton.addEventListener("click", closeModal);
+        overlay.addEventListener("click", closeModal);
+
+        // Close on Escape key
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && galleryModal.classList.contains("active")) {
+                closeModal();
+            }
+        });
+
+        // Initialize on page load (with placeholder images)
+        initializeSplide();
+    });
+
+    // Projects Filter
     (function() {
         const form = document.querySelector('.projects-filter-form');
         if (!form) return;
