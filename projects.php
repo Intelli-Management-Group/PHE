@@ -11,33 +11,33 @@ include 'inc/header.php';
             <img src="img/home/banner_home.jpg" alt="PHE Hero" class="hero-section-bg-img">
         </div>
 
-           <div class="building-system-hero-section-wrap">
-                <div class="container">
-                    <div class="row align-items-end">
-                        <div class="col-lg-9">
-                            <h2 class="mb-0">OUR PROJECTS</h2>
-                        </div>
-                        <div class="col-lg-3">
-                            <h6>Proven modular building solutions delivered across diverse environments and
-                                global markets
-                            </h6>
-                        </div>
+        <div class="building-system-hero-section-wrap">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-9">
+                        <h2 class="mb-0">OUR PROJECTS</h2>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6>Proven modular building solutions delivered across diverse environments and
+                            global markets
+                        </h6>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <div class="slogan-stats-wrapper">
         <section class="home-slogan-section d-flex-center">
             <div class="container home-slogan-container">
                 <h2 class="home-slogan-text">Built. Delivered. Proven.</h2>
-                <h6 class="home-slogan-text mt-5">PHE Luxwood has successfully delivered modular 
-                    building solutions across multiple countries, supporting residential, commercial, 
+                <h6 class="home-slogan-text mt-5">PHE Luxwood has successfully delivered modular
+                    building solutions across multiple countries, supporting residential, commercial,
                     and community developments.
                 </h6>
                 <h6 class="home-slogan-text mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                     From single-family homes to large-scale modular facilities, our projects demonstrate the
-                    speed, flexibility, and performance of our engineered building system. 
+                    speed, flexibility, and performance of our engineered building system.
                 </h6>
             </div>
         </section>
@@ -142,7 +142,7 @@ include 'inc/header.php';
                                 <img src="img/projects/australia/pacific_4.jpg" alt="Pacific House - Exterior Detail">
                                 <img src="img/projects/australia/pacific_5.jpg" alt="Pacific House - Living Area">
                                 <img src="img/projects/australia/pacific_6.jpg" alt="Pacific House - Interior 1">
-                                <img src="img/projects/australia/pacific_7.jpg" alt="Pacific House - Exterior Detail">                            
+                                <img src="img/projects/australia/pacific_7.jpg" alt="Pacific House - Exterior Detail">
                             </div>
                         </div>
 
@@ -172,7 +172,7 @@ include 'inc/header.php';
                                 <img src="img/projects/australia/ballara_house_3.jpg" alt="ballara House - Exterior Detail">
                                 <img src="img/projects/australia/ballara_house_4.jpg" alt="ballara House - Living Area">
                                 <img src="img/projects/australia/ballara_house_5.jpg" alt="ballara House - Interior 1">
-                                <img src="img/projects/australia/ballara_house_6.jpg" alt="ballara House - Exterior Detail">                            
+                                <img src="img/projects/australia/ballara_house_6.jpg" alt="ballara House - Exterior Detail">
                             </div>
                         </div>
 
@@ -180,7 +180,7 @@ include 'inc/header.php';
                         <div class="projects-block" data-country="australia" data-type="commercial">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="img/projects/australia/granny_flat_1.jpg" alt="Granny Flats" class="projects-feature-media-img">
+                                    <img src="img/projects/australia/granny_flat_3.jpg" alt="Granny Flats" class="projects-feature-media-img">
                                 </div>
 
                                 <div class="col-lg-7">
@@ -197,12 +197,12 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="img/projects/australia/granny_flat_2.jpg" alt="Granny Flats" class="img-fluid w-100">
+                                    <img src="img/projects/australia/granny_flat_4.jpg" alt="Granny Flats" class="img-fluid w-100">
                                 </div>
                             </div>
                             <div class="projects-gallery-images d-none">
-                                <img src="img/projects/australia/granny_flat_3.jpg" alt="Granny Flats - 3">
-                                <img src="img/projects/australia/granny_flat_4.jpg" alt="Granny Flats - 4">                                
+                                <img src="img/projects/australia/granny_flat_1.jpg" alt="Granny Flats - 3">
+                                <img src="img/projects/australia/granny_flat_2.jpg" alt="Granny Flats - 4">
                             </div>
                         </div>
 
@@ -224,13 +224,20 @@ include 'inc/header.php';
                                 </div>
 
                                 <div class="col-lg-5 offset-lg-1">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main4.png" alt="Project 3" class="img-fluid w-100">
+                                    <img src="img/projects/australia/moranbah_camp_1.jpg" alt="Eco Mining Cabins" class="img-fluid w-100">
                                 </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/moranbah_camp_2.jpg" alt="Eco Mining Cabins - 2">
+                                <img src="img/projects/australia/moranbah_camp_3.jpg" alt="Eco Mining Cabins - 3">
+                                <img src="img/projects/australia/moranbah_camp_4.jpg" alt="Eco Mining Cabins - 4">
+                                <img src="img/projects/australia/moranbah_camp_5.jpg" alt="Eco Mining Cabins - 5">
+                                <img src="img/projects/australia/moranbah_camp_6.jpg" alt="Eco Mining Cabins - 6">
                             </div>
                         </div>
 
                         <!-- Block 5 -->
-                        <div class="projects-block" data-country="australia" data-type="commercial">    
+                        <div class="projects-block" data-country="australia" data-type="commercial">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Site Office</h2>
@@ -250,14 +257,13 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="img/projects/australia/site_office_2.jpg" alt="Site Office" class="img-fluid w-100">
+                                    <img src="img/projects/australia/site_office_3.jpg" alt="Site Office" class="img-fluid w-100">
                                 </div>
                             </div>
                             <div class="projects-gallery-images d-none">
-                                <img src="img/projects/australia/site_office_3.jpg" alt="Site Office - 3">
-                                <img src="img/projects/australia/site_office_4.jpg" alt="Site Office - 4">                                
+                                <img src="img/projects/australia/site_office_2.jpg" alt="Site Office - 3">
+                                <img src="img/projects/australia/site_office_4.jpg" alt="Site Office - 4">
                             </div>
-
                         </div>
 
                         <!-- Block 6 -->
@@ -271,7 +277,7 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg">
                                 <div class="col-lg-5">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main4.png" alt="Cafeteria Facility" class="img-fluid w-100">
+                                    <img src="img/projects/australia/Cafeteria_1.jpg" alt="Cafeteria Facility" class="img-fluid w-100">
                                 </div>
                                 <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
                                     <div>
@@ -279,6 +285,12 @@ include 'inc/header.php';
                                         <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/Cafeteria_2.jpg" alt="Cafeteria Facility - 2">
+                                <img src="img/projects/australia/Cafeteria_3.jpg" alt="Cafeteria Facility - 3">
+                                <img src="img/projects/australia/Cafeteria_4.jpg" alt="Cafeteria Facility - 4">
+                                <img src="img/projects/australia/Cafeteria_5.jpg" alt="Cafeteria Facility - 5">
                             </div>
                         </div>
 
@@ -308,7 +320,7 @@ include 'inc/header.php';
                             </div>
                             <div class="projects-gallery-images d-none">
                                 <img src="img/projects/australia/club_canteen_3.jpg" alt="Canteen Facility - 3">
-                                <img src="img/projects/australia/club_canteen_4.jpg" alt="Canteen Facility - 4">                                
+                                <img src="img/projects/australia/club_canteen_4.jpg" alt="Canteen Facility - 4">
                             </div>
                         </div>
 
@@ -330,21 +342,21 @@ include 'inc/header.php';
                                 </div>
 
                                 <div class="col-lg-5 offset-lg-1">
-                                    <img src="img/projects/australia/tamborine_1.jpg" alt="Portable Washrooms" class="img-fluid w-100">
+                                    <img src="img/projects/australia/tamborine_7.jpg" alt="Portable Washrooms" class="img-fluid w-100">
                                 </div>
                             </div>
-                             <div class="projects-gallery-images d-none">
-                                <img src="img/projects/australia/tamborine_1-1.jpg" alt="Portable Washrooms - 1-1">
-                                <img src="img/projects/australia/tamborine_2.jpg" alt="Portable Washrooms - 2">     
-                                <img src="img/projects/australia/tamborine_2-1.jpg" alt="Portable Washrooms - 2-1">   
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/tamborine_1.jpg" alt="Portable Washrooms - 1">
+                                <!-- <img src="img/projects/australia/tamborine_1-1.jpg" alt="Portable Washrooms - 1-1"> -->
+                                <img src="img/projects/australia/tamborine_2.jpg" alt="Portable Washrooms - 2">
+                                <!-- <img src="img/projects/australia/tamborine_2-1.jpg" alt="Portable Washrooms - 2-1">    -->
                                 <img src="img/projects/australia/tamborine_3.jpg" alt="Portable Washrooms - 3">
                                 <img src="img/projects/australia/tamborine_4.jpg" alt="Portable Washrooms - 4">
                                 <img src="img/projects/australia/tamborine_5.jpg" alt="Portable Washrooms - 5">
                                 <img src="img/projects/australia/tamborine_6.jpg" alt="Portable Washrooms - 6">
-                                <img src="img/projects/australia/tamborine_7.jpg" alt="Portable Washrooms - 7">
                                 <img src="img/projects/australia/tamborine_8.jpg" alt="Portable Washrooms - 8">
                                 <img src="img/projects/australia/tamborine_9.jpg" alt="Portable Washrooms - 9">
-                                <img src="img/projects/australia/tamborine_10.jpg" alt="Portable Washrooms - 10">                                
+                                <img src="img/projects/australia/tamborine_10.jpg" alt="Portable Washrooms - 10">
                             </div>
                         </div>
 
@@ -363,14 +375,17 @@ include 'inc/header.php';
                                 </div>
 
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main2.jpeg" alt="Laundry Facilities" class="projects-feature-media-img">
+                                    <img src="img/projects/australia/moranbah_camp_7.jpg" alt="Laundry Facilities" class="projects-feature-media-img">
                                 </div>
                             </div>
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/slide2.jpeg" alt="Laundry Facilities" class="img-fluid w-100">
+                                    <img src="img/projects/australia/moranbah_camp_8.jpg" alt="Laundry Facilities - 2" class="img-fluid w-100">
                                 </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/moranbah_camp_9.jpg" alt="Laundry Facilities - 3">
                             </div>
                         </div>
 
@@ -394,12 +409,12 @@ include 'inc/header.php';
                                     </div>
                                 </div>
                             </div>
-                            <div class="projects-gallery-images d-none">                                
-                                <img src="img/projects/australia/warwick_farm_2.jpg" alt="Warwick Farm Structure - 2">                                     
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/warwick_farm_2.jpg" alt="Warwick Farm Structure - 2">
                                 <img src="img/projects/australia/warwick_farm_3.jpg" alt="Warwick Farm Structure - 3">
                                 <img src="img/projects/australia/warwick_farm_4.jpg" alt="Warwick Farm Structure - 4">
                                 <img src="img/projects/australia/warwick_farm_5.jpg" alt="Warwick Farm Structure - 5">
-                                <img src="img/projects/australia/warwick_farm_6.jpg" alt="Warwick Farm Structure - 6">                             
+                                <img src="img/projects/australia/warwick_farm_6.jpg" alt="Warwick Farm Structure - 6">
                             </div>
                         </div>
 
@@ -469,9 +484,9 @@ include 'inc/header.php';
                                 <div class="col-lg-5 projects-feature-media-col">
                                     <img src="img/projects/africa/theodor_herzl_school_1.jpg" alt="Theodor Herzl School" class="projects-feature-media-img">
                                 </div>
-                                <div class="projects-gallery-images d-none">                                
-                                    <img src="img/projects/africa/theodor_herzl_school_3.jpg" alt="Theodor Herzl School - 3">                                     
-                                    <img src="img/projects/africa/theodor_herzl_school_4.jpg" alt="Theodor Herzl School - 4">                                                          
+                                <div class="projects-gallery-images d-none">
+                                    <img src="img/projects/africa/theodor_herzl_school_3.jpg" alt="Theodor Herzl School - 3">
+                                    <img src="img/projects/africa/theodor_herzl_school_4.jpg" alt="Theodor Herzl School - 4">
                                 </div>
                             </div>
 
@@ -606,7 +621,7 @@ include 'inc/header.php';
         <div class="gallery-modal-overlay"></div>
         <div class="gallery-modal-content">
             <button class="gallery-modal-close">&times;</button>
-            
+
             <div id="main-carousel" class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
@@ -701,14 +716,14 @@ include 'inc/header.php';
         function populateGallery(projectBlock) {
             // Get all visible images from the project block
             const visibleImages = projectBlock.querySelectorAll("img:not(.d-none img)");
-            
+
             // Get hidden gallery images if they exist
             const hiddenGalleryContainer = projectBlock.querySelector(".projects-gallery-images");
             const hiddenImages = hiddenGalleryContainer ? hiddenGalleryContainer.querySelectorAll("img") : [];
-            
+
             // Combine all images
             const allImages = [...visibleImages, ...hiddenImages];
-            
+
             if (allImages.length === 0) return;
 
             // Clear existing slides
@@ -745,7 +760,7 @@ include 'inc/header.php';
             btn.addEventListener("click", () => {
                 // Get the parent project block
                 const projectBlock = btn.closest(".projects-block");
-                
+
                 if (projectBlock) {
                     populateGallery(projectBlock);
                 }

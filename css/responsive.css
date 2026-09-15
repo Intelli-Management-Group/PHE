@@ -46,6 +46,10 @@
     /* .bottom-padding-sm {
         padding-bottom: calc(var(--padding) * 0.5);
     } */
+
+    .projects-content-overlap-row {
+        margin-top: -100px;
+    }
 }
 
 @media only screen and (max-width: 767px) {}
