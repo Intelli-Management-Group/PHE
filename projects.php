@@ -523,11 +523,11 @@ include 'inc/header.php';
                         <div class="projects-block" data-country="south-africa" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main2.jpeg" alt="Brittania Bay Residence" class="projects-feature-media-img">
+                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main2.jpeg" alt="Britannia Bay Residence" class="projects-feature-media-img">
                                 </div>
 
                                 <div class="col-lg-7">
-                                    <h2 class="mb-4">Brittania Bay Residence</h2>
+                                    <h2 class="mb-4">Britannia Bay Residence</h2>
                                     <p class="text-uppercase mb-5">2-Level | 2-Bedroom Residential Home</p>
                                     <div class="row">
                                         <div class="col-lg-5 offset-lg-5">
@@ -540,7 +540,7 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/slide2.jpeg" alt="Brittania Bay Residence" class="img-fluid w-100">
+                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/slide2.jpeg" alt="Britannia Bay Residence" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div>

@@ -1115,15 +1115,38 @@ document.addEventListener("DOMContentLoaded", () => {
     thumbnailSplide.mount();
 
     // Open modal
+    const mainList = document.querySelector("#main-carousel .splide__list");
+    const thumbnailList = document.querySelector("#thumbnail-carousel .splide__list");
+
+    const buildSlides = (list, images, labelPrefix) => {
+        list.replaceChildren(...images.map((src, i) => {
+            const li = document.createElement("li");
+            li.className = "splide__slide";
+            const img = document.createElement("img");
+            img.src = src;
+            img.alt = `${labelPrefix} ${i + 1}`;
+            li.appendChild(img);
+            return li;
+        }));
+    };
+
     viewButtons.forEach(btn => {
         btn.addEventListener("click", () => {
+            const gallery = btn.dataset.gallery;
+            if (gallery) {
+                const images = gallery.split(",").map(src => src.trim()).filter(Boolean);
+                buildSlides(mainList, images, "Gallery Image");
+                buildSlides(thumbnailList, images, "Thumbnail");
+            }
+
             galleryModal.classList.add("active");
             document.body.style.overflow = "hidden"; // Prevent scrolling
-            
+
             // Refresh splide to ensure correct layout
             setTimeout(() => {
                 mainSplide.refresh();
                 thumbnailSplide.refresh();
+                mainSplide.go(0);
             }, 50);
         });
     });
