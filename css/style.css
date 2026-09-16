@@ -1662,7 +1662,7 @@ button {
     margin-bottom: 2rem;
 }
 
-.btn-primary {
+.button-primary {
     background-color: #dccbb3;
     color: #1a1a1a;
     padding: 0.75rem 2rem;
@@ -1674,7 +1674,7 @@ button {
     display: inline-block;
 }
 
-.btn-primary:hover {
+.button-primary:hover {
     background-color: #fff;
     color: #000;
     transform: translateY(-2px);

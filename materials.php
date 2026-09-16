@@ -32,7 +32,7 @@ include 'inc/header.php';
             </div>
         </div>
     </section>
-    
+
     <!-- INTRO SECTION -->
     <section class="materials-intro-section">
         <div class="container">
@@ -40,20 +40,22 @@ include 'inc/header.php';
                 <div class="col-lg-7">
                     <div class="intro-content">
                         <h2 class="product-titles fade-up-content">
-                            BUILD FASATER, HIGHER QUALITY AND WITH LESS 
-                            WASTE, WHEREVER YOU WANT.                             
+                            THE FOUNDATION OF THE PHE SYSTEM
                         </h2>
-                        
+
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="intro-text fade-up-content">
-                            <p>
-                                Manufacturing using advanced composite technology, our 
-                                materials offer a balance of strength, lightweight performance,
-                                and environmental responsibility.    
-                            </p>
-                        </div>        
+                        <p>
+                            At the core of the PHE Luxwood building system is a range
+                            of engineered materials designed to simplify construction
+                            while enhancing structural performance. From wall panels
+                            to foundations and roofing systems, each component is
+                            developed to work together — ensuring efficiency,
+                            durability, and long-term reliability across all projects.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,92 +102,93 @@ include 'inc/header.php';
             </div>
         </div>
     </section>
-        
+
     <section class="material-performance mt-5">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Left Side -->
-                 
-            <div class="col-lg-5 sticky-column">
+
+                <div class="col-lg-5 sticky-column">
                     <div class="sticky-content">
                         <h5 class="product-titles fade-up-content">
-                            We provide a complete portfolio of building system
-                            solutions—from foundations and wall panels to decking
-                            and roofing—engineered for seamless integration and
-                            construction efficiency.
-                        </h5>   
+                            Engineered for Performance
+                        </h5>
                         <p class="">
-                            We offer a wide spectum of bespoke door solutions 
-                            where timeless design meets technical precision.     
+                            PHE materials are designed with a system-based approach,
+                            where each component integrates seamlessly into the
+                            overall construction process. Manufactured using advanced
+                            composite technology, our materials offer a balance of
+                            strength, lightweight performance, and environmental
+                            responsibility.
                         </p>
                     </div>
                 </div>
 
                 <!-- Right Side -->
-                <div class="col-lg-7">
+                <div class="col-lg-7 bg-white z-1">
                     <div class="products-grid">
                         <a href="material-detail.php?product=panel" class="product-card">
                             <div class="image-wrap">
                                 <img src="img/building-material/panel/banner_main.jpg" alt="">
-                                <div class="view-btn">
+                                <!-- <div class="view-btn">
                                     VIEW
-                                </div>
+                                </div> -->
                             </div>
                             <h5>Luxwood Panel</h5>
                         </a>
                         <a href="material-detail.php?product=roof" class="product-card">
                             <div class="image-wrap">
                                 <img src="img/building-material/roof/banner_main.jpg" alt="">
-                                <div class="view-btn">
+                                <!-- <div class="view-btn">
                                     VIEW
-                                </div>
+                                </div> -->
                             </div>
                             <h5>Roofing System</h5>
                         </a>
-                       
+
                         <a href="material-detail.php?product=deck" class="product-card">
                             <div class="image-wrap">
                                 <img src="img/building-material/deck/banner_main.jpg" alt="">
-                                <div class="view-btn">
+                                <!-- <div class="view-btn">
                                     VIEW
-                                </div>
+                                </div> -->
                             </div>
                             <h5>Decking</h5>
                         </a>
                         <a href="material-detail.php?product=window-door" class="product-card">
                             <div class="image-wrap">
                                 <img src="img/building-material/window_&_door/banner_main.jpg" alt="">
-                                <div class="view-btn">
+                                <!-- <div class="view-btn">
                                     VIEW
-                                </div>
+                                </div> -->
                             </div>
                             <h5>Window & Door</h5>
                         </a>
                         <a href="material-detail.php?product=cladding" class="product-card">
                             <div class="image-wrap">
                                 <img src="img/building-material/clad/banner_main.jpg" alt="">
-                                <div class="view-btn">
+                                <!-- <div class="view-btn">
                                     VIEW
-                                </div>
+                                </div> -->
                             </div>
                             <h5>Cladding</h5>
                         </a>
                         <a href="material-detail.php?product=screw" class="product-card">
-                        
+
                             <div class="image-wrap">
-                                <img src="img/building-material/screw   /banner_main.jpg" alt="">
-                                <div class="view-btn">
+                                <img src="img/building-material/screw/banner_main.jpg" alt="">
+                                <!-- <div class="view-btn">
                                     VIEW
-                                </div>
+                                </div> -->
                             </div>
                             <h5>Screw</h5>
-                        </a>                        
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- SYSTEM INTEGRATION -->
     <section class="integration-section section-padding-lg fade-up">
         <div class="container">
@@ -218,17 +221,17 @@ include 'inc/header.php';
             </p>
             <div class="mt-4">
                 <a href="contact.php"
-                class="btn btn-primary me-3">
+                    class="btn button-primary me-3">
                     Contact Us
                 </a>
                 <a href="building-system.php"
-                class="btn btn-outline-primary">
+                    class="btn button-primary">
                     Explore Building System
                 </a>
             </div>
         </div>
     </section>
-    <script>
+    <!-- <script>
         document.querySelectorAll('.image-wrap').forEach(card => {
 
             const btn = card.querySelector('.view-btn');
@@ -254,7 +257,7 @@ include 'inc/header.php';
             });
 
         });
-    </script>
+    </script> -->
 </main>
 
 

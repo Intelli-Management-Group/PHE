@@ -67,12 +67,12 @@ include 'inc/header.php';
                                             <label class="form-check-label" for="filter-country-south-africa">South Africa</label>
                                         </div>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <div class="form-check projects-filter-check">
                                             <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="china" id="filter-country-china">
                                             <label class="form-check-label" for="filter-country-china">China</label>
                                         </div>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -419,7 +419,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 11 -->
-                        <div class="projects-block" data-country="china" data-type="residential">
+                        <!-- <div class="projects-block" data-country="china" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
                                     <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main2.jpeg" alt="Zambia House" class="projects-feature-media-img">
@@ -442,10 +442,10 @@ include 'inc/header.php';
                                     <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/slide2.jpeg" alt="Zambia House" class="img-fluid w-100">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Block 12 -->
-                        <div class="projects-block" data-country="china" data-type="residential">
+                        <!-- <div class="projects-block" data-country="china" data-type="residential">
                             <div class="row mb-4">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Beijing House</h2>
@@ -465,7 +465,7 @@ include 'inc/header.php';
                                     <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main4.png" alt="Beijing House" class="img-fluid w-100">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Block 13 -->
                         <div class="projects-block" data-country="south-africa" data-type="commercial">
@@ -520,7 +520,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 15 -->
-                        <div class="projects-block" data-country="south-africa" data-type="residential">
+                        <!-- <div class="projects-block" data-country="south-africa" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
                                     <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main2.jpeg" alt="Britannia Bay Residence" class="projects-feature-media-img">
@@ -543,7 +543,7 @@ include 'inc/header.php';
                                     <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/slide2.jpeg" alt="Britannia Bay Residence" class="img-fluid w-100">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
