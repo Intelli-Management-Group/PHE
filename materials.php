@@ -13,7 +13,7 @@ include 'inc/header.php';
 <main class="materials-page">
     <!-- Hero Section -->
     <section class="home-hero-section">
-        <div class="hero-section-bg">
+        <div class="hero-section-bg hero-section-bg-overlay">
             <img src="img/building-material/banner_main.jpg"
                 alt="Building Materials"
                 class="hero-section-bg-img">
@@ -39,10 +39,10 @@ include 'inc/header.php';
             <div class="row align-items-center">
                 <div class="col-lg-7">
                     <div class="intro-content">
+                        <p class="mb-0 fade-up-content">CORE BENEFITS</p>
                         <h2 class="product-titles fade-up-content">
                             THE FOUNDATION OF THE PHE SYSTEM
                         </h2>
-
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -109,18 +109,11 @@ include 'inc/header.php';
                 <!-- Left Side -->
 
                 <div class="col-lg-5 sticky-column">
+                    <p>OUR PRODUCTS</p>
                     <div class="sticky-content">
                         <h5 class="product-titles fade-up-content">
-                            Engineered for Performance
+                            We provide a complete portfolio of building system solutions-from foundations and wall panels to decking and roofing-engineered for seamless integration and construction efficiency.
                         </h5>
-                        <p class="">
-                            PHE materials are designed with a system-based approach,
-                            where each component integrates seamlessly into the
-                            overall construction process. Manufactured using advanced
-                            composite technology, our materials offer a balance of
-                            strength, lightweight performance, and environmental
-                            responsibility.
-                        </p>
                     </div>
                 </div>
 

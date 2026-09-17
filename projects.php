@@ -7,8 +7,8 @@ include 'inc/header.php';
 
 <main>
     <section class="home-hero-section">
-        <div class="hero-section-bg">
-            <img src="img/home/banner_home.jpg" alt="PHE Hero" class="hero-section-bg-img">
+        <div class="hero-section-bg hero-section-bg-overlay">
+            <img src="img/projects/banner_main.jpg" alt="PHE Hero" class="hero-section-bg-img">
         </div>
 
         <div class="building-system-hero-section-wrap">

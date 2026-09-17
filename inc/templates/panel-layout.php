@@ -1,56 +1,76 @@
 <?php 
 $hotspots = [
     [
-        'label' => 'END TONGUE AND GROOVE',
-        'title' => 'Easy assembly',
-        'description' => 'With end-jointed panels, it is easy to join and you use as much of the wood as possible. A sustainable choice for our planet and your finances.',
+        'label' => '',
+        'title' => 'Fire & Smoke Retardant',
+        'description' => [
+            'The flame retardant and smoke preventative additives in the recipe can effectively stop the wall panel being ignited.',
+            'Test reports show fire resistance of the wall panel will exceed two hours and non-combustable Grade-A product under EN standards.'
+        ],
         'top' => '32%',
         'left' => '32%',
         'direction' => 'left'
     ],
     [
-        'label' => 'TEXTURE',
-        'title' => 'Brushed',
-        'description' => 'A brushed structure has been treated with rotating brushes that have removed the soft springwood on the surface. The result is a more durable product with a clear wood structure.',
+        'label' => '',
+        'title' => 'Environmentally Friendly',
+        'description' => [
+            'The limits of radio-nuclides formaldehyde content in panel forms no hard to health of humans or animals.',
+            'The panel is recyclable and can be granulated back into product many years after used and therefore no construction waste has been created.'
+        ],
         'top' => '55%',
         'left' => '50%',
         'direction' => 'left'
     ],
     [
-        'label' => 'CERTIFICATION',
-        'title' => 'Sustainable forestry',
-        'description' => 'The forests of Norrland that surround us are our main raw material, and respecting the environment comes naturally. Our wood panels and solid wood floors are made from wood from certified sustainable forestry.',
+        'label' => '',
+        'title' => 'Construction Savings',
+        'description' => [
+            'Wall construction reduces or even eliminates the need of steel structure.',
+            'Reduces the need for heavy lifting equipment for construction.',
+            'Wall panels can be installed faster, compared to traditional building processes.',
+            'Wall construction is 70% – 80% quicker, results in saving of 80% in labor costs.'
+        ],
         'top' => '88%',
         'left' => '30%',
         'direction' => 'left'
     ],
 
     [
-        'label' => 'Surface treatment',
-        'title' => ' Superglaze',
-        'description' => 'Superglaze is a two-layer treatment. The panel is first treated with a varnish that inhibits knot yellowing and then with a white-pigmented varnish that makes the panel bright and easy to keep clean.',
+        'label' => '',
+        'title' => 'Maximizes Internal Space',
+        'description' => [
+            'The wall has excellent performance and takes up less space than the traditional wall, enlarging the effective internal space.',
+            'Overall of 10% space saved in a 12sqm room'
+        ],
         'top' => '35%',
         'left' => '72%',
         'direction' => 'right'
     ],
     [
-        'label' => 'Profile',
-        'title' => 'Smooth',
-        'description' => 'tongue and groove The smooth tongue and groove creates a modern and stylish smooth wall. The profile has a very small bevel that creates a smooth transition between each board.',
+        'label' => '',
+        'title' => 'Energy Savings & Heat Prevention',
+        'description' => [
+            'Wall panel has a 0.3 [W/(m2.K)] heat index',
+            'Compared to: Kiln fired hollow bricks or concrete block construction heat index is 0.5 - 0.6[W/(m2.K)]'
+        ],
         'top' => '68%',
         'left' => '83%',
         'direction' => 'right'
     ],
     [
-        'label' => '8% Moisture ratio',
-        'title' => 'More Stable Products',
-        'description' => 'Dimensionally stable wood product. For dimensionally stable wood panels and wood floors, the wood is dried to 8% moisture content.',
+        'label' => '',
+        'title' => 'Durability & Light Weight',
+        'description' => [
+            'Wall panels weight less than 60 kg/m2',
+            'Each panel (150*450*2800mm) can withstand a 328KN compressed load vertically.',
+            'Low self-weight offers quake-proof property and reduces risk in earthquake zones.',
+            'Compared to: Kiln fired hollow bricks or concrete block construction is 3 - 4 times the weight of the Wall panels'
+        ],
         'top' => '88%',
         'left' => '50%',
         'direction' => 'right'
     ],
-
-
 ];
 ?>
 <!-- HERO -->
@@ -146,7 +166,17 @@ $hotspots = [
                     <button class="hotspot-toggle">+</button>
                 </div>
                 <div class="hotspot-body">
-                    <p><?= $spot['description']; ?></p>
+                    <div class="hotspot-body-inner">
+                        <?php if(is_array($spot['description'])): ?>
+                            <ul class="hotspot-list">
+                                <?php foreach($spot['description'] as $line): ?>
+                                    <li><?= $line; ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php else: ?>
+                            <p><?= $spot['description']; ?></p>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
 
@@ -253,7 +283,7 @@ $hotspots = [
   <div class="container">
     <div class="diagram-scroll-wrapper">
 
-      <!-- Left: tall image, sticky -->
+      <!-- Left: wider portrait block (60%) — sets the section height -->
       <div class="diagram-left">
         <div class="diagram-left-sticky">
           <img
@@ -263,7 +293,7 @@ $hotspots = [
         </div>
       </div>
 
-      <!-- Right: shorter image, scrolls with parallax -->
+      <!-- Right: narrower portrait block (40%) — drifts down on scroll -->
       <div class="diagram-right">
         <div class="parallax-small-image scroll-reveal reveal-right">
           <img
@@ -318,39 +348,71 @@ $hotspots = [
     (function () {
         const wrapper    = document.querySelector('.diagram-scroll-wrapper');
         const rightPanel = document.querySelector('.diagram-right');
-        const leftSticky = document.querySelector('.diagram-left-sticky');
-        if (!wrapper || !rightPanel || !leftSticky) return;
-        const NAV_H = 80;
+        const leftBlock  = document.querySelector('.diagram-left-sticky');
+        if (!wrapper || !rightPanel || !leftBlock) return;
+
+        // How late the drift finishes, as a share of the viewport height.
+        // 0   = done once the section's bottom reaches the viewport bottom
+        // 0.5 = keeps drifting for another half screen of scrolling
+        // 1   = only bottom-aligns as the section clears the top of the screen
+        const LATENESS = 0.5;
+
+        let ticking = false;
+
+        function update() {
+            ticking = false;
+
+            // Both images run at their natural height, so the taller left
+            // block gives us exactly how far the right one can drift.
+            const travel = leftBlock.offsetHeight - rightPanel.offsetHeight;
+            if (travel <= 0) {
+                rightPanel.style.transform = '';
+                return;
+            }
+
+            const rect = wrapper.getBoundingClientRect();
+            // 0 when the section's top enters the viewport. The span it runs
+            // over decides where it ends — widen it to finish later.
+            const span     = rect.height + (LATENESS * window.innerHeight);
+            const progress = (window.innerHeight - rect.top) / span;
+            const clamped  = Math.min(Math.max(progress, 0), 1);
+
+            rightPanel.style.transform = `translate3d(0, ${(clamped * travel).toFixed(2)}px, 0)`;
+        }
 
         function onScroll() {
-            const leftH  = leftSticky.offsetHeight;
-            const rightH = rightPanel.offsetHeight;
-            const MAX_OFFSET = (leftH - rightH) - (-72); 
-
-            if (MAX_OFFSET <= 0) return;
-
-            const sectionTop  = wrapper.getBoundingClientRect().top + window.scrollY;
-            const scrolledIn  = window.scrollY - sectionTop + NAV_H;
-            const offset = Math.min(Math.max(scrolledIn, 0), MAX_OFFSET);
-
-            rightPanel.style.transform = `translateY(${offset}px)`;
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(update);
         }
 
         window.addEventListener('scroll', onScroll, { passive: true });
         window.addEventListener('resize', onScroll);
+        // Heights are unknown until the portrait images have loaded.
+        window.addEventListener('load', update);
+        wrapper.querySelectorAll('img').forEach(img => {
+            if (!img.complete) img.addEventListener('load', update);
+        });
 
-        onScroll();
+        update();
     })();
 
     document.querySelectorAll('.hotspot-toggle').forEach(btn => {
         btn.addEventListener('click', function () {
             const current = this.closest('.hotspot');
+            const wasActive = current.classList.contains('active');
+
             document.querySelectorAll('.hotspot').forEach(item => {
-                if (item !== current) {
-                    item.classList.remove('active');
-                }
+                item.classList.remove('active');
+                const body = item.querySelector('.hotspot-body');
+                if (body) body.style.maxHeight = '';
             });
-            current.classList.toggle('active');
+
+            if (!wasActive) {
+                current.classList.add('active');
+                const body = current.querySelector('.hotspot-body');
+                if (body) body.style.maxHeight = body.scrollHeight + 'px';
+            }
         });
     });
 
