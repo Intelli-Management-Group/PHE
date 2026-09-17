@@ -15,7 +15,7 @@ include 'inc/header.php';
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-9">
-                        <h2 class="mb-0">PHE LUXWOOD BUILDING SYSTEM</h2>
+                        <h2 class="mb-0">BUILDING SYSTEM</h2>
                     </div>
                     <div class="col-lg-3">
                         <h6>Engineered modular systems designed to accelerate construction, reduce costs, and deliver reliable performance. </h6>
@@ -386,7 +386,7 @@ include 'inc/header.php';
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="https://balancedarchitecture.com/wp-content/uploads/2021/11/EXISTING-FIRST-FLOOR-PRES-scaled-e1635965923983.jpg" alt="" class="img-fluid">
+                    <img src="img/building-system/Pacific_Heron_floorplan.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
