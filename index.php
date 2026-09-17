@@ -124,7 +124,7 @@ include 'inc/header.php';
     <section class="why-choose-us-section">
         <div class="container-fluid px-0 why-choose-us-slide">
             <div class="row g-0 h-100 align-items-center">
-                <div class="col-lg-6 h-100 why-choose-us-img-col">
+                <div class="col-lg-6 h-100 why-choose-us-img-col mt-0">
                     <img src="img/home/img_1.jpg" alt="" class="why-choose-us-img">
                 </div>
                 <div class="col-lg-6 h-100 why-choose-us-content-col">

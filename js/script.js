@@ -193,26 +193,31 @@ document.addEventListener("DOMContentLoaded", () => {
         const slide2ImgCol = slide2.querySelector(".why-choose-us-img-col");
         const slide2ContentCol = slide2.querySelector(".why-choose-us-content-col");
 
-        // Initial states
-        gsap.set(slide2ImgCol, { yPercent: 100 });
-        gsap.set(slide2ContentCol, { xPercent: 100 });
+        // Below lg the slides stack in normal flow (see responsive.css), so the
+        // pinned crossfade only runs on desktop — matchMedia reverts its
+        // transforms when the viewport drops below the breakpoint
+        gsap.matchMedia().add("(min-width: 992px)", () => {
+            // Initial states
+            gsap.set(slide2ImgCol, { yPercent: 100 });
+            gsap.set(slide2ContentCol, { xPercent: 100 });
 
-        const tlWhyChooseUs = gsap.timeline({
-            scrollTrigger: {
-                trigger: whyChooseUsSection,
-                start: "top top",
-                end: "+=100%",
-                scrub: true,
-                pin: true,
-                anticipatePin: 1,
-                invalidateOnRefresh: true,
-            }
+            const tlWhyChooseUs = gsap.timeline({
+                scrollTrigger: {
+                    trigger: whyChooseUsSection,
+                    start: "top top",
+                    end: "+=100%",
+                    scrub: true,
+                    pin: true,
+                    anticipatePin: 1,
+                    invalidateOnRefresh: true,
+                }
+            });
+
+            tlWhyChooseUs
+                .to(slide2ImgCol, { yPercent: 0, ease: "none" }, 0)
+                .to(slide1ContentCol, { xPercent: -100, opacity: 0, ease: "none" }, 0)
+                .to(slide2ContentCol, { xPercent: 0, ease: "none" }, 0);
         });
-
-        tlWhyChooseUs
-            .to(slide2ImgCol, { yPercent: 0, ease: "none" }, 0)
-            .to(slide1ContentCol, { xPercent: -100, opacity: 0, ease: "none" }, 0)
-            .to(slide2ContentCol, { xPercent: 0, ease: "none" }, 0);
     }
 
     // Modular Animation

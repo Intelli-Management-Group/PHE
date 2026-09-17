@@ -47,11 +47,111 @@
         padding-bottom: calc(var(--padding) * 0.5);
     } */
 
+    .bottom-padding-lg {
+        padding-bottom: calc(var(--padding) * 0.9);
+    }
+
     .projects-content-overlap-row {
         margin-top: -100px;
     }
+
+    /* Always show each project's heading before its image on mobile,
+       regardless of the left/right order used for the desktop layout,
+       so an image never appears before the title it belongs to. */
+    .projects-feature-media-col {
+        order: 2;
+    }
+
+    .projects-block .row.mb-5.pb-5 {
+        margin-bottom: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .projects-block .row.mb-4 {
+        margin-bottom: 1rem !important;
+    }
+
+    .projects-feature-media-col,
+    .projects-feature-media-img {
+        height: 400px;
+    }
+
+    /* Divider between projects makes each one read as its own group,
+       separate from the tighter spacing used within a single project. */
+    .projects-block + .projects-block {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 32px;
+    }
+
+    /* Stack the why-choose-us slides in normal flow instead of the
+       full-viewport absolutely-positioned crossfade used on desktop */
+    .why-choose-us-section {
+        height: auto;
+        overflow: visible;
+    }
+
+    .why-choose-us-slide {
+        position: relative;
+        height: auto;
+    }
+
+    .why-choose-us-slide .row,
+    .why-choose-us-img-col,
+    .why-choose-us-content-col,
+    .why-choose-us-content-wrapper {
+        height: auto !important;
+    }
+
+    .why-choose-us-img {
+        height: 45vw;
+        min-height: 240px;
+        max-height: 400px;
+    }
+
+    .why-choose-us-content {
+        padding: 40px 24px 56px;
+    }
 }
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    .bottom-padding-lg {
+        padding-bottom: calc(var(--padding) * 0.6);
+    }
 
-@media only screen and (max-width: 575px) {}
+    .projects-content-overlap-row {
+        margin-top: -70px;
+    }
+
+    .projects-block .row.mb-5.pb-5 {
+        margin-bottom: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+
+    .projects-block .row.mb-4 {
+        margin-bottom: 0.75rem !important;
+    }
+
+    .projects-feature-media-col,
+    .projects-feature-media-img {
+        height: 320px;
+    }
+
+    .projects-block + .projects-block {
+        padding-top: 24px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .projects-content-overlap-row {
+        margin-top: -50px;
+    }
+
+    .projects-feature-media-col,
+    .projects-feature-media-img {
+        height: 260px;
+    }
+
+    .projects-block + .projects-block {
+        padding-top: 20px;
+    }
+}

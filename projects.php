@@ -148,7 +148,7 @@ include 'inc/header.php';
 
                         <!-- Block 2 -->
                         <div class="projects-block" data-country="australia" data-type="residential">
-                            <div class="row mb-4">
+                            <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Ballara House</h2>
                                     <p class="text-uppercase mb-5">2-Bedroom Residential Home</p>
@@ -208,7 +208,7 @@ include 'inc/header.php';
 
                         <!-- Block 4 -->
                         <div class="projects-block" data-country="australia" data-type="commercial">
-                            <div class="row mb-4">
+                            <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Eco Mining Cabins</h2>
                                     <p class="text-uppercase mb-5">37 Units | Studio Portable Cabins</p>
@@ -268,7 +268,7 @@ include 'inc/header.php';
 
                         <!-- Block 6 -->
                         <div class="projects-block" data-country="australia" data-type="amenities">
-                            <div class="row mb-4">
+                            <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Cafeteria Facility</h2>
                                     <p class="text-uppercase mb-5">Modular Dining Facility</p>
@@ -326,7 +326,7 @@ include 'inc/header.php';
 
                         <!-- Block 8 -->
                         <div class="projects-block" data-country="australia" data-type="amenities">
-                            <div class="row mb-4">
+                            <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Portable Washrooms</h2>
                                     <p class="text-uppercase mb-5">Sanitation Units</p>
@@ -391,7 +391,7 @@ include 'inc/header.php';
 
                         <!-- Block 10 -->
                         <div class="projects-block" data-country="australia" data-type="commercial">
-                            <div class="row mb-4">
+                            <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Warwick Farm Structure</h2>
                                     <p class="text-uppercase mb-5">Agricultural Modular Facility</p>
@@ -446,7 +446,7 @@ include 'inc/header.php';
 
                         <!-- Block 12 -->
                         <!-- <div class="projects-block" data-country="china" data-type="residential">
-                            <div class="row mb-4">
+                            <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Beijing House</h2>
                                     <p class="text-uppercase mb-5">1-Bedroom Residential Home</p>
@@ -499,7 +499,7 @@ include 'inc/header.php';
 
                         <!-- Block 14 -->
                         <div class="projects-block" data-country="south-africa" data-type="residential">
-                            <div class="row mb-4">
+                            <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Cornubia House</h2>
                                     <p class="text-uppercase mb-5">2-Level | 3-Bedroom Residential Home</p>
@@ -580,33 +580,34 @@ include 'inc/header.php';
         </div>
     </section>
 
-
-    <!-- Project Value Section -->
-    <!-- <section class="project-value-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <h2 class="project-value-title" data-aos="fade-up" data-aos-duration="1000">Trusted Across Projects of Scale</h2>
-                    <p class="project-value-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">With current project values exceeding USD $28 million, PHE Luxwood continues to support residential, commercial, and institutional developments with scalable modular solutions.</p>
+    <!-- Project Value & Closing Section -->
+    <div class="value-closing-row">
+        <section class="project-value-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <h2 class="project-value-title" data-aos="fade-up" data-aos-duration="1000">Trusted Across Projects of Scale</h2>
+                        <p class="project-value-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">With current project values exceeding USD $28 million, PHE Luxwood continues to support residential, commercial, and institutional developments with scalable modular solutions.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section> -->
+        </section>
 
-    <!-- Closing Section -->
-    <!-- <section class="closing-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <h2 class="closing-title" data-aos="fade-up" data-aos-duration="1000">From Concept to Completion</h2>
-                    <p class="closing-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Whether delivering single-unit homes or multi-unit developments, PHE Luxwood provides a complete modular building system designed for efficiency, durability, and adaptability across global markets.</p>
+        <!-- Closing Section -->
+        <section class="closing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <h2 class="closing-title" data-aos="fade-up" data-aos-duration="1000">From Concept to Completion</h2>
+                        <p class="closing-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Whether delivering single-unit homes or multi-unit developments, PHE Luxwood provides a complete modular building system designed for efficiency, durability, and adaptability across global markets.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section> -->
+        </section>
+    </div>
 
     <!-- CTA Section -->
-    <!-- <section class="cta-section">
+    <section class="cta-section">
         <div class="container text-center">
             <h2 class="cta-title" data-aos="fade-up" data-aos-duration="1000">Start Your Project with PHE Luxwood</h2>
             <div class="cta-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
@@ -614,7 +615,7 @@ include 'inc/header.php';
                 <a href="contact.php" class="cta-button cta-button-secondary">Discuss Your Project</a>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Gallery Modal -->
     <div id="gallery-modal" class="gallery-modal">

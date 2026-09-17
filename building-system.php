@@ -414,7 +414,7 @@ include 'inc/header.php';
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="https://balancedarchitecture.com/wp-content/uploads/2021/11/EXISTING-FIRST-FLOOR-PRES-scaled-e1635965923983.jpg" alt="" class="img-fluid">
+                    <img src="img/building-system/Grand_House_floorplan.jpg" alt="" class="img-fluid">
                 </div>
             </div>
         </div>

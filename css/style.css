@@ -1296,6 +1296,53 @@ button {
     }
 }
 
+/* Project Value & Closing Row */
+@media (min-width: 992px) {
+    .value-closing-row {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .value-closing-row .project-value-section,
+    .value-closing-row .closing-section {
+        flex: 1 0 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .value-closing-row .project-value-section .col-lg-10,
+    .value-closing-row .closing-section .col-lg-10 {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-left: 0;
+    }
+
+    .value-closing-row .project-value-section .container,
+    .value-closing-row .closing-section .container {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    .value-closing-row .project-value-section {
+        padding-right: 16px;
+    }
+
+    .value-closing-row .closing-section {
+        padding-left: 16px;
+        position: relative;
+    }
+
+    .value-closing-row .closing-section::before {
+        content: "";
+        position: absolute;
+        top: 15%;
+        bottom: 15%;
+        left: 0;
+        width: 1px;
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+
 /* Project Value Section */
 .project-value-section {
     background-color: #fff;
