@@ -9,19 +9,19 @@ include 'inc/header.php';
 <main class="about-page">
 
     <!-- Hero -->
-     <section class="home-hero-section">
-        <div class="hero-section-bg">
-            <img src="img/building-system/banner_main.jpg" alt="PHE Hero" class="hero-section-bg-img">
+    <section class="home-hero-section">
+        <div class="hero-section-bg hero-section-bg-overlay">
+            <img src="img/about/banner_about.jpg" alt="PHE Hero" class="hero-section-bg-img">
         </div>
 
         <div class="building-system-hero-section-wrap">
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-9">
-                        <h2 class="mb-0">PHE LUXWOOD ABOUT</h2>
+                        <h2 class="mb-0">ABOUT US</h2>
                     </div>
                     <div class="col-lg-3">
-                        <h6>Engineered modular systems designed to accelerate construction, reduce costs, and deliver reliable performance. </h6>
+                        <h6>Get to know the people and purpose behind Luxwood's modular building systems.</h6>
                     </div>
                 </div>
             </div>
@@ -36,8 +36,7 @@ include 'inc/header.php';
                     <h3
                         data-gsap="fade-up"
                         class="section-title">
-                        New standards for
-                        responsible living
+                        More than just houses
                     </h3>
                 </div>
                 <div class="col-lg-7">
@@ -45,18 +44,20 @@ include 'inc/header.php';
                         class="responsible-living-content"
                         data-gsap="fade-up">
                         <p>
-                            We create homes that not only save energy but also
-                            actively contribute to a carbon-neutral future,
-                            setting new standards for environmentally
-                            responsible living.
+                            Our goal at Luxwood is to bring more than just
+                            houses to people, instilling a sense of security,
+                            comfort and peacefulness that we believe every
+                            human being deserves — leaving a lasting impact
+                            and legacy in the construction industry.
                         </p>
                         <p>
-                            Our homes are better sealed and insulated to reduce
-                            the energy needed for cooling and heating. Smart
-                            building controls manage cooling and lighting more
-                            efficiently, while our roofs feature integrated
-                            solar panels to generate power directly in each
-                            home.
+                            Luxwood Global is an Australian-based engineering
+                            company specialising in the manufacture and
+                            distribution of Composite Polymer Extruded Panels,
+                            produced in a state-of-the-art facility in China
+                            using world-class extrusion techniques. We are
+                            constantly striving to improve our products and
+                            undergo extensive testing to ensure their quality.
                         </p>
                     </div>
                 </div>
@@ -91,36 +92,73 @@ include 'inc/header.php';
     </section>
 
     <!-- Quote -->
-     <section class="about-quote-section">
+    <section class="about-quote-section">
         <div class="container">
             <div class="quote-wrap">
 
-                <blockquote class="about-quote">
-                    “KPS understood the brief in detail and
-                    brought it to life with clarity and precision.”
-                </blockquote>
+                <div id="quote-carousel" class="splide quote-carousel">
+                    <div class="splide__track">
+                        <ul class="splide__list">
 
-                <div class="quote-author">
-                    Vinod Kumar, Samba Financial Group
+                            <li class="splide__slide">
+                                <blockquote class="about-quote">
+                                    “I had the privilege of working alongside
+                                    this company and delivering housing solutions
+                                    in Australia and overseas. I can highly
+                                    recommend this product if you are looking for
+                                    a sound alternative building solution.”
+                                </blockquote>
+
+                                <div class="quote-author">
+                                    <strong>Jacques De Bedout</strong>
+                                    <span>Design Manager</span>
+                                    <span>IBSI - Intelligent Building Systems International</span>
+                                </div>
+                            </li>
+
+                            <li class="splide__slide">
+                                <blockquote class="about-quote">
+                                    “I have had the pleasure of working with this
+                                    company in Africa on a subsidized project for
+                                    the Municipality. In trying circumstances and
+                                    with mostly unskilled local labour, their
+                                    level of this company’s professionalism has
+                                    been exceptional, moreover their practical and
+                                    hands on approach meant that everyone involved
+                                    in the build of the house was fully committed
+                                    and engaged. First to arrive on site and last
+                                    to leave, no issue too big and willing to
+                                    overcome any problem there and then. Highly
+                                    recommended.”
+                                </blockquote>
+
+                                <div class="quote-author">
+                                    <strong>Francois Bruyns</strong>
+                                    <span>Director</span>
+                                    <span>IBSI - the African subsidiary of ISBI</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    
-
     <!-- Leadership -->
     <section class="luxwood-family-section py-120">
         <div class="container">
-                <div class="family-header">
+            <div class="family-header">
                 <div class="row align-items-end">
                     <div class="col-lg-12">
                         <h2 class="family-title">
-                            LEADERSHIP TEAM
+                            THE LUXWOOD FAMILY
                         </h2>
                     </div>
                 </div>
+
                 <div class="family-tabs">
                     <button
                         class="family-tab active"
@@ -148,130 +186,63 @@ include 'inc/header.php';
                 <div class="team-grid">
 
                     <div class="team-card featured">
-
                         <div class="team-card-image">
-                            <img src="img/about/team1.webp" alt="">
+                            <img src="img/about/family-core-1.jpg" alt="Mark">
                         </div>
-
-                        <div class="team-card-content ">
-                            <h4>KRISTIAN PETERSSON</h4>
-                            <span>Founder</span>
-                              <p>
-                                A Swedish-born, third-generation Dubai resident
-                                and finance professional with extensive
-                                experience in banking, family offices and
-                                investments.
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="team-card featured">
-
-                        <div class="team-card-image">
-                            <img src="img/about/team2.webp" alt="">
-                        </div>
-
-                        <div class="team-card-content expanded">
-
-                            <h4>VIKTOR PETERSSON</h4>
-
-                            <span>Director</span>
-
+                        <div class="team-card-content">
+                            <h4>MARK</h4>
+                            <span>Director / Owner</span>
                             <p>
-                                A Swedish-born, third-generation Dubai resident
-                                and finance professional with extensive
-                                experience in banking, family offices and
-                                investments.
+                                Mark is the owner and creator of the whole
+                                operation. With over 20 years of experience,
+                                there is very little Mark cannot do.
                             </p>
-
                         </div>
-
                     </div>
 
                     <div class="team-card featured">
-
                         <div class="team-card-image">
-                            <img src="img/about/team3.webp" alt="">
+                            <img src="img/about/family-core-2.jpg" alt="Claire">
                         </div>
-
                         <div class="team-card-content">
-                            <h4>PHILIP EBBERSTEN</h4>
-                            <span>Director</span>
-                            <p>Born and raised in Gothenburg, Sweden, 
-                                Kristian is a qualified mechanical engineer 
-                                with a postgraduate qualification in 
-                                business administration and economics. 
-                                Today, he is Chairman of KPS, one of the 
-                                largest independent interior construction 
-                                groups in the Middle East.
+                            <h4>CLAIRE</h4>
+                            <span>Manager</span>
+                            <p>
+                                Claire is hard-working, dedicated and kind;
+                                the glue that keeps our Cape Town branch
+                                going.
                             </p>
                         </div>
-
                     </div>
 
                     <div class="team-card featured">
-
                         <div class="team-card-image">
-                            <img src="img/about/team4.webp" alt="">
+                            <img src="img/about/family-core-3.jpg" alt="Annie">
                         </div>
-
                         <div class="team-card-content">
-                            <h4>FREDRIK ANHEIM</h4>
-                            <span>Director</span>
-                            <p>Born and raised in Gothenburg, Sweden, 
-                                Kristian is a qualified mechanical engineer 
-                                with a postgraduate qualification in 
-                                business administration and economics. 
-                                Today, he is Chairman of KPS, one of the 
-                                largest independent interior construction 
-                                groups in the Middle East.
+                            <h4>ANNIE</h4>
+                            <span>General Manager</span>
+                            <p>
+                                Annie is an enthusiastic, diligent woman who
+                                keeps our China factory together.
                             </p>
                         </div>
-
                     </div>
 
                     <div class="team-card featured">
-
                         <div class="team-card-image">
-                            <img src="img/about/team5.webp" alt="">
+                            <img src="img/about/family-core-4.jpg" alt="Petra">
                         </div>
-
                         <div class="team-card-content">
-                            <h4>KLAS SCHERDÉN</h4>
-                            <span>Director</span>
-                            <p>Born and raised in Gothenburg, Sweden, 
-                                Kristian is a qualified mechanical engineer 
-                                with a postgraduate qualification in 
-                                business administration and economics. 
-                                Today, he is Chairman of KPS, one of the 
-                                largest independent interior construction 
-                                groups in the Middle East.
+                            <h4>PETRA</h4>
+                            <span>General Manager</span>
+                            <p>
+                                Petra is an enterprising, dedicated woman
+                                with many years of international experience.
                             </p>
                         </div>
-
                     </div>
 
-                    <div class="team-card featured">
-
-                        <div class="team-card-image">
-                           <img src="img/about/team6.webp" alt="">
-                        </div>
-
-                        <div class="team-card-content">
-                            <h4>PER MODIG</h4>
-                            <span>Director</span>
-                            <p>Born and raised in Gothenburg, Sweden, 
-                                Kristian is a qualified mechanical engineer 
-                                with a postgraduate qualification in 
-                                business administration and economics. 
-                                Today, he is Chairman of KPS, one of the 
-                                largest independent interior construction 
-                                groups in the Middle East.
-                            </p>
-                        </div>
-
-                    </div>
                 </div>
 
             </div>
@@ -282,93 +253,182 @@ include 'inc/header.php';
                 <div class="team-grid">
                     <div class="team-card featured">
                         <div class="team-card-image">
-                            <img src="img/about/team1.webp" alt="">
+                            <img src="img/about/family-stakeholder-1.jpg" alt="Chong">
                         </div>
                         <div class="team-card-content">
-                            <h4>JOHN ANDERSON</h4>
-                            <span>Lead Stakeholder</span>
+                            <h4>CHONG</h4>
                             <p>
-                                Experienced business strategist with extensive expertise
-                                in large-scale real estate developments and long-term
-                                investment planning.
+                                Chong currently sits on the board of Trust
+                                Waikato and is quite active in the local
+                                community. Chong is the main facilitator in
+                                New Zealand for Luxwood Homes.
                             </p>
                         </div>
                     </div>
                     <div class="team-card featured">
                         <div class="team-card-image">
-                            <img src="img/about/team2.webp" alt="">
+                            <img src="img/about/family-stakeholder-2.jpg" alt="Pieter">
                         </div>
                         <div class="team-card-content">
-                            <h4>SARAH JOHANSSON</h4>
-                            <span>Strategic Partner</span>
+                            <h4>PIETER</h4>
                             <p>
-                                Specializes in sustainable development projects and
-                                stakeholder engagement across international markets.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="team-card featured">
-                        <div class="team-card-image">
-                            <img src="img/about/team3.webp" alt="">
-                        </div>
-                        <div class="team-card-content">
-                            <h4>MICHAEL LARSSON</h4>
-                            <span>Investor Representative</span>
-                            <p>
-                                Bringing decades of financial and operational leadership
-                                within infrastructure and construction sectors.
+                                Pieter is chairman of the Law Alliance NZ
+                                (LANZ), with member firms located throughout
+                                New Zealand providing specialist legal
+                                services in almost every aspect of the law.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Facilitators -->
-             <div
+            <div
                 class="family-panel"
                 id="facilitators">
                 <div class="team-grid">
                     <div class="team-card featured">
                         <div class="team-card-image">
-                            <img src="img/about/team1.webp" alt="">
+                            <img src="img/about/family-facilitator-1.jpg" alt="Amber-Leigh">
                         </div>
                         <div class="team-card-content">
-                            <h4>JOHN ANDERSON</h4>
-                            <span>Lead Stakeholder</span>
+                            <h4>AMBER-LEIGH</h4>
                             <p>
-                                Experienced business strategist with extensive expertise
-                                in large-scale real estate developments and long-term
-                                investment planning.
+                                Amber-Leigh&rsquo;s big smile is probably the
+                                first thing you will see walking through our
+                                door, and with her enthusiastic nature she
+                                handles our web development.
                             </p>
                         </div>
                     </div>
                     <div class="team-card featured">
                         <div class="team-card-image">
-                            <img src="img/about/team2.webp" alt="">
+                            <img src="img/about/family-facilitator-2.jpg" alt="Mokhele">
                         </div>
                         <div class="team-card-content">
-                            <h4>SARAH JOHANSSON</h4>
-                            <span>Strategic Partner</span>
+                            <h4>MOKHELE</h4>
                             <p>
-                                Specializes in sustainable development projects and
-                                stakeholder engagement across international markets.
+                                Mokhele is a passionate, tireless
+                                perfectionist with a great eye for detail
+                                and is always ready for any task he may
+                                encounter.
                             </p>
                         </div>
                     </div>
                     <div class="team-card featured">
                         <div class="team-card-image">
-                            <img src="img/about/team3.webp" alt="">
+                            <img src="img/about/family-facilitator-3.jpg" alt="Michael">
                         </div>
                         <div class="team-card-content">
-                            <h4>MICHAEL LARSSON</h4>
-                            <span>Investor Representative</span>
+                            <h4>MICHAEL</h4>
                             <p>
-                                Bringing decades of financial and operational leadership
-                                within infrastructure and construction sectors.
+                                Michael is a dedicated, optimistic young man,
+                                whose forklift driving skills leave us in
+                                awe.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team-card featured">
+                        <div class="team-card-image">
+                            <img src="img/about/family-facilitator-4.jpg" alt="Guy">
+                        </div>
+                        <div class="team-card-content">
+                            <h4>GUY</h4>
+                            <p>
+                                Guy is a member of our Luxwood USA Advisory
+                                Board. He holds many years of international
+                                experience in leading large organizations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team-card featured">
+                        <div class="team-card-image">
+                            <img src="img/about/family-facilitator-5.jpg" alt="Jody">
+                        </div>
+                        <div class="team-card-content">
+                            <h4>JODY</h4>
+                            <p>
+                                Jody is an intuitive, hard-working young lady
+                                who we are proud to say is one of our
+                                technologists. She attained her National
+                                Diploma through the Cape Peninsula University
+                                of Technology.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team-card featured">
+                        <div class="team-card-image">
+                            <img src="img/about/family-facilitator-6.jpg" alt="Nicholas">
+                        </div>
+                        <div class="team-card-content">
+                            <h4>NICHOLAS</h4>
+                            <p>
+                                Nicholas is our local engineer. He studied
+                                Civil Engineering and has a wide range of
+                                experience. We are proud to say that he is
+                                part of the Luxwood family.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team-card featured">
+                        <div class="team-card-image">
+                            <img src="img/about/family-facilitator-7.jpg" alt="Graeme">
+                        </div>
+                        <div class="team-card-content">
+                            <h4>GRAEME</h4>
+                            <p>
+                                Graeme is a certified APEC member. He is our
+                                global engineer and attained his Bachelor of
+                                Engineering at the NSW Institute of
+                                Technology.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team-card featured">
+                        <div class="team-card-image">
+                            <img src="img/about/family-facilitator-8.jpg" alt="John">
+                        </div>
+                        <div class="team-card-content">
+                            <h4>JOHN</h4>
+                            <p>
+                                John works with the Luxwood team in a sales
+                                capacity. He has a wealth of experience
+                                working with college campuses, hospitals and
+                                B&amp;I.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team-card featured">
+                        <div class="team-card-image">
+                            <img src="img/about/family-facilitator-9.jpg" alt="Amy">
+                        </div>
+                        <div class="team-card-content">
+                            <h4>AMY</h4>
+                            <p>
+                                Amy is an innovative, diligent and
+                                enthusiastic young lady who we are proud to
+                                say is one of our architectural draughtsmen.
+                                She has attained years of invaluable
+                                experience in the area.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team-card featured">
+                        <div class="team-card-image">
+                            <img src="img/about/family-facilitator-10.jpg" alt="Paul">
+                        </div>
+                        <div class="team-card-content">
+                            <h4>PAUL</h4>
+                            <p>
+                                With an education in Computer Science,
+                                Business Administration and Project
+                                Management, Paul&rsquo;s entrepreneurial
+                                vision founded Intelli Group, a diversified
+                                international business with global partners.
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>        
+            </div>
         </div>
     </section>
 

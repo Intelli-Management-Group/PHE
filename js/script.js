@@ -968,29 +968,29 @@ document.addEventListener("DOMContentLoaded", () => {
         ==========================================
         */
 
-        teamCards.forEach(card => {
+        // teamCards.forEach(card => {
 
-            const image =
-                card.querySelector("img");
+        //     const image =
+        //         card.querySelector("img");
 
-            if (!image) return;
+        //     if (!image) return;
 
-            gsap.to(image, {
+        //     gsap.to(image, {
 
-                yPercent: -10,
+        //         yPercent: -10,
 
-                ease: "none",
+        //         ease: "none",
 
-                scrollTrigger: {
-                    trigger: card,
-                    start: "top bottom",
-                    end: "bottom top",
-                    scrub: true
-                }
+        //         scrollTrigger: {
+        //             trigger: card,
+        //             start: "top bottom",
+        //             end: "bottom top",
+        //             scrub: true
+        //         }
 
-            });
+        //     });
 
-        });
+        // });
 
         /*
         ==========================================
@@ -1073,6 +1073,19 @@ window.addEventListener("resize", () => {
   resizeReloadTimer = setTimeout(() => {
     window.location.reload();
   }, 250);
+});
+
+// Splide Quote Carousel (about page)
+document.addEventListener("DOMContentLoaded", () => {
+    if (!document.querySelector("#quote-carousel")) return;
+
+    new Splide("#quote-carousel", {
+        type: "loop",
+        autoHeight: true,
+        speed: 600,
+        pagination: true,
+        arrows: false,
+    }).mount();
 });
 
 // Splide Gallery Modal

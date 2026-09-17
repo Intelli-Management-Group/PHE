@@ -290,10 +290,9 @@ include 'inc/header.php';
                                         <div class="line-wrapper p-wrapper">
                                             <div class="line-content">
                                                 <p>A contemporary modular residence designed for modern lifestyles, combining efficient space planning with clean architectural lines.</p>
-
-                                                <button class="mt-3" type="button" data-bs-toggle="modal" data-bs-target="#sydneyHouseModal">
+                                                <!-- <button class="mt-3" type="button" data-bs-toggle="modal" data-bs-target="#sydneyHouseModal">
                                                     View Floor Plan
-                                                </button>
+                                                </button> -->
                                             </div>
                                         </div>
                                     </div>
