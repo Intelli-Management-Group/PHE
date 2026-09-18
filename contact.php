@@ -813,7 +813,7 @@ include 'inc/header.php';
                 <strong>Email:</strong>
                 <a id="micEmail" href="mailto:info@luxwood.com">info@luxwood.com</a>
             </div>
-            <div class="mic-row">
+            <div class="mic-row" style="padding-bottom: 28px;">
                 <strong>Address:</strong>
                 <span id="micAddr">
                     200-3071 Number 5 Road,<br>
@@ -821,12 +821,12 @@ include 'inc/header.php';
                     British Columbia, Canada
                 </span>
             </div>
-            <button class="contact-btn">
+            <!-- <button class="contact-btn">
                 <span class="btn-text">
                     <span>Contact Us</span>
                     <span>Contact Us</span>
                 </span>
-            </button>
+            </button> -->
         </div>
     </div>
 
@@ -1007,11 +1007,6 @@ include 'inc/header.php';
     </section> -->
 </main>
 
-<!-- Google Maps JS API (zoomControl:false so we use our own) -->
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-fSqRpW24y6bsoNeIWSDAjafI5DeJw04&callback=initMap">
-</script>
-
 <script>
     //Section 1 Script Start
     const GREYSCALE_STYLE = [{
@@ -1190,9 +1185,15 @@ include 'inc/header.php';
         const markerSvg = `
             <svg viewBox="0 0 62 89" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 31.0857C0 54.4 31 88.4 31 88.4C31 88.4 62 54.4 62 31.0857C62 13.9175 48.1206 0 31 0C13.8794 0 0 13.9175 0 31.0857Z" fill="#252324"/>
-                <path d="M41.0873 21.5718V20.8H41.3078L41.5454 21.363L41.7791 20.8H42V21.5718H41.8488V20.9906L41.6072 21.5718H41.4747L41.2381 20.9906V21.5718H41.0873ZM40.364 20.9555V20.8H41.0047V20.9555H40.766V21.5718H40.6041V20.9555H40.364Z" fill="#FFFCF5"/>
-                <path d="M29.9412 43.68H21L22.6031 28.9422H31.5443L29.9412 43.68Z" fill="#FFFCF5"/>
-                <path d="M33.0606 43.68H42L39.4327 20.8H30.473L33.0606 43.68Z" fill="#FFFCF5"/>
+                <svg x="18.7" y="13" width="24.7" height="36" viewBox="106 0 38 55.4">
+                    <polygon points="125.4 0 106 19.3 106 47.5 112.7 47.5 112.7 22 130.1 4.7 125.4 0" fill="#ffffff"/>
+                    <rect x="106" y="48.7" width="30.2" height="6.7" fill="#ffffff"/>
+                    <polygon points="125.8 10.6 137.3 22 137.3 55.3 144 55.3 144 19.3 130.5 5.9 125.8 10.6" fill="#ffffff"/>
+                    <rect x="121.1" y="18.4" width="3.3" height="3.3" fill="#ffffff"/>
+                    <rect x="125.6" y="18.4" width="3.3" height="3.3" fill="#ffffff"/>
+                    <rect x="121.1" y="22.7" width="3.3" height="3.3" fill="#ffffff"/>
+                    <rect x="125.6" y="22.7" width="3.3" height="3.3" fill="#ffffff"/>
+                </svg>
             </svg>
         `;
 
@@ -1469,6 +1470,13 @@ include 'inc/header.php';
         updateParallax();
 
     })();
+</script>
+
+<!-- Google Maps JS API (zoomControl:false so we use our own).
+     Must stay AFTER the script above that defines initMap, otherwise the async
+     callback can fire before initMap exists. -->
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-fSqRpW24y6bsoNeIWSDAjafI5DeJw04&callback=initMap">
 </script>
 
 <?php include 'inc/footer.php'; ?>

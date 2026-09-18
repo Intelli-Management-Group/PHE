@@ -823,6 +823,13 @@ include 'inc/header.php';
             if (emptyMsg) {
                 emptyMsg.classList.toggle('d-none', visibleCount > 0);
             }
+
+            // Hiding/showing blocks changes the page height, so the fade-up
+            // triggers measured at load are stale and never fire. Re-measure.
+            // (ScrollTrigger is undefined on the initial call: script.js loads later.)
+            if (typeof ScrollTrigger !== 'undefined') {
+                ScrollTrigger.refresh();
+            }
         }
 
         form.addEventListener('change', function(e) {
