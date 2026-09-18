@@ -63,7 +63,7 @@ include 'inc/header.php';
 
     <section>
         <div class="container">
-            <div class="row g-4 mt-5 mb-5">
+            <div class="row g-4 benefit-row">
                 <div class="col-md-3">
                     <div class="benefit-box">
                         <h5>High Strength & Durability</h5>
@@ -127,7 +127,7 @@ include 'inc/header.php';
                                     VIEW
                                 </div> -->
                             </div>
-                            <h5>Luxwood Panel</h5>
+                            <h5>Wall Panel</h5>
                         </a>
                         <a href="material-detail.php?product=roof" class="product-card">
                             <div class="image-wrap">
@@ -146,17 +146,14 @@ include 'inc/header.php';
                                     VIEW
                                 </div> -->
                             </div>
-                            <h5>Decking</h5>
+                            <h5>Decking System</h5>
                         </a>
-                        <a href="material-detail.php?product=window-door" class="product-card">
+                        <!-- <a href="material-detail.php?product=window-door" class="product-card">
                             <div class="image-wrap">
                                 <img src="img/building-material/window_&_door/banner_main.jpg" alt="">
-                                <!-- <div class="view-btn">
-                                    VIEW
-                                </div> -->
                             </div>
                             <h5>Window & Door</h5>
-                        </a>
+                        </a> -->
                         <a href="material-detail.php?product=cladding" class="product-card">
                             <div class="image-wrap">
                                 <img src="img/building-material/clad/banner_main.jpg" alt="">
@@ -164,7 +161,7 @@ include 'inc/header.php';
                                     VIEW
                                 </div> -->
                             </div>
-                            <h5>Cladding</h5>
+                            <h5>Cladding System</h5>
                         </a>
                         <a href="material-detail.php?product=screw" class="product-card">
 
@@ -174,7 +171,7 @@ include 'inc/header.php';
                                     VIEW
                                 </div> -->
                             </div>
-                            <h5>Screw</h5>
+                            <h5>Helical Screw Piles</h5>
                         </a>
                     </div>
                 </div>
@@ -212,9 +209,9 @@ include 'inc/header.php';
                 Discover how our engineered materials can support faster,
                 more efficient, and sustainable construction.
             </p>
-            <div class="mt-4">
+            <div class="materials-cta-buttons">
                 <a href="contact.php"
-                    class="btn button-primary me-3">
+                    class="btn button-primary">
                     Contact Us
                 </a>
                 <a href="building-system.php"

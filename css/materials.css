@@ -413,6 +413,19 @@
     margin-bottom:20px;
 }
 
+/* .benefit-row{
+    margin-top:3rem;
+    margin-bottom:3rem;
+} */
+
+.materials-cta-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:16px;
+    margin-top:1.5rem;
+}
+
 .image-wrap{
     position:relative;
     overflow:hidden;
@@ -464,7 +477,7 @@
         position:relative;
         top:auto;
         padding-right:0;
-        margin-bottom:50px;
+        margin-bottom:24px;
     }
 
     .products-grid{
@@ -491,8 +504,24 @@
         padding:50px 0;
     }
 
-    .materials-cta{
+    .materials-page .material-performance{
+        padding: 0;
+    }
+
+    /* Needs the .materials-page prefix to beat the desktop 100px rule */
+    .materials-page .materials-cta{
         padding:70px 0;
+    }
+
+    .materials-page .materials-intro-section{
+        padding:60px 0;
+    }
+
+    /* The row's gutter already adds 24px above the first column, so no extra
+       top margin here. */
+    .benefit-row{
+        margin-top:0;
+        margin-bottom:2rem;
     }
 
     .intro-title{
@@ -520,6 +549,42 @@
 
 .product-intro .col-lg-7{
     min-height:500px;
+}
+
+/* Accessories: tight tile strip under a section heading */
+.accessories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.accessories-grid-item {
+    overflow: hidden;
+    background: #f4f4f4;
+}
+
+.accessories-grid-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accessories-grid-item:hover img {
+    transform: scale(1.04);
+}
+
+@media (min-width: 768px) {
+    .accessories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .accessories-grid {
+        grid-template-columns: repeat(var(--accessories-cols, 5), 1fr);
+    }
 }
 
 
@@ -1046,5 +1111,67 @@
 @media (max-width: 768px) {
     .diagram-scroll-wrapper {
         gap: 16px;
+    }
+}
+
+/* Phones: trim the vertical rhythm of the materials landing page. Kept at the
+   end of the file so these override the earlier section/card rules. */
+@media (max-width: 767px) {
+    .materials-page .section-padding,
+    .materials-page .section-padding-lg,
+    .materials-page .material-intro,
+    .materials-page .material-section,
+    .materials-page .integration-section{
+        padding:40px 0;
+    }
+
+    .materials-page .materials-intro-section{
+        padding:48px 0 24px;
+    }
+
+    .intro-text p:last-child{
+        margin-bottom:0;
+    }
+
+    .materials-page .materials-cta{
+        padding:56px 0;
+    }
+
+    .materials-cta-buttons{
+        flex-direction:column;
+        align-items:stretch;
+        gap:12px;
+    }
+
+    .benefit-row{
+        margin-top:0;
+        margin-bottom:1rem;
+    }
+
+    .benefit-box{
+        padding-top:20px;
+    }
+
+    .sticky-content{
+        margin-bottom:20px;
+    }
+
+    .products-grid{
+        gap:24px;
+    }
+
+    .product-card{
+        margin-bottom:0;
+    }
+
+    .product-card img,
+    .image-wrap img{
+        height:auto;
+        aspect-ratio:4 / 3;
+    }
+
+    .product-card h5{
+        margin-top:12px;
+        font-size:22px;
     }
 }

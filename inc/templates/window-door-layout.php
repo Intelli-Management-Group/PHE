@@ -1,6 +1,6 @@
 <!-- HERO -->
 <section class="home-hero-section product-banner-animation">
-    <div class="hero-section-bg product-banner-bg">
+    <div class="hero-section-bg hero-section-bg-overlay product-banner-bg">
         <img src="<?= $product['banner_image']; ?>"
             alt="<?= $product['title']; ?>"
             class="hero-section-bg-img product-banner-img">
@@ -131,6 +131,32 @@ if (
                     </div>
                 <?php endif; ?>
             </div>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
+
+<!-- ACCESSORIES -->
+<?php if(!empty($product['accessories'])): ?>
+<section class="product-intro product-accessories pb-5">
+    <div class="container">
+        <div class="headline-wrap">
+            <h3 class="product-titles reveal-line mb-4 mb-lg-5">
+                <?= $product['accessories_title'] ?? 'Accessories'; ?>
+            </h3>
+        </div>
+
+        <div class="accessories-grid" style="--accessories-cols: <?= min(count($product['accessories']), 5); ?>">
+            <?php foreach($product['accessories'] as $i => $item): ?>
+                <div class="accessories-grid-item"
+                    data-aos="fade-up"
+                    data-aos-delay="<?= $i * 100; ?>">
+                    <img
+                        src="<?= $item['image']; ?>"
+                        alt="<?= htmlspecialchars($item['alt'] ?? ''); ?>"
+                        loading="lazy">
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>

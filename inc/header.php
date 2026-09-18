@@ -51,8 +51,8 @@
                     <div class="offcanvas-header d-xl-none">
                         <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav align-items-xl-center gap-4 text-uppercase fw-semibold justify-content-xl-end">
+                    <div class="offcanvas-body flex-grow-1 justify-content-xl-end">
+                        <ul class="navbar-nav align-items-xl-center gap-4 text-uppercase fw-semibold">
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Models

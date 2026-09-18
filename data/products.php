@@ -6,11 +6,11 @@ $products = [
 
         // Hero
         'template' => 'panel-layout',
-        'title' => 'Luxwood Panel',
+        'title' => 'Wall Panel',
         'banner_image' => 'img/building-material/panel/banner_main.jpg',
 
         // Section 1
-        'overview_title' => 'Luxwood Panel',
+        'overview_title' => 'Wall Panel',
         'overview_description' => 'The Luxwood Wall Panel is the core structural component of the PHE building system, used for both wall and floor applications across all modular structures. ',
         'overview_image' => 'img/building-material/panel/img_1.jpg',
 
@@ -30,7 +30,7 @@ $products = [
         // Section 3
         'secondary_title' => 'Polex Board & Internal Sheets',
         'secondary_description' => 'Interior and structural support materials designed to complement the Luxwood system, providing additional flexibility in construction and finishing.',
-        'secondary_image' => 'img/building-material/panel/sub_fitted.webp',
+        'secondary_image' => 'img/building-material/panel/polex_board.png',
 
         'secondary_features' => [
             'Lightweight and easy to install',
@@ -40,9 +40,9 @@ $products = [
 
         // Section 4
         'door_window_title' => 'Doors & Windows',
-        'door_window_image' => 'img/building-material/panel/banner_main.jpg',
+        'door_window_image' => 'img/building-material/window_&_door/banner_main.jpg',
 
-        'door_section_title' => 'PHE LUXWOOD PANEL COMPOSITE DOORS',
+        'door_section_title' => 'PANEL COMPOSITE DOORS',
 
         'door_features' => [
             'Waterproof',
@@ -71,7 +71,7 @@ $products = [
 
     'roof' => [
         'template' => 'window-door-layout',
-        'title' => 'Luxwood Roofing System',
+        'title' => 'Roofing System',
         'banner_image' => 'img/building-material/roof/banner_main.jpg',
       
         // Section 1
@@ -90,11 +90,11 @@ $products = [
 
     'deck' => [
         'template' => 'window-door-layout',
-        'title' => 'Luxwood Decking',
+        'title' => 'Decking System',
         'banner_image' => 'img/building-material/deck/banner_main.jpg',
 
         // Section 1
-        'overview_title' => 'Decking',
+        'overview_title' => 'Decking System',
         'overview_description' => 'A durable and low-maintenance outdoor solution designed to replicate the look of natural wood while offering superior performance.',
         'overview_image' => 'img/building-material/deck/img_1.jpg',
 
@@ -104,15 +104,24 @@ $products = [
             'Long-lasting and low maintenance',
             'Suitable for residential and commercial use'
         ],
+
+        // Accessories
+        'accessories_title' => 'Accessories',
+        'accessories' => [
+            ['image' => 'img/building-material/deck/accessories_1.jpg', 'alt' => 'Grey grooved decking boards'],
+            ['image' => 'img/building-material/deck/accessories_2.jpg', 'alt' => 'Decking joist'],
+            ['image' => 'img/building-material/deck/accessories_3.jpg', 'alt' => 'Decking batten'],
+            ['image' => 'img/building-material/deck/accessories_4.jpg', 'alt' => 'Hollow decking board profile'],
+        ],
     ],
 
     'cladding' => [
         'template' => 'window-door-layout',
-        'title' => 'Luxwood Cladding',
+        'title' => 'Cladding System',
         'banner_image' => 'img/building-material/clad/banner_main.jpg',
 
         // Section 1
-        'overview_title' => 'Cladding',
+        'overview_title' => 'Cladding System',
         'overview_description' => 'Exterior cladding solutions designed to provide both protection and aesthetic flexibility.',
         'overview_image' => 'img/building-material/clad/img_1.png',
 
@@ -122,15 +131,25 @@ $products = [
             'Durable, weather-resistant finish',
             'Certified for safety and performance'
         ],
+
+        // Accessories
+        'accessories_title' => 'Accessories',
+        'accessories' => [
+            ['image' => 'img/building-material/clad/accessories_1.jpg', 'alt' => 'Stainless steel cladding clip'],
+            ['image' => 'img/building-material/clad/accessories_2.jpg', 'alt' => 'Countersunk fixing screws'],
+            ['image' => 'img/building-material/clad/accessories_3.jpg', 'alt' => 'Cladding batten'],
+            ['image' => 'img/building-material/clad/accessories_4.jpg', 'alt' => 'Cladding board profile'],
+            ['image' => 'img/building-material/clad/accessories_5.jpg', 'alt' => 'Corner trim'],
+        ],
     ],
 
     'screw' => [
         'template' => 'window-door-layout',
-        'title' => 'Luxwood Helical Screw Piles',
+        'title' => 'Helical Screw Piles',
         'banner_image' => 'img/building-material/screw/banner_main.jpg',
 
         // Section 1
-        'overview_title' => 'Screw Piles',
+        'overview_title' => 'Helical Screw Piles',
         'overview_description' => 'A fast and efficient alternative to traditional concrete foundations, screw piles provide strong structural support with minimal site disruption. ',
         'overview_image' => 'img/building-material/screw/img_1.png',
 
@@ -151,14 +170,14 @@ $products = [
 
     'window-door' => [    
         'template' => 'window-door-layout',
-        'title' => 'Luxwood Doors & Windows',
+        'title' => 'Doors & Windows',
         'banner_image' => 'img/building-material/window_&_door/banner_main.jpg',
 
         // Section 1
         'overview_title' => 'Doors & Windows',
         'overview_image' => 'img/building-material/window_&_door/img_3.jpg',
 
-        'overview_features_title' => 'PHE LUXWOOD PANEL COMPOSITE DOORS',
+        'overview_features_title' => 'PANEL COMPOSITE DOORS',
         'overview_features' => [
             'Waterproof',
             'Pest Proof',

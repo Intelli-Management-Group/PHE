@@ -75,7 +75,7 @@ $hotspots = [
 ?>
 <!-- HERO -->
 <section class="home-hero-section product-banner-animation">
-    <div class="hero-section-bg product-banner-bg">
+    <div class="hero-section-bg hero-section-bg-overlay product-banner-bg">
         <img src="<?= $product['banner_image']; ?>"
             alt="<?= $product['title']; ?>"
             class="hero-section-bg-img product-banner-img">
