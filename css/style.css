@@ -325,6 +325,8 @@ button {
     position: absolute;
     top: 0;
     left: 0;
+    /* Slides overlap; without this the top slide swallows clicks meant for the slide underneath */
+    pointer-events: none;
 }
 
 .why-choose-us-slide:first-child {
@@ -351,6 +353,7 @@ button {
 .why-choose-us-content-col {
     position: relative;
     z-index: 1;
+    pointer-events: auto;
 }
 
 .why-choose-us-img {
@@ -492,6 +495,12 @@ button {
 .projects-section {
     background-color: #fff;
     color: #000;
+}
+
+/* Breathing room for deep links such as projects.php#pacific-house, so the
+   project title isn't flush against the top edge of the viewport */
+.projects-block {
+    scroll-margin-top: 100px;
 }
 
 /* .projects-section-inner {

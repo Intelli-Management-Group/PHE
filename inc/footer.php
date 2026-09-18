@@ -4,17 +4,17 @@
                 <div class="row">
                     <div class="col-md-3 col-6">
                         <ul class="site-footer-list">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Product</a></li>
-                            <li><a href="#">Building Material</a></li>
-                            <li><a href="#">Implementation</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="building-system.php#our-modules">Product</a></li>
+                            <li><a href="materials.php">Building Material</a></li>
+                            <li><a href="building-system.php#deployment">Implementation</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-6">
                         <ul class="site-footer-list">
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="projects.php">Projects</a></li>
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="contact.php">Contact</a></li>
                         </ul>
                     </div>
                 </div>

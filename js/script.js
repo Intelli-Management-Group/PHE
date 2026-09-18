@@ -1101,7 +1101,30 @@ document.addEventListener("DOMContentLoaded", () => {
 // Recalculate ScrollTrigger after all images and resources have fully loaded
 window.addEventListener("load", () => {
     ScrollTrigger.refresh();
+    scrollToUrlHash();
 });
+
+// Re-apply a #fragment arrived at from another page (e.g. index.php ->
+// projects.php#pacific-house). ScrollTrigger.refresh() scrolls to 0 to measure
+// its triggers and then restores the position it recorded beforehand, which
+// wipes out the browser's own jump to the fragment — so redo it here, once
+// images have loaded and the final offsets are known.
+function scrollToUrlHash() {
+    const hash = window.location.hash;
+    if (!hash || hash === "#") return;
+
+    let target;
+    try {
+        target = document.querySelector(hash);
+    } catch (e) {
+        return; // not a valid selector (e.g. "#" used as a placeholder href)
+    }
+    if (!target) return;
+
+    // scrollIntoView (rather than a raw scrollTo) so any scroll-margin-top set
+    // on the target in CSS is honoured.
+    target.scrollIntoView({ block: "start", behavior: "auto" });
+}
 
 // Full page reload after resize (debounced) — home only; resets pinned ScrollTrigger / slogan-stats sequence
 let resizeReloadTimer;

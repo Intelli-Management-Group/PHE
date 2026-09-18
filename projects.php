@@ -113,7 +113,7 @@ include 'inc/header.php';
                 <div class="col-lg-10 top-padding px-5 text-white" style="background-color: #1a2e25;">
                     <div class="projects-content">
                         <!-- Block 1 -->
-                        <div class="projects-block" data-country="australia" data-type="residential">
+                        <div class="projects-block" id="pacific-house" data-country="australia" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Pacific House</h2>
@@ -147,7 +147,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 2 -->
-                        <div class="projects-block" data-country="australia" data-type="residential">
+                        <div class="projects-block" id="ballara-house" data-country="australia" data-type="residential">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Ballara House</h2>
@@ -207,7 +207,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 4 -->
-                        <div class="projects-block" data-country="australia" data-type="commercial">
+                        <div class="projects-block" id="eco-mining-cabins" data-country="australia" data-type="commercial">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Eco Mining Cabins</h2>

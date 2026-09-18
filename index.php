@@ -47,7 +47,7 @@ include 'inc/header.php';
             <h6 class="text-white mb-4">Real Applications. Built with Precision.</h6>
             <div class="row g-4">
                 <div class="col-lg-4">
-                    <a href="#" class="model-preview-card d-block h-100">
+                    <a href="projects.php#pacific-house" class="model-preview-card d-block h-100">
                         <div class="model-preview-image-wrap">
                             <img src="img/home/img_project_1.jpg" alt="HO2 model" class="model-preview-image img-fluid">
                             <div class="model-preview-content">
@@ -71,7 +71,7 @@ include 'inc/header.php';
                 </div>
 
                 <div class="col-lg-4">
-                    <a href="#" class="model-preview-card d-block h-100">
+                    <a href="projects.php#ballara-house" class="model-preview-card d-block h-100">
                         <div class="model-preview-image-wrap">
                             <img src="img/home/img_project_2.jpg" alt="HO3 model" class="model-preview-image img-fluid">
                             <div class="model-preview-content">
@@ -95,7 +95,7 @@ include 'inc/header.php';
                 </div>
 
                 <div class="col-lg-4">
-                    <a href="#" class="model-preview-card d-block h-100">
+                    <a href="projects.php#eco-mining-cabins" class="model-preview-card d-block h-100">
                         <div class="model-preview-image-wrap">
                             <img src="img/home/img_project_3.jpg" alt="HO4 model" class="model-preview-image img-fluid">
                             <div class="model-preview-content">
@@ -132,7 +132,7 @@ include 'inc/header.php';
                         <div class="why-choose-us-content">
                             <h2>Faster, Smarter Construction</h2>
                             <p>Our modular panel system streamlines the entire building process — reducing construction timelines to as little as 24–72 hours while minimizing labour, complexity, and on-site waste.</p>
-                            <a href="#" class="why-choose-us-cta">see how it works <i class="fa-solid fa-arrow-right-long why-choose-us-arrow"></i></a>
+                            <a href="building-system.php" class="why-choose-us-cta">see how it works <i class="fa-solid fa-arrow-right-long why-choose-us-arrow"></i></a>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@ include 'inc/header.php';
                         <div class="why-choose-us-content">
                             <h2>Sustainable by Design</h2>
                             <p>Manufactured using recycled composite materials, Luxwood systems reduce environmental impact while delivering energy-efficient, low-maintenance buildings designed for long-term performance.</p>
-                            <a href="#" class="why-choose-us-cta">see how it works <i class="fa-solid fa-arrow-right-long why-choose-us-arrow"></i></a>
+                            <a href="materials.php" class="why-choose-us-cta">see how it works <i class="fa-solid fa-arrow-right-long why-choose-us-arrow"></i></a>
                         </div>
                     </div>
                 </div>

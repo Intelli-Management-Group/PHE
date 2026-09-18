@@ -42,8 +42,8 @@ include 'inc/header.php';
                         <p>PHE Luxwood is an engineered modular building system that combines advanced composite materials with streamlined construction methods.</p>
                         <p>Designed for efficiency, durability, and scalability, our system enables faster project delivery while maintaining consistent build quality across a wide range of applications.</p>
                         <!-- <div class="d-flex gap-4">
-                            <a href="#" class="link-underline">Explore Our Products</a>
-                            <a href="#" class="link-underline">More About Us</a>
+                            <a href="materials.php" class="link-underline">Explore Our Products</a>
+                            <a href="about.php" class="link-underline">More About Us</a>
                         </div> -->
                     </div>
                 </div>
@@ -432,7 +432,7 @@ include 'inc/header.php';
         </div>
     </section>
 
-    <section class="modular-features-section">
+    <section class="modular-features-section" id="deployment">
         <div class="modular-features-bg">
             <img src="img/building-system/banner_bg_kithome.png" alt="Kitchen Background" class="modular-features-bg-img">
         </div>
@@ -477,7 +477,7 @@ include 'inc/header.php';
     </section>
 
     <!-- Modular Applications -->
-    <section class="section-padding modular-applications-section">
+    <section class="section-padding modular-applications-section" id="our-modules">
         <h3 class="text-center mb-5">Our Modules</h3>
         <div class="container">
             <div class="modular-applications-wrapper">

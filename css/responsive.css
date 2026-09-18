@@ -86,7 +86,7 @@
 
     /* Divider between projects makes each one read as its own group,
        separate from the tighter spacing used within a single project. */
-    .projects-block + .projects-block {
+    .projects-block+.projects-block {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding-top: 32px;
     }
@@ -148,7 +148,7 @@
         height: auto !important;
     }
 
-    .kit-home-slide + .kit-home-slide {
+    .kit-home-slide+.kit-home-slide {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
@@ -211,8 +211,12 @@
         height: 320px;
     }
 
-    .projects-block + .projects-block {
+    .projects-block+.projects-block {
         padding-top: 24px;
+    }
+
+    .hero-section-title {
+        letter-spacing: 12px;
     }
 }
 
@@ -226,7 +230,7 @@
         height: 260px;
     }
 
-    .projects-block + .projects-block {
+    .projects-block+.projects-block {
         padding-top: 20px;
     }
 }
