@@ -82,10 +82,10 @@ $hotspots = [
     </div>
 
     <div class="building-system-hero-section-wrap product-banner-content">
-        <div class="ms-5">
+        <div class="ms-3 ms-md-5">
             <div class="row align-items-end">
                 <div class="">
-                    <h2 class="mb-5 product-banner-title">
+                    <h2 class="mb-3 mb-md-5 product-banner-title">
                         <?= $product['title']; ?>
                     </h2>
                 </div>
@@ -95,7 +95,7 @@ $hotspots = [
 </section>
 
 <!-- OVERVIEW -->
-<section class="product-intro product-diagram py-5">
+<section class="product-intro product-diagram py-4 py-lg-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5">
@@ -108,7 +108,7 @@ $hotspots = [
                 <?php endif; ?>
 
                 <?php if(!empty($product['overview_features'])): ?>
-                    <div class="key-features mt-5">
+                    <div class="key-features mt-4 mt-lg-5">
                         <h3 class="mb-4 product-titles">
                             Key Features
                         </h3>
@@ -121,7 +121,7 @@ $hotspots = [
                 <?php endif; ?>
 
                 <?php if(!empty($product['overview_note_title'])): ?>
-                    <div class="key-features mt-5">
+                    <div class="key-features mt-4 mt-lg-5">
                         <h5 class="mb-3 product-titles">
                             <?= $product['overview_note_title']; ?>
                         </h5>
@@ -149,15 +149,17 @@ $hotspots = [
 
         <img src="<?= $product['profile_image']; ?>" class="product-main-image">
 
-        <?php foreach($hotspots as $spot): ?>
+        <?php foreach($hotspots as $i => $spot): ?>
             <div class="hotspot hotspot-<?= $spot['direction']; ?>"
-                style="top:<?= $spot['top']; ?>;left:<?= $spot['left']; ?>;">
+                style="--hotspot-top:<?= $spot['top']; ?>;--hotspot-left:<?= $spot['left']; ?>;">
 
-                <span class="hotspot-dot"></span>
+                <button type="button" class="hotspot-dot" data-n="<?= $i + 1; ?>"
+                    aria-label="Show <?= htmlspecialchars($spot['title']); ?>"></button>
 
             <div class="hotspot-card">
                 <div class="hotspot-header">
                     <div class="hotspot-content">
+                        <span class="hotspot-num"><?= $i + 1; ?></span>
                         <span class="hotspot-label">
                             <?= $spot['label']; ?>
                         </span>
@@ -187,7 +189,7 @@ $hotspots = [
 </section>
 
 <!-- SECONDARY SECTION -->
-<section class="product-intro py-5">
+<section class="product-intro py-4 py-lg-5">
     <div class="container">
         <div class="row align-items-center">
 
@@ -207,7 +209,7 @@ $hotspots = [
                 <?php endif; ?>
 
                 <?php if(!empty($product['secondary_features'])): ?>
-                    <div class="key-features mt-5">
+                    <div class="key-features mt-4 mt-lg-5">
                         <h5 class="mb-4 product-titles">
                             Key Features
                         </h5>
@@ -231,7 +233,7 @@ $hotspots = [
 </section>
 
 <!-- DOORS & WINDOWS -->
-<section class="product-intro py-5">
+<section class="product-intro py-4 py-lg-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7 d-flex align-items-center justify-content-center">
@@ -279,7 +281,7 @@ $hotspots = [
     </div>
 </section>
 
-<section class="product-diagram py-5">
+<section class="product-diagram py-4 py-lg-5">
   <div class="container">
     <div class="diagram-scroll-wrapper">
 
@@ -397,7 +399,10 @@ $hotspots = [
         update();
     })();
 
-    document.querySelectorAll('.hotspot-toggle').forEach(btn => {
+    // Both the "+" button and the dot on the image toggle a hotspot card.
+    // On small screens the cards stack below the image, so a dot tap also
+    // scrolls its card into view.
+    document.querySelectorAll('.hotspot-toggle, .hotspot-dot').forEach(btn => {
         btn.addEventListener('click', function () {
             const current = this.closest('.hotspot');
             const wasActive = current.classList.contains('active');
@@ -412,8 +417,20 @@ $hotspots = [
                 current.classList.add('active');
                 const body = current.querySelector('.hotspot-body');
                 if (body) body.style.maxHeight = body.scrollHeight + 'px';
+
+                if (this.classList.contains('hotspot-dot')) {
+                    const card = current.querySelector('.hotspot-card');
+                    if (card) card.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+                }
             }
         });
+    });
+
+    // The open card's height was measured at the old width; re-measure when
+    // the layout changes (rotation, desktop <-> stacked mobile layout).
+    window.addEventListener('resize', function () {
+        const body = document.querySelector('.hotspot.active .hotspot-body');
+        if (body) body.style.maxHeight = body.scrollHeight + 'px';
     });
 
     document.addEventListener('DOMContentLoaded', function() {

@@ -42,13 +42,17 @@
                 </a>
 
                 <!-- Toggle Button -->
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!-- Navbar Content -->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav align-items-center gap-4 text-uppercase fw-semibold">
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="navbarNav" aria-label="Navigation menu">
+                    <div class="offcanvas-header d-xl-none">
+                        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav align-items-xl-center gap-4 text-uppercase fw-semibold justify-content-xl-end">
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Models
@@ -114,7 +118,8 @@
                         <li class="nav-item ms-lg-3">
                             <a class="site-header-cta" href="contact.php">Contact Us</a>
                         </li>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>

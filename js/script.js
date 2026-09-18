@@ -265,24 +265,30 @@ document.addEventListener("DOMContentLoaded", () => {
             0
         );
 
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".modular-animation-wrapper",
-                start: "top 70%",
-                end: "top 20%",
-                scrub: 1,
-            },
+        // The box "explode" offsets below are fixed pixel values, which on
+        // narrow viewports push the diagram out of the section — so this
+        // part of the effect only runs on desktop; mobile keeps the boxes
+        // at their static layered CSS positions.
+        gsap.matchMedia().add("(min-width: 992px)", () => {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".modular-animation-wrapper",
+                    start: "top 70%",
+                    end: "top 20%",
+                    scrub: 1,
+                },
+            });
+
+            tl.to(".box-1", { x: -200, y: -100 }, "phase1")
+                .to(".box-2", { x: -100, y: -50 }, "phase1")
+                .to(".box-3", { x: 0, y: 0 }, "phase1")
+                .to(".box-4", { x: 100, y: 50 }, "phase1");
+
+            tl.to(".box-1", { x: -150, y: -50 }, "phase2")
+                .to(".box-2", { x: -100, y: -25 }, "phase2")
+                .to(".box-3", { x: -50, y: 0 }, "phase2")
+                .to(".box-4", { x: 0, y: 25 }, "phase2");
         });
-
-        tl.to(".box-1", { x: -200, y: -100 }, "phase1")
-            .to(".box-2", { x: -100, y: -50 }, "phase1")
-            .to(".box-3", { x: 0, y: 0 }, "phase1")
-            .to(".box-4", { x: 100, y: 50 }, "phase1");
-
-        tl.to(".box-1", { x: -150, y: -50 }, "phase2")
-            .to(".box-2", { x: -100, y: -25 }, "phase2")
-            .to(".box-3", { x: -50, y: 0 }, "phase2")
-            .to(".box-4", { x: 0, y: 25 }, "phase2");
 
         window.addEventListener("load", () => ScrollTrigger.refresh());
     }
@@ -344,179 +350,216 @@ document.addEventListener("DOMContentLoaded", () => {
     const kitHomeNavItems = document.querySelectorAll(".kit-home-nav-item");
 
     if (kitHomeSection && kitHomeSlides.length > 1) {
-        kitHomeSection.classList.add("kit-home--multi-slide");
+        // The pinned crossfade below relies on the desktop layout (nav
+        // column beside a fixed-height image column). Below lg the nav and
+        // slides stack in normal flow instead (see responsive.css), so all
+        // of the pinning/hiding/masking setup only runs on desktop —
+        // otherwise slides 2+ would stay clipped/masked out on mobile.
+        gsap.matchMedia().add("(min-width: 992px)", () => {
+            kitHomeSection.classList.add("kit-home--multi-slide");
 
-        // Equalize .kit-home-text heights across all slides so the progress bar
-        // (whose height is a percentage of its parent) has a consistent length
-        // regardless of whether a title wraps to two lines on some slides.
-        const kitHomeTextEls = kitHomeSection.querySelectorAll(".kit-home-slide .kit-home-text");
-        const equalizeKitHomeTextHeights = () => {
-            kitHomeTextEls.forEach(el => { el.style.minHeight = ""; });
-            let maxHeight = 0;
-            kitHomeTextEls.forEach(el => {
-                maxHeight = Math.max(maxHeight, el.offsetHeight);
+            // Equalize .kit-home-text heights across all slides so the progress bar
+            // (whose height is a percentage of its parent) has a consistent length
+            // regardless of whether a title wraps to two lines on some slides.
+            const kitHomeTextEls = kitHomeSection.querySelectorAll(".kit-home-slide .kit-home-text");
+            const equalizeKitHomeTextHeights = () => {
+                kitHomeTextEls.forEach(el => { el.style.minHeight = ""; });
+                let maxHeight = 0;
+                kitHomeTextEls.forEach(el => {
+                    maxHeight = Math.max(maxHeight, el.offsetHeight);
+                });
+                if (maxHeight > 0) {
+                    kitHomeTextEls.forEach(el => { el.style.minHeight = maxHeight + "px"; });
+                }
+            };
+            equalizeKitHomeTextHeights();
+            ScrollTrigger.addEventListener("refreshInit", equalizeKitHomeTextHeights);
+
+            // Set initial states. We use zIndex: "auto" on the slides so they don't create a stacking context,
+            // allowing us to interleave the z-indexes of the left and right images globally.
+            gsap.set(kitHomeSlides, { opacity: 0, visibility: "hidden", zIndex: "auto" });
+            gsap.set(kitHomeSlides[0], { opacity: 1, visibility: "visible", zIndex: "auto" });
+
+            // Assign global z-indexes to the internal elements so left images always stay above right images across all slides
+            kitHomeSlides.forEach((slide, index) => {
+                const rightImg = slide.querySelector(".kit-home-img-right");
+                const leftImg = slide.querySelector(".kit-home-img-left");
+                const content = slide.querySelector(".kit-home-content");
+
+                if (rightImg) gsap.set(rightImg, { zIndex: index + 1 });
+                if (leftImg) gsap.set(leftImg, { zIndex: index + 50 });
+                if (content) gsap.set(content, { zIndex: index + 100 });
             });
-            if (maxHeight > 0) {
-                kitHomeTextEls.forEach(el => { el.style.minHeight = maxHeight + "px"; });
+
+            const syncKitHomeActiveSlide = progress => {
+                const activeIdx = Math.round(progress * (kitHomeSlides.length - 1));
+                kitHomeSlides.forEach((slide, idx) => {
+                    slide.classList.toggle("kit-home-slide--active", idx === activeIdx);
+                });
+                if (kitHomeNavItems.length) {
+                    kitHomeNavItems.forEach((item, idx) => {
+                        item.classList.toggle("is-active", idx === activeIdx);
+                    });
+                }
+            };
+
+            const tlKitHome = gsap.timeline({
+                scrollTrigger: {
+                    trigger: kitHomeSection,
+                    start: "top top",
+                    end: "+=" + (kitHomeSlides.length - 1) * 100 + "%",
+                    scrub: 1,
+                    pin: true,
+                    anticipatePin: 1,
+                    invalidateOnRefresh: true,
+                    onUpdate: self => {
+                        kitHomeSection.style.setProperty('--section-progress', (self.progress * 100) + '%');
+                        syncKitHomeActiveSlide(self.progress);
+                    }
+                }
+            });
+
+            if (tlKitHome.scrollTrigger) {
+                syncKitHomeActiveSlide(tlKitHome.scrollTrigger.progress);
             }
-        };
-        equalizeKitHomeTextHeights();
-        ScrollTrigger.addEventListener("refreshInit", equalizeKitHomeTextHeights);
 
-        // Set initial states. We use zIndex: "auto" on the slides so they don't create a stacking context,
-        // allowing us to interleave the z-indexes of the left and right images globally.
-        gsap.set(kitHomeSlides, { opacity: 0, visibility: "hidden", zIndex: "auto" });
-        gsap.set(kitHomeSlides[0], { opacity: 1, visibility: "visible", zIndex: "auto" });
-
-        // Assign global z-indexes to the internal elements so left images always stay above right images across all slides
-        kitHomeSlides.forEach((slide, index) => {
-            const rightImg = slide.querySelector(".kit-home-img-right");
-            const leftImg = slide.querySelector(".kit-home-img-left");
-            const content = slide.querySelector(".kit-home-content");
-
-            if (rightImg) gsap.set(rightImg, { zIndex: index + 1 });
-            if (leftImg) gsap.set(leftImg, { zIndex: index + 50 });
-            if (content) gsap.set(content, { zIndex: index + 100 });
-        });
-
-        const syncKitHomeActiveSlide = progress => {
-            const activeIdx = Math.round(progress * (kitHomeSlides.length - 1));
-            kitHomeSlides.forEach((slide, idx) => {
-                slide.classList.toggle("kit-home-slide--active", idx === activeIdx);
-            });
+            // Click a nav item to jump to the matching slide
+            const navClickHandlers = [];
             if (kitHomeNavItems.length) {
                 kitHomeNavItems.forEach((item, idx) => {
-                    item.classList.toggle("is-active", idx === activeIdx);
+                    const link = item.querySelector("a");
+                    if (!link) return;
+                    const handler = (e) => {
+                        e.preventDefault();
+                        const st = tlKitHome.scrollTrigger;
+                        if (!st) return;
+                        const ratio = kitHomeSlides.length > 1 ? idx / (kitHomeSlides.length - 1) : 0;
+                        const target = st.start + ratio * (st.end - st.start);
+                        window.scrollTo({
+                            top: target,
+                            behavior: "smooth",
+                        });
+                    };
+                    link.addEventListener("click", handler);
+                    navClickHandlers.push({ link, handler });
                 });
             }
-        };
 
-        const tlKitHome = gsap.timeline({
-            scrollTrigger: {
-                trigger: kitHomeSection,
-                start: "top top",
-                end: "+=" + (kitHomeSlides.length - 1) * 100 + "%",
-                scrub: 1,
-                pin: true,
-                anticipatePin: 1,
-                invalidateOnRefresh: true,
-                onUpdate: self => {
-                    kitHomeSection.style.setProperty('--section-progress', (self.progress * 100) + '%');
-                    syncKitHomeActiveSlide(self.progress);
+            const maskedRightImgs = [];
+
+            for (let i = 0; i < kitHomeSlides.length - 1; i++) {
+                const nextSlide = kitHomeSlides[i + 1];
+                const startTime = i * 2;
+
+                // Setup next slide for blinds effect
+                gsap.set(nextSlide, {
+                    opacity: 1,
+                    visibility: "visible",
+                    zIndex: "auto"
+                });
+
+                const nextImgRight = nextSlide.querySelector(".kit-home-img-right");
+                const nextImgLeft = nextSlide.querySelector(".kit-home-img-left");
+
+                const currentSlide = kitHomeSlides[i];
+                const currentLines = currentSlide.querySelectorAll(".line-content");
+                const nextLines = nextSlide.querySelectorAll(".line-content");
+
+                // Initial state for next slide text
+                gsap.set(nextLines, { yPercent: 100 });
+
+                // Setup left image animation (slide up from bottom)
+                if (nextImgLeft) {
+                    gsap.set(nextImgLeft, { clipPath: "inset(100% 0% 0% 0%)" });
+                    tlKitHome.to(nextImgLeft, {
+                        clipPath: "inset(0% 0% 0% 0%)",
+                        duration: 1,
+                        ease: "none"
+                    }, startTime);
                 }
+
+                // Setup right image animation (30 blinds, bottom first)
+                if (nextImgRight) {
+                    maskedRightImgs.push(nextImgRight);
+                    const numBlinds = 30;
+                    const blinds = Array.from({ length: numBlinds }, () => ({ value: 0 }));
+
+                    const updateBlindsMask = () => {
+                        let maskImages = [];
+                        let maskSizes = [];
+                        let maskPositions = [];
+
+                        const blindHeight = (100 / numBlinds) + 0.5; // Add 0.5% to overlap and prevent gaps
+
+                        for (let j = 0; j < numBlinds; j++) {
+                            maskImages.push(`linear-gradient(to top, black ${blinds[j].value}%, transparent ${blinds[j].value}%)`);
+                            maskSizes.push(`100% ${blindHeight}%`);
+                            maskPositions.push(`0 ${j * 100 / (numBlinds - 1)}%`);
+                        }
+
+                        nextImgRight.style.maskImage = maskImages.join(', ');
+                        nextImgRight.style.webkitMaskImage = maskImages.join(', ');
+                        nextImgRight.style.maskSize = maskSizes.join(', ');
+                        nextImgRight.style.webkitMaskSize = maskSizes.join(', ');
+                        nextImgRight.style.maskPosition = maskPositions.join(', ');
+                        nextImgRight.style.webkitMaskPosition = maskPositions.join(', ');
+                        nextImgRight.style.maskRepeat = 'no-repeat';
+                        nextImgRight.style.webkitMaskRepeat = 'no-repeat';
+                    };
+
+                    updateBlindsMask(); // Set initial state
+
+                    tlKitHome.to(blinds, {
+                        value: 100,
+                        duration: 0.5,
+                        stagger: {
+                            amount: 0.5,
+                            from: "end"
+                        },
+                        ease: "none",
+                        onUpdate: updateBlindsMask
+                    }, startTime);
+                }
+
+                // Animate text
+                tlKitHome.to(currentLines, {
+                    yPercent: -100,
+                    duration: 0.4,
+                    stagger: 0.05,
+                    ease: "power2.in"
+                }, startTime)
+                .to(nextLines, {
+                    yPercent: 0,
+                    duration: 0.4,
+                    stagger: 0.05,
+                    ease: "power2.out"
+                }, startTime + 0.6);
             }
-        });
 
-        if (tlKitHome.scrollTrigger) {
-            syncKitHomeActiveSlide(tlKitHome.scrollTrigger.progress);
-        }
-
-        // Click a nav item to jump to the matching slide
-        if (kitHomeNavItems.length) {
-            kitHomeNavItems.forEach((item, idx) => {
-                const link = item.querySelector("a");
-                if (!link) return;
-                link.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    const st = tlKitHome.scrollTrigger;
-                    if (!st) return;
-                    const ratio = kitHomeSlides.length > 1 ? idx / (kitHomeSlides.length - 1) : 0;
-                    const target = st.start + ratio * (st.end - st.start);
-                    window.scrollTo({
-                        top: target,
-                        behavior: "smooth",
-                    });
+            // Cleanup when leaving the desktop breakpoint: gsap.matchMedia
+            // auto-reverts gsap.set/to values, but the mask styles above are
+            // plain DOM styles and the nav click listeners are plain
+            // listeners, so both need an explicit revert here.
+            return () => {
+                ScrollTrigger.removeEventListener("refreshInit", equalizeKitHomeTextHeights);
+                kitHomeTextEls.forEach(el => { el.style.minHeight = ""; });
+                navClickHandlers.forEach(({ link, handler }) => link.removeEventListener("click", handler));
+                maskedRightImgs.forEach(img => {
+                    img.style.maskImage = "";
+                    img.style.webkitMaskImage = "";
+                    img.style.maskSize = "";
+                    img.style.webkitMaskSize = "";
+                    img.style.maskPosition = "";
+                    img.style.webkitMaskPosition = "";
+                    img.style.maskRepeat = "";
+                    img.style.webkitMaskRepeat = "";
                 });
-            });
-        }
-
-        for (let i = 0; i < kitHomeSlides.length - 1; i++) {
-            const nextSlide = kitHomeSlides[i + 1];
-            const startTime = i * 2;
-
-            // Setup next slide for blinds effect
-            gsap.set(nextSlide, { 
-                opacity: 1, 
-                visibility: "visible", 
-                zIndex: "auto"
-            });
-
-            const nextImgRight = nextSlide.querySelector(".kit-home-img-right");
-            const nextImgLeft = nextSlide.querySelector(".kit-home-img-left");
-
-            const currentSlide = kitHomeSlides[i];
-            const currentLines = currentSlide.querySelectorAll(".line-content");
-            const nextLines = nextSlide.querySelectorAll(".line-content");
-
-            // Initial state for next slide text
-            gsap.set(nextLines, { yPercent: 100 });
-
-            // Setup left image animation (slide up from bottom)
-            if (nextImgLeft) {
-                gsap.set(nextImgLeft, { clipPath: "inset(100% 0% 0% 0%)" });
-                tlKitHome.to(nextImgLeft, {
-                    clipPath: "inset(0% 0% 0% 0%)",
-                    duration: 1,
-                    ease: "none"
-                }, startTime);
-            }
-
-            // Setup right image animation (30 blinds, bottom first)
-            if (nextImgRight) {
-                const numBlinds = 30;
-                const blinds = Array.from({ length: numBlinds }, () => ({ value: 0 }));
-                
-                const updateBlindsMask = () => {
-                    let maskImages = [];
-                    let maskSizes = [];
-                    let maskPositions = [];
-                    
-                    const blindHeight = (100 / numBlinds) + 0.5; // Add 0.5% to overlap and prevent gaps
-                    
-                    for (let j = 0; j < numBlinds; j++) {
-                        maskImages.push(`linear-gradient(to top, black ${blinds[j].value}%, transparent ${blinds[j].value}%)`);
-                        maskSizes.push(`100% ${blindHeight}%`);
-                        maskPositions.push(`0 ${j * 100 / (numBlinds - 1)}%`);
-                    }
-                    
-                    nextImgRight.style.maskImage = maskImages.join(', ');
-                    nextImgRight.style.webkitMaskImage = maskImages.join(', ');
-                    nextImgRight.style.maskSize = maskSizes.join(', ');
-                    nextImgRight.style.webkitMaskSize = maskSizes.join(', ');
-                    nextImgRight.style.maskPosition = maskPositions.join(', ');
-                    nextImgRight.style.webkitMaskPosition = maskPositions.join(', ');
-                    nextImgRight.style.maskRepeat = 'no-repeat';
-                    nextImgRight.style.webkitMaskRepeat = 'no-repeat';
-                };
-
-                updateBlindsMask(); // Set initial state
-
-                tlKitHome.to(blinds, {
-                    value: 100,
-                    duration: 0.5,
-                    stagger: {
-                        amount: 0.5,
-                        from: "end"
-                    },
-                    ease: "none",
-                    onUpdate: updateBlindsMask
-                }, startTime);
-            }
-
-            // Animate text
-            tlKitHome.to(currentLines, {
-                yPercent: -100,
-                duration: 0.4,
-                stagger: 0.05,
-                ease: "power2.in"
-            }, startTime)
-            .to(nextLines, {
-                yPercent: 0,
-                duration: 0.4,
-                stagger: 0.05,
-                ease: "power2.out"
-            }, startTime + 0.6);
-        }
+                kitHomeSection.classList.remove("kit-home--multi-slide");
+                kitHomeSection.style.removeProperty("--section-progress");
+                kitHomeSlides.forEach(slide => slide.classList.remove("kit-home-slide--active"));
+                kitHomeNavItems.forEach(item => item.classList.remove("is-active"));
+            };
+        });
     }
 
     // Modular Section Intro Animation

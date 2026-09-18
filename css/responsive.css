@@ -20,6 +20,14 @@
         --bs-gutter-y: 1.5rem;
     }
 
+    /* Bootstrap implements row-gutter-y as margin-top on each column, so the
+       rule above was overriding .g-0's zero-gutter intent below this
+       breakpoint — on .modular-features-row that margin gap exposed the
+       background image between stacked cards. Restore g-0 rows to no gutter. */
+    .row.g-0 {
+        --bs-gutter-y: 0;
+    }
+
     .section-padding {
         padding-top: calc(var(--padding) * 0.5);
         padding-bottom: calc(var(--padding) * 0.5);
@@ -110,6 +118,73 @@
 
     .why-choose-us-content {
         padding: 40px 24px 56px;
+    }
+
+    /* Kit Home slider: the pinned crossfade in js/script.js only runs at
+       min-width 992px, so below that every slide stacks in normal flow
+       instead of being pinned with only one slide visible at a time. */
+    .kit-home-row {
+        min-height: 0;
+    }
+
+    .kit-home-nav {
+        display: none;
+    }
+
+    .kit-home-container {
+        height: auto;
+    }
+
+    .kit-home-slide {
+        position: relative;
+        z-index: auto;
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+        padding: 3rem 1.25rem;
+    }
+
+    .kit-home-slide .h-100 {
+        height: auto !important;
+    }
+
+    .kit-home-slide + .kit-home-slide {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* .modular-features-col already hides the sub-pixel seam between
+       adjacent GPU-composited columns (will-change: transform) with a
+       horizontal box-shadow for desktop's side-by-side layout — stacked
+       top-to-bottom on mobile, the same seam appears on the top/bottom
+       edges instead, so extend the shadow to cover those too. */
+    .modular-features-col {
+        box-shadow: 1px 0 0 0 #591c1c, -1px 0 0 0 #591c1c, 0 1px 0 0 #591c1c, 0 -1px 0 0 #591c1c;
+    }
+
+    .kit-home-images {
+        position: relative;
+        height: 70vw;
+        max-height: 380px;
+        margin-top: 2rem;
+    }
+
+    /* Modular exploded-diagram animation (js/script.js) also only runs at
+       min-width 992px, so keep the section compact instead of the fixed
+       900px desktop min-height below that */
+    .long-section {
+        min-height: 0;
+    }
+
+    .modular-animation-wrapper {
+        min-height: 260px;
+    }
+
+    /* The -40vh overlap below is a desktop trick that pulls this section up
+       over the end of the pinned 100vh .modular-features-section. On mobile
+       that section isn't pinned — it's a tall stack of 4 cards — so the same
+       negative margin was covering the last two cards. */
+    .modular-applications-section {
+        margin-top: 0;
     }
 }
 
