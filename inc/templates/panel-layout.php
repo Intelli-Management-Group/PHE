@@ -1,4 +1,4 @@
-<?php 
+<?php
 $hotspots = [
     [
         'label' => '',
@@ -99,7 +99,7 @@ $hotspots = [
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5">
-                <?php if(!empty($product['overview_description'])): ?>
+                <?php if (!empty($product['overview_description'])): ?>
                     <div class="headline-wrap">
                         <h3 class="product-titles reveal-line">
                             <?= nl2br($product['overview_description']); ?>
@@ -107,25 +107,25 @@ $hotspots = [
                     </div>
                 <?php endif; ?>
 
-                <?php if(!empty($product['overview_features'])): ?>
+                <?php if (!empty($product['overview_features'])): ?>
                     <div class="key-features mt-4 mt-lg-5">
-                        <h3 class="mb-4 product-titles">
+                        <p class="fw-semibold">
                             Key Features
-                        </h3>
+                        </p>
                         <ul class="feature-list-custom">
-                            <?php foreach($product['overview_features'] as $feature): ?>
+                            <?php foreach ($product['overview_features'] as $feature): ?>
                                 <li class="product-description"><?= $feature; ?></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
                 <?php endif; ?>
 
-                <?php if(!empty($product['overview_note_title'])): ?>
+                <?php if (!empty($product['overview_note_title'])): ?>
                     <div class="key-features mt-4 mt-lg-5">
-                        <h5 class="mb-3 product-titles">
+                        <p class="fw-semibold">
                             <?= $product['overview_note_title']; ?>
-                        </h5>
-                        <?php if(!empty($product['overview_note_description'])): ?>
+                        </p>
+                        <?php if (!empty($product['overview_note_description'])): ?>
                             <p class="product-description mb-0">
                                 <?= nl2br($product['overview_note_description']); ?>
                             </p>
@@ -149,38 +149,38 @@ $hotspots = [
 
         <img src="<?= $product['profile_image']; ?>" class="product-main-image">
 
-        <?php foreach($hotspots as $i => $spot): ?>
+        <?php foreach ($hotspots as $i => $spot): ?>
             <div class="hotspot hotspot-<?= $spot['direction']; ?>"
                 style="--hotspot-top:<?= $spot['top']; ?>;--hotspot-left:<?= $spot['left']; ?>;">
 
                 <button type="button" class="hotspot-dot" data-n="<?= $i + 1; ?>"
                     aria-label="Show <?= htmlspecialchars($spot['title']); ?>"></button>
 
-            <div class="hotspot-card">
-                <div class="hotspot-header">
-                    <div class="hotspot-content">
-                        <span class="hotspot-num"><?= $i + 1; ?></span>
-                        <span class="hotspot-label">
-                            <?= $spot['label']; ?>
-                        </span>
-                        <h4><?= $spot['title']; ?></h4>
+                <div class="hotspot-card">
+                    <div class="hotspot-header">
+                        <div class="hotspot-content">
+                            <span class="hotspot-num"><?= $i + 1; ?></span>
+                            <span class="hotspot-label">
+                                <?= $spot['label']; ?>
+                            </span>
+                            <h4><?= $spot['title']; ?></h4>
+                        </div>
+                        <button class="hotspot-toggle">+</button>
                     </div>
-                    <button class="hotspot-toggle">+</button>
-                </div>
-                <div class="hotspot-body">
-                    <div class="hotspot-body-inner">
-                        <?php if(is_array($spot['description'])): ?>
-                            <ul class="hotspot-list">
-                                <?php foreach($spot['description'] as $line): ?>
-                                    <li><?= $line; ?></li>
-                                <?php endforeach; ?>
-                            </ul>
-                        <?php else: ?>
-                            <p><?= $spot['description']; ?></p>
-                        <?php endif; ?>
+                    <div class="hotspot-body">
+                        <div class="hotspot-body-inner">
+                            <?php if (is_array($spot['description'])): ?>
+                                <ul class="hotspot-list">
+                                    <?php foreach ($spot['description'] as $line): ?>
+                                        <li><?= $line; ?></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            <?php else: ?>
+                                <p><?= $spot['description']; ?></p>
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
-            </div>
 
             </div>
         <?php endforeach; ?>
@@ -194,7 +194,7 @@ $hotspots = [
         <div class="row align-items-center">
 
             <div class="col-lg-5">
-                <?php if(!empty($product['secondary_title'])): ?>
+                <?php if (!empty($product['secondary_title'])): ?>
                     <div class="headline-wrap">
                         <h3 class="product-titles reveal-line">
                             <?= nl2br($product['secondary_title']); ?>
@@ -202,19 +202,19 @@ $hotspots = [
                     </div>
                 <?php endif; ?>
 
-                <?php if(!empty($product['secondary_description'])): ?>
+                <?php if (!empty($product['secondary_description'])): ?>
                     <p class="product-description">
                         <?= nl2br($product['secondary_description']); ?>
                     </p>
                 <?php endif; ?>
 
-                <?php if(!empty($product['secondary_features'])): ?>
+                <?php if (!empty($product['secondary_features'])): ?>
                     <div class="key-features mt-4 mt-lg-5">
-                        <h5 class="mb-4 product-titles">
+                        <p class="fw-semibold">
                             Key Features
-                        </h5>
+                        </p>
                         <ul class="feature-list-custom">
-                            <?php foreach($product['secondary_features'] as $feature): ?>
+                            <?php foreach ($product['secondary_features'] as $feature): ?>
                                 <li class="product-description"><?= $feature; ?></li>
                             <?php endforeach; ?>
                         </ul>
@@ -243,7 +243,7 @@ $hotspots = [
                     class="product-feature-image">
             </div>
             <div class="col-lg-5">
-                 <?php if(!empty($product['door_window_title'])): ?>
+                <?php if (!empty($product['door_window_title'])): ?>
                     <div class="headline-wrap">
                         <h3 class="product-titles reveal-line">
                             <?= nl2br($product['door_window_title']); ?>
@@ -251,26 +251,26 @@ $hotspots = [
                     </div>
                 <?php endif; ?>
 
-                <?php if(!empty($product['door_features'])): ?>
-                    <div class="key-features mb-4">
-                        <h5 class="mb-3 product-sub-titles">
+                <?php if (!empty($product['door_features'])): ?>
+                    <div class="key-features mb-4 mt-lg-5">
+                        <p class="fw-semibold">
                             <?= $product['door_section_title']; ?>
-                        </h5>
+                        </p>
                         <ul class="feature-list-custom">
-                            <?php foreach($product['door_features'] as $feature): ?>
+                            <?php foreach ($product['door_features'] as $feature): ?>
                                 <li class="product-description"><?= $feature; ?></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
                 <?php endif; ?>
 
-                <?php if(!empty($product['window_features'])): ?>
+                <?php if (!empty($product['window_features'])): ?>
                     <div class="key-features">
-                        <h5 class="mb-3 product-sub-titles">
+                        <p class="fw-semibold">
                             <?= $product['window_section_title']; ?>
-                        </h5>
+                        </p>
                         <ul class="feature-list-custom">
-                            <?php foreach($product['window_features'] as $feature): ?>
+                            <?php foreach ($product['window_features'] as $feature): ?>
                                 <li class="product-description"><?= $feature; ?></li>
                             <?php endforeach; ?>
                         </ul>
@@ -282,43 +282,43 @@ $hotspots = [
 </section>
 
 <section class="product-diagram py-4 py-lg-5">
-  <div class="container">
-    <div class="diagram-scroll-wrapper">
+    <div class="container">
+        <div class="diagram-scroll-wrapper">
 
-      <!-- Left: wider portrait block (60%) — sets the section height -->
-      <div class="diagram-left">
-        <div class="diagram-left-sticky">
-          <img
-            src="<?= $product['gallery_image_large']; ?>"
-            class="diagram-image-large scroll-reveal reveal-left"
-            alt="">
+            <!-- Left: wider portrait block (60%) — sets the section height -->
+            <div class="diagram-left">
+                <div class="diagram-left-sticky">
+                    <img
+                        src="<?= $product['gallery_image_large']; ?>"
+                        class="diagram-image-large scroll-reveal reveal-left"
+                        alt="">
+                </div>
+            </div>
+
+            <!-- Right: narrower portrait block (40%) — drifts down on scroll -->
+            <div class="diagram-right">
+                <div class="parallax-small-image scroll-reveal reveal-right">
+                    <img
+                        src="<?= $product['gallery_image_small']; ?>"
+                        class="diagram-image-medium"
+                        alt="">
+                </div>
+            </div>
+
         </div>
-      </div>
-
-      <!-- Right: narrower portrait block (40%) — drifts down on scroll -->
-      <div class="diagram-right">
-        <div class="parallax-small-image scroll-reveal reveal-right">
-          <img
-            src="<?= $product['gallery_image_small']; ?>"
-            class="diagram-image-medium"
-            alt="">
-        </div>
-      </div>
-
     </div>
-  </div>
 </section>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.product-titles.reveal-line').forEach(el => {
             const raw = el.innerHTML
-            .replace(/<div[^>]*>|<\/div>|<span[^>]*>|<\/span>/gi, '')
-            .trim();
+                .replace(/<div[^>]*>|<\/div>|<span[^>]*>|<\/span>/gi, '')
+                .trim();
 
             const lines = raw
-            .split(/<br\s*\/?>/i)
-            .map(line => line.trim())
-            .filter(Boolean);
+                .split(/<br\s*\/?>/i)
+                .map(line => line.trim())
+                .filter(Boolean);
 
             el.innerHTML = lines.map(line => `
             <span class="reveal-line-wrap">
@@ -327,30 +327,30 @@ $hotspots = [
             `).join('');
 
             const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
 
-                entry.target
-                .querySelectorAll('.reveal-line-inner')
-                .forEach((line, index) => {
-                    const delay = index === 0 ? 0 : 150 + (index * 120);
-                    setTimeout(() => line.classList.add('visible'), delay);
+                    entry.target
+                        .querySelectorAll('.reveal-line-inner')
+                        .forEach((line, index) => {
+                            const delay = index === 0 ? 0 : 150 + (index * 120);
+                            setTimeout(() => line.classList.add('visible'), delay);
+                        });
+                    observer.unobserve(entry.target);
                 });
-                observer.unobserve(entry.target);
-            });
             }, {
-            threshold: 0.15,
-            rootMargin: '0px 0px -40px 0px'
+                threshold: 0.15,
+                rootMargin: '0px 0px -40px 0px'
             });
             observer.observe(el);
         });
 
-        });
+    });
 
-    (function () {
-        const wrapper    = document.querySelector('.diagram-scroll-wrapper');
+    (function() {
+        const wrapper = document.querySelector('.diagram-scroll-wrapper');
         const rightPanel = document.querySelector('.diagram-right');
-        const leftBlock  = document.querySelector('.diagram-left-sticky');
+        const leftBlock = document.querySelector('.diagram-left-sticky');
         if (!wrapper || !rightPanel || !leftBlock) return;
 
         // How late the drift finishes, as a share of the viewport height.
@@ -375,9 +375,9 @@ $hotspots = [
             const rect = wrapper.getBoundingClientRect();
             // 0 when the section's top enters the viewport. The span it runs
             // over decides where it ends — widen it to finish later.
-            const span     = rect.height + (LATENESS * window.innerHeight);
+            const span = rect.height + (LATENESS * window.innerHeight);
             const progress = (window.innerHeight - rect.top) / span;
-            const clamped  = Math.min(Math.max(progress, 0), 1);
+            const clamped = Math.min(Math.max(progress, 0), 1);
 
             rightPanel.style.transform = `translate3d(0, ${(clamped * travel).toFixed(2)}px, 0)`;
         }
@@ -388,7 +388,9 @@ $hotspots = [
             requestAnimationFrame(update);
         }
 
-        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('scroll', onScroll, {
+            passive: true
+        });
         window.addEventListener('resize', onScroll);
         // Heights are unknown until the portrait images have loaded.
         window.addEventListener('load', update);
@@ -403,7 +405,7 @@ $hotspots = [
     // On small screens the cards stack below the image, so a dot tap also
     // scrolls its card into view.
     document.querySelectorAll('.hotspot-toggle, .hotspot-dot').forEach(btn => {
-        btn.addEventListener('click', function () {
+        btn.addEventListener('click', function() {
             const current = this.closest('.hotspot');
             const wasActive = current.classList.contains('active');
 
@@ -420,7 +422,10 @@ $hotspots = [
 
                 if (this.classList.contains('hotspot-dot')) {
                     const card = current.querySelector('.hotspot-card');
-                    if (card) card.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+                    if (card) card.scrollIntoView({
+                        block: 'nearest',
+                        behavior: 'smooth'
+                    });
                 }
             }
         });
@@ -428,32 +433,37 @@ $hotspots = [
 
     // The open card's height was measured at the old width; re-measure when
     // the layout changes (rotation, desktop <-> stacked mobile layout).
-    window.addEventListener('resize', function () {
+    window.addEventListener('resize', function() {
         const body = document.querySelector('.hotspot.active .hotspot-body');
         if (body) body.style.maxHeight = body.scrollHeight + 'px';
     });
 
     document.addEventListener('DOMContentLoaded', function() {
         const bannerBg = document.querySelector('.product-banner-bg');
+
         function updateParallax() {
             const scrolled = window.pageYOffset;
             bannerBg.style.transform =
                 `translate3d(0, ${scrolled * 0.25}px, 0)`;
             requestAnimationFrame(updateParallax);
         }
-        requestAnimationFrame(updateParallax);  
+        requestAnimationFrame(updateParallax);
 
         // Scroll reveal (fade + slide in from left/right)
         const revealEls = document.querySelectorAll('.scroll-reveal');
         const observer = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
             });
-        }, { threshold: 0.15 });
-        revealEls.forEach(function(el) { observer.observe(el); });
+        }, {
+            threshold: 0.15
+        });
+        revealEls.forEach(function(el) {
+            observer.observe(el);
+        });
 
     });
 </script>

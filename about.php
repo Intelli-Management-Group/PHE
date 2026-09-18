@@ -68,7 +68,7 @@ include 'inc/header.php';
                     class="certification-item"
                     data-gsap="fade-up">
                     <img
-                        src="img/about/certificate1.png"
+                        src="img/about/certification_1.jpg"
                         alt="Certificate">
                 </div>
                 <div
@@ -76,7 +76,7 @@ include 'inc/header.php';
                     data-gsap="fade-up"
                     data-aos-delay="150">
                     <img
-                        src="img/about/certificate2.png"
+                        src="img/about/certification_2.jpg"
                         alt="Certificate">
                 </div>
                 <div
@@ -84,7 +84,7 @@ include 'inc/header.php';
                     data-gsap="fade-up"
                     data-aos-delay="300">
                     <img
-                        src="img/about/certificate3.png"
+                        src="img/about/certification_3.jpg"
                         alt="Certificate">
                 </div>
             </div>

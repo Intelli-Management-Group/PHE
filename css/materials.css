@@ -657,7 +657,7 @@
   font-weight: 400;
   /* font-size: clamp(36px, 5vw, 56px); */
   font-size: 40px;
-  letter-spacing: -0.01em;
+  letter-spacing: -1px;
   line-height: 1.28;
   color: #212325;
 }
@@ -845,8 +845,8 @@
     height:36px;
     border:none;
     border-radius:50%;
-    background:#f4f2ed;
-    color:#b49773;
+    background:rgba(89,28,28,.08);
+    color:#591c1c;
     font-size:24px;
     cursor:pointer;
 
@@ -988,7 +988,7 @@
         width: 28px;
         height: 28px;
         transform: translate(-50%, -50%);
-        background: #b49773;
+        background: #591c1c;
         color: #fff;
         font-size: 13px;
         font-weight: 600;
@@ -1003,7 +1003,10 @@
     }
 
     .hotspot.active .hotspot-dot {
-        background: #111;
+        background: #fff;
+        color: #591c1c;
+        border: 2px solid #591c1c;
+        line-height: 24px;
     }
 
     .hotspot-card,
@@ -1035,15 +1038,16 @@
         width: 26px;
         height: 26px;
         border-radius: 50%;
-        background: #f4f2ed;
-        color: #b49773;
+        background: rgba(89,28,28,.08);
+        color: #591c1c;
         font-size: 12px;
         font-weight: 600;
     }
 
     .hotspot.active .hotspot-num {
-        background: #111;
-        color: #fff;
+        background: #fff;
+        color: #591c1c;
+        border: 2px solid #591c1c;
     }
 
     .hotspot-content h4 {

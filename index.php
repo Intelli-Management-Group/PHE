@@ -26,7 +26,7 @@ include 'inc/header.php';
             <div class="container home-slogan-container">
                 <h2 class="home-slogan-text">Smarter Building.</h2>
                 <h2 class="home-slogan-text mb-5">Greener Future.</h2>
-                <h6 class="text-center">Delivering advanced modular building systems that reduce construction time, lower costs, and support sustainable building practices.</h6>
+                <h6 class="text-center">Delivering advanced modular building systems that reduce construction time, lower costs, <br class="d-none d-lg-block">and support sustainable building practices.</h6>
             </div>
         </section>
 
