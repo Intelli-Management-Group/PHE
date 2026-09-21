@@ -1,5 +1,5 @@
 <?php
-$page_title = "Projects | PHE";
+$page_title = "Building System | PHE";
 $meta_description = "PHE is a leading provider of prefabricated homes. We offer a wide range of homes to suit your needs.";
 
 include 'inc/header.php';
@@ -144,7 +144,7 @@ include 'inc/header.php';
         </div>
     </section>
 
-    <section class="kit-home">
+    <section class="kit-home" id="kit-homes">
         <div class="container-fluid px-0">
             <div class="row g-0 kit-home-row">
                 <nav class="col-lg-3 kit-home-nav" aria-label="Section navigation">

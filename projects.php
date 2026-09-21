@@ -31,13 +31,8 @@ include 'inc/header.php';
         <section class="home-slogan-section d-flex-center">
             <div class="container home-slogan-container">
                 <h2 class="home-slogan-text">Built. Delivered. Proven.</h2>
-                <h6 class="text-center mt-5 mb-3">PHE Luxwood has successfully delivered modular
-                    building solutions across multiple countries, supporting residential, commercial,
-                    and community developments.
-                </h6>
-                <h6 class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    From single-family homes to large-scale modular facilities, our projects demonstrate the
-                    speed, flexibility, and performance of our engineered building system.
+                <h6 class="text-center mx-auto mt-5 mb-3" style="line-height: 1.5; max-width: 1200px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    PHE Luxwood has successfully delivered modular building solutions across multiple countries, supporting residential, commercial, and community developments. From single-family homes to large-scale modular facilities, our projects demonstrate the speed, flexibility, and performance of our engineered building system.
                 </h6>
             </div>
         </section>

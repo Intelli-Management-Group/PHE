@@ -26,7 +26,7 @@ include 'inc/header.php';
             <div class="container home-slogan-container">
                 <h2 class="home-slogan-text">Smarter Building.</h2>
                 <h2 class="home-slogan-text mb-5">Greener Future.</h2>
-                <h6 class="text-center">Delivering advanced modular building systems that reduce construction time, lower costs, <br class="d-none d-lg-block">and support sustainable building practices.</h6>
+                <h6 class="text-center" style="line-height: 1.5;">Delivering advanced modular building systems that reduce <br class="d-none d-lg-block">construction time, lower costs, and support sustainable building practices.</h6>
             </div>
         </section>
 
@@ -47,12 +47,12 @@ include 'inc/header.php';
             <h6 class="text-white mb-4">Real Applications. Built with Precision.</h6>
             <div class="row g-4">
                 <div class="col-lg-4">
-                    <a href="projects.php#pacific-house" class="model-preview-card d-block h-100">
+                    <a href="projects.php" class="model-preview-card d-block h-100">
                         <div class="model-preview-image-wrap">
-                            <img src="img/home/img_project_1.jpg" alt="HO2 model" class="model-preview-image img-fluid">
+                            <img src="img/projects/australia/pacific_1.jpg" alt="HO2 model" class="model-preview-image img-fluid">
                             <div class="model-preview-content">
                                 <h4>Modern <br class="d-none d-lg-block"> Residential Home</h4>
-                                <h6>Australia</h6>
+                                <!-- <h6>Australia</h6> -->
                                 <p>A contemporary single-family residence constructed using PHE Luxwood panels, demonstrating clean design, efficient construction, and long-term durability.</p>
                                 <div class="d-flex justify-content-between">
                                     <h6 class="mb-0">LEARN MORE</h6>
@@ -71,12 +71,12 @@ include 'inc/header.php';
                 </div>
 
                 <div class="col-lg-4">
-                    <a href="projects.php#ballara-house" class="model-preview-card d-block h-100">
+                    <a href="building-system.php#kit-homes" class="model-preview-card d-block h-100">
                         <div class="model-preview-image-wrap">
-                            <img src="img/home/img_project_2.jpg" alt="HO3 model" class="model-preview-image img-fluid">
+                            <img src="img/building-system/coomera.jpg" alt="HO3 model" class="model-preview-image img-fluid">
                             <div class="model-preview-content">
                                 <h4>Compact <br class="d-none d-lg-block"> Modular Kit Home</h4>
-                                <h6>Australia</h6>
+                                <!-- <h6>Australia</h6> -->
                                 <p>A fully functional modular unit designed for efficient living, showcasing rapid assembly and optimized interior space using Luxwood’s panel system.</p>
                                 <div class="d-flex justify-content-between">
                                     <h6 class="mb-0">LEARN MORE</h6>
@@ -95,12 +95,12 @@ include 'inc/header.php';
                 </div>
 
                 <div class="col-lg-4">
-                    <a href="projects.php#eco-mining-cabins" class="model-preview-card d-block h-100">
+                    <a href="building-system.php#our-modules" class="model-preview-card d-block h-100">
                         <div class="model-preview-image-wrap">
-                            <img src="img/home/img_project_3.jpg" alt="HO4 model" class="model-preview-image img-fluid">
+                            <img src="img/building-system/cabin.jpg" alt="HO4 model" class="model-preview-image img-fluid">
                             <div class="model-preview-content">
                                 <h4>Multi-Unit <br class="d-none d-lg-block"> Modular Housing</h4>
-                                <h6>Cold Climate Region</h6>
+                                <!-- <h6>Cold Climate Region</h6> -->
                                 <p>A cluster of modular housing units designed for harsh weather conditions, highlighting Luxwood’s thermal performance and adaptability across environments.</p>
                                 <div class="d-flex justify-content-between">
                                     <h6 class="mb-0">LEARN MORE</h6>
