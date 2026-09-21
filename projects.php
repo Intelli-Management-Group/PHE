@@ -31,7 +31,7 @@ include 'inc/header.php';
         <section class="home-slogan-section d-flex-center">
             <div class="container home-slogan-container">
                 <h2 class="home-slogan-text">Built. Delivered. Proven.</h2>
-                <h6 class="text-center mt-5">PHE Luxwood has successfully delivered modular
+                <h6 class="text-center mt-5 mb-3">PHE Luxwood has successfully delivered modular
                     building solutions across multiple countries, supporting residential, commercial,
                     and community developments.
                 </h6>
@@ -63,16 +63,40 @@ include 'inc/header.php';
                                     </li>
                                     <li>
                                         <div class="form-check projects-filter-check">
+                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="china" id="filter-country-china">
+                                            <label class="form-check-label" for="filter-country-china">China</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check projects-filter-check">
+                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="congo" id="filter-country-congo">
+                                            <label class="form-check-label" for="filter-country-congo">Congo</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check projects-filter-check">
+                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="kenya" id="filter-country-kenya">
+                                            <label class="form-check-label" for="filter-country-kenya">Kenya</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check projects-filter-check">
+                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="liberia" id="filter-country-liberia">
+                                            <label class="form-check-label" for="filter-country-liberia">Liberia</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check projects-filter-check">
+                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="senegal" id="filter-country-senegal">
+                                            <label class="form-check-label" for="filter-country-senegal">Senegal</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check projects-filter-check">
                                             <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="south-africa" id="filter-country-south-africa">
                                             <label class="form-check-label" for="filter-country-south-africa">South Africa</label>
                                         </div>
                                     </li>
-                                    <!-- <li>
-                                        <div class="form-check projects-filter-check">
-                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="china" id="filter-country-china">
-                                            <label class="form-check-label" for="filter-country-china">China</label>
-                                        </div>
-                                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -418,6 +442,267 @@ include 'inc/header.php';
                             </div>
                         </div>
 
+                        <!-- Coomera Project -->
+                        <div class="projects-block" data-country="australia" data-type="residential">
+                            <div class="row mb-5 pb-5">
+                                <div class="col-lg-5 projects-feature-media-col">
+                                    <img src="img/projects/australia/coomera_1.jpg" alt="Coomera Project" class="projects-feature-media-img">
+                                </div>
+
+                                <div class="col-lg-7">
+                                    <h2 class="mb-4">Coomera Project</h2>
+                                    <p class="text-uppercase mb-5">Residential Home</p>
+                                    <div class="row">
+                                        <div class="col-lg-5 offset-lg-5">
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg projects-content-overlap-row">
+                                <div class="col-lg-7 offset-lg-3">
+                                    <img src="img/projects/australia/coomera_2.jpg" alt="Coomera Project" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/coomera_3.jpg" alt="Coomera Project - 3">
+                                <img src="img/projects/australia/coomera_4.jpg" alt="Coomera Project - 4">
+                                <img src="img/projects/australia/coomera_5.jpg" alt="Coomera Project - 5">
+                                <img src="img/projects/australia/coomera_6.jpg" alt="Coomera Project - 6">
+                            </div>
+                        </div>
+
+                        <!-- Drift House -->
+                        <div class="projects-block" data-country="australia" data-type="residential">
+                            <div class="row">
+                                <div class="col-lg-10 offset-lg-2">
+                                    <h2 class="mb-4">Drift House</h2>
+                                    <p class="text-uppercase mb-5">Residential Home</p>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg">
+                                <div class="col-lg-5 d-flex flex-column justify-content-center">
+                                    <div>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 offset-lg-1">
+                                    <img src="img/projects/australia/drift_house_1.jpg" alt="Drift House" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/drift_house_2.jpg" alt="Drift House - 2">
+                                <img src="img/projects/australia/drift_house_3.jpg" alt="Drift House - 3">
+                                <img src="img/projects/australia/drift_house_4.jpg" alt="Drift House - 4">
+                                <img src="img/projects/australia/drift_house_5.jpg" alt="Drift House - 5">
+                            </div>
+                        </div>
+
+                        <!-- Goonellabah Project -->
+                        <div class="projects-block" data-country="australia" data-type="residential">
+                            <div class="row mb-5 pb-5">
+                                <div class="col-lg-7">
+                                    <h2 class="mb-4">Goonellabah Project</h2>
+                                    <p class="text-uppercase mb-5">Residential Home</p>
+                                    <div class="row">
+                                        <div class="col-lg-5 offset-lg-5">
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 projects-feature-media-col">
+                                    <img src="img/projects/australia/goonellabah_1.jpg" alt="Goonellabah Project" class="projects-feature-media-img">
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg projects-content-overlap-row">
+                                <div class="col-lg-7 offset-lg-3">
+                                    <img src="img/projects/australia/goonellabah_2.jpg" alt="Goonellabah Project" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/goonellabah_3.jpg" alt="Goonellabah Project - 3">
+                                <img src="img/projects/australia/goonellabah_4.jpg" alt="Goonellabah Project - 4">
+                                <img src="img/projects/australia/goonellabah_5.jpg" alt="Goonellabah Project - 5">
+                                <img src="img/projects/australia/goonellabah_6.jpg" alt="Goonellabah Project - 6">
+                                <img src="img/projects/australia/goonellabah_7.jpg" alt="Goonellabah Project - 7">
+                            </div>
+                        </div>
+
+                        <!-- Granview House -->
+                        <div class="projects-block" data-country="australia" data-type="residential">
+                            <div class="row">
+                                <div class="col-lg-10 offset-lg-2">
+                                    <h2 class="mb-4">Granview House</h2>
+                                    <p class="text-uppercase mb-5">Residential Home</p>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg">
+                                <div class="col-lg-5">
+                                    <img src="img/projects/australia/granview_house_1.jpg" alt="Granview House" class="img-fluid w-100">
+                                </div>
+                                <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
+                                    <div>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/granview_house_2.jpg" alt="Granview House - 2">
+                                <img src="img/projects/australia/granview_house_3.jpg" alt="Granview House - 3">
+                                <img src="img/projects/australia/granview_house_4.jpg" alt="Granview House - 4">
+                                <img src="img/projects/australia/granview_house_5.jpg" alt="Granview House - 5">
+                                <img src="img/projects/australia/granview_house_6.jpg" alt="Granview House - 6">
+                            </div>
+                        </div>
+
+                        <!-- Helidon Project -->
+                        <div class="projects-block" data-country="australia" data-type="commercial">
+                            <div class="row mb-5 pb-5">
+                                <div class="col-lg-5 projects-feature-media-col">
+                                    <img src="img/projects/australia/helidon_1.jpg" alt="Helidon Project" class="projects-feature-media-img">
+                                </div>
+
+                                <div class="col-lg-7">
+                                    <h2 class="mb-4">Helidon Project</h2>
+                                    <p class="text-uppercase mb-5">Modular Building Units</p>
+                                    <div class="row">
+                                        <div class="col-lg-5 offset-lg-5">
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg projects-content-overlap-row">
+                                <div class="col-lg-7 offset-lg-3">
+                                    <img src="img/projects/australia/helidon_2.jpg" alt="Helidon Project" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/helidon_3.jpg" alt="Helidon Project - 3">
+                                <img src="img/projects/australia/helidon_4.jpg" alt="Helidon Project - 4">
+                                <img src="img/projects/australia/helidon_5.jpg" alt="Helidon Project - 5">
+                            </div>
+                        </div>
+
+                        <!-- Heron House -->
+                        <div class="projects-block" data-country="australia" data-type="residential">
+                            <div class="row">
+                                <div class="col-lg-10 offset-lg-2">
+                                    <h2 class="mb-4">Heron House</h2>
+                                    <p class="text-uppercase mb-5">Residential Home</p>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg">
+                                <div class="col-lg-5 d-flex flex-column justify-content-center">
+                                    <div>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 offset-lg-1">
+                                    <img src="img/projects/australia/heron_house_1.jpg" alt="Heron House" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/heron_house_2.jpg" alt="Heron House - 2">
+                                <img src="img/projects/australia/heron_house_3.jpg" alt="Heron House - 3">
+                            </div>
+                        </div>
+
+                        <!-- Kimberley College -->
+                        <div class="projects-block" data-country="australia" data-type="amenities">
+                            <div class="row mb-5 pb-5">
+                                <div class="col-lg-7">
+                                    <h2 class="mb-4">Kimberley College</h2>
+                                    <p class="text-uppercase mb-5">Modular Amenities</p>
+                                    <div class="row">
+                                        <div class="col-lg-5 offset-lg-5">
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 projects-feature-media-col">
+                                    <img src="img/projects/australia/kimberley_college_1.jpg" alt="Kimberley College" class="projects-feature-media-img">
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg projects-content-overlap-row">
+                                <div class="col-lg-7 offset-lg-3">
+                                    <img src="img/projects/australia/kimberley_college_2.jpg" alt="Kimberley College" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/kimberley_college_3.jpg" alt="Kimberley College - 3">
+                                <img src="img/projects/australia/kimberley_college_4.jpg" alt="Kimberley College - 4">
+                            </div>
+                        </div>
+
+                        <!-- Nerang House -->
+                        <div class="projects-block" data-country="australia" data-type="residential">
+                            <div class="row">
+                                <div class="col-lg-10 offset-lg-2">
+                                    <h2 class="mb-4">Nerang House</h2>
+                                    <p class="text-uppercase mb-5">Residential Home</p>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg">
+                                <div class="col-lg-5">
+                                    <img src="img/projects/australia/nerang_house_1.jpg" alt="Nerang House" class="img-fluid w-100">
+                                </div>
+                                <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
+                                    <div>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/nerang_house_2.jpg" alt="Nerang House - 2">
+                                <img src="img/projects/australia/nerang_house_3.jpg" alt="Nerang House - 3">
+                                <img src="img/projects/australia/nerang_house_4.jpg" alt="Nerang House - 4">
+                            </div>
+                        </div>
+
+                        <!-- Sydney Project -->
+                        <div class="projects-block" data-country="australia" data-type="residential">
+                            <div class="row mb-5 pb-5">
+                                <div class="col-lg-5 projects-feature-media-col">
+                                    <img src="img/projects/australia/sydney_1.jpg" alt="Sydney Project" class="projects-feature-media-img">
+                                </div>
+
+                                <div class="col-lg-7">
+                                    <h2 class="mb-4">Sydney Project</h2>
+                                    <p class="text-uppercase mb-5">Residential Home</p>
+                                    <div class="row">
+                                        <div class="col-lg-5 offset-lg-5">
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg projects-content-overlap-row">
+                                <div class="col-lg-7 offset-lg-3">
+                                    <img src="img/projects/australia/sydney_2.jpg" alt="Sydney Project" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/australia/sydney_3.jpg" alt="Sydney Project - 3">
+                                <img src="img/projects/australia/sydney_4.jpg" alt="Sydney Project - 4">
+                                <img src="img/projects/australia/sydney_5.jpg" alt="Sydney Project - 5">
+                                <img src="img/projects/australia/sydney_6.jpg" alt="Sydney Project - 6">
+                            </div>
+                        </div>
+
                         <!-- Block 11 -->
                         <!-- <div class="projects-block" data-country="china" data-type="residential">
                             <div class="row mb-5 pb-5">
@@ -516,6 +801,277 @@ include 'inc/header.php';
                                         <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+
+                        <!-- Congo Project -->
+                        <div class="projects-block" data-country="congo" data-type="residential">
+                            <div class="row mb-5 pb-5">
+                                <div class="col-lg-5 projects-feature-media-col">
+                                    <img src="img/projects/africa/congo_1.jpg" alt="Congo Project" class="projects-feature-media-img">
+                                </div>
+
+                                <div class="col-lg-7">
+                                    <h2 class="mb-4">Congo Project</h2>
+                                    <p class="text-uppercase mb-5">Residential Home</p>
+                                    <div class="row">
+                                        <div class="col-lg-5 offset-lg-5">
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg projects-content-overlap-row">
+                                <div class="col-lg-7 offset-lg-3">
+                                    <img src="img/projects/africa/congo_2.jpg" alt="Congo Project" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/africa/congo_3.jpg" alt="Congo Project - 3">
+                            </div>
+                        </div>
+
+                        <!-- Kenya Project -->
+                        <div class="projects-block" data-country="kenya" data-type="commercial">
+                            <div class="row">
+                                <div class="col-lg-10 offset-lg-2">
+                                    <h2 class="mb-4">Kenya Project</h2>
+                                    <p class="text-uppercase mb-5">Commercial Facility</p>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg">
+                                <div class="col-lg-5 d-flex flex-column justify-content-center">
+                                    <div>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 offset-lg-1">
+                                    <img src="img/projects/africa/kenya_1.jpg" alt="Kenya Project" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/africa/kenya_2.jpg" alt="Kenya Project - 2">
+                                <img src="img/projects/africa/kenya_3.jpg" alt="Kenya Project - 3">
+                            </div>
+                        </div>
+
+                        <!-- Liberia Project -->
+                        <div class="projects-block" data-country="liberia" data-type="residential">
+                            <div class="row mb-5 pb-5">
+                                <div class="col-lg-7">
+                                    <h2 class="mb-4">Liberia Project</h2>
+                                    <p class="text-uppercase mb-5">Residential Home</p>
+                                    <div class="row">
+                                        <div class="col-lg-5 offset-lg-5">
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 projects-feature-media-col">
+                                    <img src="img/projects/africa/liberia_1.jpg" alt="Liberia Project" class="projects-feature-media-img">
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg projects-content-overlap-row">
+                                <div class="col-lg-7 offset-lg-3">
+                                    <img src="img/projects/africa/liberia_2.jpg" alt="Liberia Project" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/africa/liberia_3.jpg" alt="Liberia Project - 3">
+                                <img src="img/projects/africa/liberia_4.jpg" alt="Liberia Project - 4">
+                                <img src="img/projects/africa/liberia_5.jpg" alt="Liberia Project - 5">
+                            </div>
+                        </div>
+
+                        <!-- Senegal Project -->
+                        <div class="projects-block" data-country="senegal" data-type="commercial">
+                            <div class="row">
+                                <div class="col-lg-10 offset-lg-2">
+                                    <h2 class="mb-4">Senegal Project</h2>
+                                    <p class="text-uppercase mb-5">Commercial Facility</p>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg">
+                                <div class="col-lg-5">
+                                    <img src="img/projects/africa/senegal_1.jpg" alt="Senegal Project" class="img-fluid w-100">
+                                </div>
+                                <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
+                                    <div>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/africa/senegal_2.jpg" alt="Senegal Project - 2">
+                                <img src="img/projects/africa/senegal_3.jpg" alt="Senegal Project - 3">
+                                <img src="img/projects/africa/senegal_4.jpg" alt="Senegal Project - 4">
+                                <img src="img/projects/africa/senegal_5.jpg" alt="Senegal Project - 5">
+                            </div>
+                        </div>
+
+                        <!-- Accommodation Project -->
+                        <div class="projects-block" data-country="china" data-type="commercial">
+                            <div class="row mb-5 pb-5">
+                                <div class="col-lg-5 projects-feature-media-col">
+                                    <img src="img/projects/china/accomodation_1.jpg" alt="Accommodation Project" class="projects-feature-media-img">
+                                </div>
+
+                                <div class="col-lg-7">
+                                    <h2 class="mb-4">Accommodation Project</h2>
+                                    <p class="text-uppercase mb-5">Accommodation Units</p>
+                                    <div class="row">
+                                        <div class="col-lg-5 offset-lg-5">
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg projects-content-overlap-row">
+                                <div class="col-lg-7 offset-lg-3">
+                                    <img src="img/projects/china/accomodation_2.jpg" alt="Accommodation Project" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/china/accomodation_3.jpg" alt="Accommodation Project - 3">
+                            </div>
+                        </div>
+
+                        <!-- Commercial Building -->
+                        <div class="projects-block" data-country="china" data-type="commercial">
+                            <div class="row">
+                                <div class="col-lg-10 offset-lg-2">
+                                    <h2 class="mb-4">Commercial Building</h2>
+                                    <p class="text-uppercase mb-5">Commercial Building</p>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg">
+                                <div class="col-lg-5 d-flex flex-column justify-content-center">
+                                    <div>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 offset-lg-1">
+                                    <img src="img/projects/china/commercial_1.jpg" alt="Commercial Building" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/china/commercial_2.jpg" alt="Commercial Building - 2">
+                            </div>
+                        </div>
+
+                        <!-- Luxury House -->
+                        <div class="projects-block" data-country="china" data-type="residential">
+                            <div class="row mb-5 pb-5">
+                                <div class="col-lg-7">
+                                    <h2 class="mb-4">Luxury House</h2>
+                                    <p class="text-uppercase mb-5">Residential Home</p>
+                                    <div class="row">
+                                        <div class="col-lg-5 offset-lg-5">
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 projects-feature-media-col">
+                                    <img src="img/projects/china/luxury_house_1.jpg" alt="Luxury House" class="projects-feature-media-img">
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg projects-content-overlap-row">
+                                <div class="col-lg-7 offset-lg-3">
+                                    <img src="img/projects/china/luxury_house_2.jpg" alt="Luxury House" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/china/luxury_house_3.jpg" alt="Luxury House - 3">
+                            </div>
+                        </div>
+
+                        <!-- Tuscany House -->
+                        <div class="projects-block" data-country="china" data-type="residential">
+                            <div class="row">
+                                <div class="col-lg-10 offset-lg-2">
+                                    <h2 class="mb-4">Tuscany House</h2>
+                                    <p class="text-uppercase mb-5">Residential Home</p>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg">
+                                <div class="col-lg-5">
+                                    <img src="img/projects/china/tuscany.jpg" alt="Tuscany House" class="img-fluid w-100">
+                                </div>
+                                <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
+                                    <div>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Public Facility -->
+                        <div class="projects-block" data-country="china" data-type="amenities">
+                            <div class="row mb-5 pb-5">
+                                <div class="col-lg-5 projects-feature-media-col">
+                                    <img src="img/projects/china/public_1.jpg" alt="Public Facility" class="projects-feature-media-img">
+                                </div>
+
+                                <div class="col-lg-7">
+                                    <h2 class="mb-4">Public Facility</h2>
+                                    <p class="text-uppercase mb-5">Community Facility</p>
+                                    <div class="row">
+                                        <div class="col-lg-5 offset-lg-5">
+                                            <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg projects-content-overlap-row">
+                                <div class="col-lg-7 offset-lg-3">
+                                    <img src="img/projects/china/public_2.jpg" alt="Public Facility" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/china/public_3.jpg" alt="Public Facility - 3">
+                                <img src="img/projects/china/public_4.jpg" alt="Public Facility - 4">
+                                <img src="img/projects/china/public_5.jpg" alt="Public Facility - 5">
+                                <img src="img/projects/china/public_6.jpg" alt="Public Facility - 6">
+                            </div>
+                        </div>
+
+                        <!-- Victim Relief Project -->
+                        <div class="projects-block" data-country="china" data-type="commercial">
+                            <div class="row">
+                                <div class="col-lg-10 offset-lg-2">
+                                    <h2 class="mb-4">Victim Relief Project</h2>
+                                    <p class="text-uppercase mb-5">Emergency Relief Housing</p>
+                                </div>
+                            </div>
+
+                            <div class="row bottom-padding-lg">
+                                <div class="col-lg-5 d-flex flex-column justify-content-center">
+                                    <div>
+                                        <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 offset-lg-1">
+                                    <img src="img/projects/china/victim_relief_project_1.jpg" alt="Victim Relief Project" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="projects-gallery-images d-none">
+                                <img src="img/projects/china/victim_relief_project_2.jpg" alt="Victim Relief Project - 2">
+                                <img src="img/projects/china/victim_relief_project_3.jpg" alt="Victim Relief Project - 3">
+                                <img src="img/projects/china/victim_relief_project_4.jpg" alt="Victim Relief Project - 4">
                             </div>
                         </div>
 

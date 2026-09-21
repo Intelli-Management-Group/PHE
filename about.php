@@ -1,5 +1,5 @@
 <?php
-$page_title = "About Us";
+$page_title = "About Us | PHE";
 $meta_description = "Learn more about PHE Luxwood and our leadership team.";
 
 include 'inc/header.php';

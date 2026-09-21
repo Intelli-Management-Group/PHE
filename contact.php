@@ -1,5 +1,5 @@
 <?php
-$page_title = "Contact Us | ";
+$page_title = "Contact Us | PHE";
 $meta_description = "Get in touch with our team.";
 include 'inc/header.php';
 ?>

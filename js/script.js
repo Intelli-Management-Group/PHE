@@ -406,17 +406,18 @@ document.addEventListener("DOMContentLoaded", () => {
             const tlKitHome = gsap.timeline({
                 scrollTrigger: {
                     trigger: kitHomeSection,
-                    start: "top top",
-                    end: "+=" + (kitHomeSlides.length - 1) * 100 + "%",
+                    start: 'top top',
+                    end: '+=' + (kitHomeSlides.length - 1) * 100 + '%',
                     scrub: 1,
                     pin: true,
                     anticipatePin: 1,
+                    refreshPriority: 1,
                     invalidateOnRefresh: true,
-                    onUpdate: self => {
-                        kitHomeSection.style.setProperty('--section-progress', (self.progress * 100) + '%');
+                    onUpdate: (self) => {
+                        kitHomeSection.style.setProperty('--section-progress', self.progress * 100 + '%');
                         syncKitHomeActiveSlide(self.progress);
-                    }
-                }
+                    },
+                },
             });
 
             if (tlKitHome.scrollTrigger) {

@@ -961,6 +961,16 @@ button {
     letter-spacing: -0.02em;
 } */
 
+/* The text column is only ~25vw wide on desktop, so the global h3 size
+   (5vw, min 36px) overflows and gets clipped by .line-wrapper. Scale
+   with the column instead; below 992px the slides stack full-width and
+   the global h3 size applies. */
+@media (min-width: 992px) {
+    .kit-home-text h3 {
+        font-size: clamp(28px, 3.2vw, 56px);
+    }
+}
+
 .kit-home-text p {
     /* font-size: 1.1rem;
     line-height: 1.6;
