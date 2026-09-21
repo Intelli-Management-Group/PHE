@@ -1181,11 +1181,28 @@ button {
     line-height: 1;
 }
 
+/* Fixed-height stage so landscape and portrait images share one frame;
+   images are letterboxed (contain) instead of stretching the modal. */
+#main-carousel {
+    height: min(70vh, 640px);
+}
+
+#main-carousel .splide__track,
+#main-carousel .splide__list,
+#main-carousel .splide__slide {
+    height: 100%;
+}
+
+#main-carousel .splide__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #main-carousel img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    /* border-radius: 8px; */
+    height: 100%;
+    object-fit: contain;
 }
 
 #thumbnail-carousel {
@@ -1209,7 +1226,7 @@ button {
 
 #thumbnail-carousel img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     /* border-radius: 4px; */
 }

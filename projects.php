@@ -143,7 +143,7 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Pacific House</h2>
                                     <p class="text-uppercase mb-5">3-Bedroom Residential Home</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
                                             <p>A modern modular home designed for efficient construction and comfortable living.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
@@ -211,7 +211,7 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Granny Flats</h2>
                                     <p class="text-uppercase mb-5">60 Units | 1-Bedroom Portable Cabins</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
                                             <p>A large-scale modular housing project designed for rapid deployment and consistent build quality. </p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
@@ -267,7 +267,7 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Site Office</h2>
                                     <p class="text-uppercase mb-5">Modular Office Facility</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
                                             <p>A rapidly deployed modular workspace designed to support on-site operations.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
@@ -329,7 +329,7 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Canteen Facility</h2>
                                     <p class="text-uppercase mb-5">Modular Food Service Unit</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
                                             <p>Designed for efficient food service operations within remote or temporary sites.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
@@ -391,7 +391,7 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Laundry Facilities</h2>
                                     <p class="text-uppercase mb-5">Modular Utility Units</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
                                             <p>Supporting infrastructure units designed for operational convenience in workforce environments.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
@@ -453,7 +453,8 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Coomera Project</h2>
                                     <p class="text-uppercase mb-5">Residential Home</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
+                                            <p>A modular kit home built from pre-engineered Luxwood components for fast assembly and dependable everyday living.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
@@ -485,6 +486,7 @@ include 'inc/header.php';
                             <div class="row bottom-padding-lg">
                                 <div class="col-lg-5 d-flex flex-column justify-content-center">
                                     <div>
+                                        <p class="mb-4">A contemporary kit home designed for comfortable living, combining quick installation with durable Luxwood construction.</p>
                                         <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
@@ -508,7 +510,8 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Goonellabah Project</h2>
                                     <p class="text-uppercase mb-5">Residential Home</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
+                                            <p>A residential home delivered with the Luxwood panel system, balancing efficient construction with lasting performance.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
@@ -548,6 +551,7 @@ include 'inc/header.php';
                                 </div>
                                 <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
                                     <div>
+                                        <p class="mb-4">A residential home built with pre-engineered Luxwood components, designed for comfort, durability, and efficient construction.</p>
                                         <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
@@ -572,7 +576,8 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Helidon Project</h2>
                                     <p class="text-uppercase mb-5">Modular Building Units</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
+                                            <p>Prefabricated modular building units engineered for rapid deployment and adaptable use across a range of site requirements.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
@@ -603,6 +608,7 @@ include 'inc/header.php';
                             <div class="row bottom-padding-lg">
                                 <div class="col-lg-5 d-flex flex-column justify-content-center">
                                     <div>
+                                        <p class="mb-4">A residential home that pairs a practical layout with the speed and consistency of factory-prepared Luxwood components.</p>
                                         <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
@@ -624,7 +630,8 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Kimberley College</h2>
                                     <p class="text-uppercase mb-5">Modular Amenities</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
+                                            <p>Purpose-built facilities supporting an educational campus, delivered efficiently with minimal disruption to daily activity.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
@@ -661,6 +668,7 @@ include 'inc/header.php';
                                 </div>
                                 <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
                                     <div>
+                                        <p class="mb-4">A residential home designed for efficient construction, using durable Luxwood materials suited to long-term living.</p>
                                         <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
@@ -676,14 +684,15 @@ include 'inc/header.php';
                         <div class="projects-block" data-country="australia" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="img/projects/australia/sydney_1.jpg" alt="Sydney Project" class="projects-feature-media-img">
+                                    <img src="img/projects/australia/sydney_2.jpg" alt="Sydney Project" class="projects-feature-media-img">
                                 </div>
 
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Sydney Project</h2>
                                     <p class="text-uppercase mb-5">Residential Home</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
+                                            <p>A modular kit home built from pre-engineered Luxwood components, offering fast installation and dependable long-term performance.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
@@ -692,7 +701,7 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="img/projects/australia/sydney_2.jpg" alt="Sydney Project" class="img-fluid w-100">
+                                    <img src="img/projects/australia/sydney_1.jpg" alt="Sydney Project" class="img-fluid w-100">
                                 </div>
                             </div>
                             <div class="projects-gallery-images d-none">
@@ -707,14 +716,14 @@ include 'inc/header.php';
                         <!-- <div class="projects-block" data-country="china" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main2.jpeg" alt="Zambia House" class="projects-feature-media-img">
+                                    <img src="" alt="Zambia House" class="projects-feature-media-img">
                                 </div>
 
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Zambia House</h2>
                                     <p class="text-uppercase mb-5">2-Bedroom Residential Home</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
                                             <p>A modular home built using Luxwood panels, combining structural performance with efficient construction methods.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
@@ -724,7 +733,7 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/slide2.jpeg" alt="Zambia House" class="img-fluid w-100">
+                                    <img src="" alt="Zambia House" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div> -->
@@ -747,7 +756,7 @@ include 'inc/header.php';
                                 </div>
 
                                 <div class="col-lg-5 offset-lg-1">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main4.png" alt="Beijing House" class="img-fluid w-100">
+                                    <img src="" alt="Beijing House" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div> -->
@@ -759,7 +768,7 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Theodor Herzl School</h2>
                                     <p class="text-uppercase mb-5">Educational Facility | 100+ Students</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
                                             <p>A modular school development designed to accommodate over 100 students, showcasing the scalability and reliability of the Luxwood system in community infrastructure.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
@@ -815,7 +824,8 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Congo Project</h2>
                                     <p class="text-uppercase mb-5">Residential Home</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
+                                            <p>A residential home built for demanding climates, using durable, moisture-resistant Luxwood panels.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
@@ -844,6 +854,7 @@ include 'inc/header.php';
                             <div class="row bottom-padding-lg">
                                 <div class="col-lg-5 d-flex flex-column justify-content-center">
                                     <div>
+                                        <p class="mb-4">A modular commercial facility demonstrating the speed and flexibility of the Luxwood system for business use.</p>
                                         <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
@@ -865,7 +876,8 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Liberia Project</h2>
                                     <p class="text-uppercase mb-5">Residential Home</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
+                                            <p>A residential home delivered with lightweight, moisture- and pest-resistant Luxwood panels suited to demanding climates.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
@@ -903,6 +915,7 @@ include 'inc/header.php';
                                 </div>
                                 <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
                                     <div>
+                                        <p class="mb-4">A commercial facility built for rapid deployment, showing how the Luxwood system adapts to diverse working environments.</p>
                                         <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
@@ -923,10 +936,11 @@ include 'inc/header.php';
                                 </div>
 
                                 <div class="col-lg-7">
-                                    <h2 class="mb-4">Accommodation Project</h2>
+                                    <h2 class="mb-4">Accommo&shy;dation Project</h2>
                                     <p class="text-uppercase mb-5">Accommodation Units</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
+                                            <p>Modular accommodation units designed for rapid installation, consistent build quality, and dependable everyday comfort.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
@@ -955,6 +969,7 @@ include 'inc/header.php';
                             <div class="row bottom-padding-lg">
                                 <div class="col-lg-5 d-flex flex-column justify-content-center">
                                     <div>
+                                        <p class="mb-4">A commercial building showing how the Luxwood system delivers flexible, professional space with efficient construction.</p>
                                         <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
@@ -975,7 +990,8 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Luxury House</h2>
                                     <p class="text-uppercase mb-5">Residential Home</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
+                                            <p>A high-specification home that pairs refined finishes with the structural strength and efficiency of the Luxwood system.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
@@ -1011,6 +1027,7 @@ include 'inc/header.php';
                                 </div>
                                 <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
                                     <div>
+                                        <p class="mb-4">A residential home combining a distinctive architectural style with the strength and efficiency of the Luxwood system.</p>
                                         <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
@@ -1028,7 +1045,8 @@ include 'inc/header.php';
                                     <h2 class="mb-4">Public Facility</h2>
                                     <p class="text-uppercase mb-5">Community Facility</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
+                                            <p>A modular community facility built for public use, delivering durable, low-maintenance space with efficient construction.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
                                     </div>
@@ -1060,6 +1078,7 @@ include 'inc/header.php';
                             <div class="row bottom-padding-lg">
                                 <div class="col-lg-5 d-flex flex-column justify-content-center">
                                     <div>
+                                        <p class="mb-4">Emergency relief housing designed for rapid deployment, providing safe and dependable shelter when speed matters most.</p>
                                         <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                     </div>
                                 </div>
@@ -1079,14 +1098,14 @@ include 'inc/header.php';
                         <!-- <div class="projects-block" data-country="south-africa" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/main2.jpeg" alt="Britannia Bay Residence" class="projects-feature-media-img">
+                                    <img src="" alt="Britannia Bay Residence" class="projects-feature-media-img">
                                 </div>
 
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Britannia Bay Residence</h2>
                                     <p class="text-uppercase mb-5">2-Level | 2-Bedroom Residential Home</p>
                                     <div class="row">
-                                        <div class="col-lg-5 offset-lg-5">
+                                        <div class="col-xxl-5 offset-xxl-5">
                                             <p>A coastal residential development designed to perform in demanding environmental conditions.</p>
                                             <button type="button" class="view-gallery-btn">VIEW IMAGES</button>
                                         </div>
@@ -1096,7 +1115,7 @@ include 'inc/header.php';
 
                             <div class="row bottom-padding-lg projects-content-overlap-row">
                                 <div class="col-lg-7 offset-lg-3">
-                                    <img src="https://tref.digitaldesignnyc.co/wp-content/uploads/2023/12/slide2.jpeg" alt="Britannia Bay Residence" class="img-fluid w-100">
+                                    <img src="" alt="Britannia Bay Residence" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div> -->
