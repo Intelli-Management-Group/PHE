@@ -11,7 +11,7 @@
                     </div>
                     <div class="col-md-3 col-6">
                         <ul class="site-footer-list">
-                            <li><a href="materials.php">Building Material</a></li>
+                            <li><a href="materials.php">Building Materials</a></li>
                             <li><a href="about.php">About</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>

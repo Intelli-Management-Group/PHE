@@ -72,7 +72,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="materials.php">Building Material</a>
+                            <a class="nav-link text-white" href="materials.php">Building Materials</a>
                         </li>
 
                         <li class="nav-item">

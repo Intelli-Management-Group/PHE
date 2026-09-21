@@ -60,7 +60,7 @@
     }
 
     .projects-content-overlap-row {
-        margin-top: -100px;
+        margin-top: 0;
     }
 
     /* Always show each project's heading before its image on mobile,
@@ -193,9 +193,9 @@
         padding-bottom: calc(var(--padding) * 0.6);
     }
 
-    .projects-content-overlap-row {
+    /* .projects-content-overlap-row {
         margin-top: -70px;
-    }
+    } */
 
     .projects-block .row.mb-5.pb-5 {
         margin-bottom: 0.75rem !important;
@@ -221,9 +221,9 @@
 }
 
 @media only screen and (max-width: 575px) {
-    .projects-content-overlap-row {
+    /* .projects-content-overlap-row {
         margin-top: -50px;
-    }
+    } */
 
     .projects-feature-media-col,
     .projects-feature-media-img {

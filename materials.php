@@ -41,7 +41,7 @@ include 'inc/header.php';
                     <div class="intro-content">
                         <p class="mb-0 fade-up-content">CORE BENEFITS</p>
                         <h2 class="product-titles fade-up-content">
-                            THE FOUNDATION OF THE PHE SYSTEM
+                            The Foundation of the PHE system
                         </h2>
                     </div>
                 </div>

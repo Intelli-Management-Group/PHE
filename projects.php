@@ -45,51 +45,27 @@ include 'inc/header.php';
                     <form class="projects-filter-form" action="projects.php" method="get">
                         <div class="projects-filter-group">
                             <button class="projects-filter-heading collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projects-filter-field" aria-expanded="false" aria-controls="projects-filter-field">
-                                <span>Country</span>
+                                <span>Region</span>
                                 <i class="fa-solid fa-chevron-up projects-filter-chevron" aria-hidden="true"></i>
                             </button>
                             <div class="collapse" id="projects-filter-field">
                                 <ul class="projects-filter-list list-unstyled mb-0">
                                     <li>
                                         <div class="form-check projects-filter-check">
-                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="australia" id="filter-country-australia">
-                                            <label class="form-check-label" for="filter-country-australia">Australia</label>
+                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="region" name="region[]" value="australia" id="filter-region-australia">
+                                            <label class="form-check-label" for="filter-region-australia">Australia</label>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="form-check projects-filter-check">
-                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="china" id="filter-country-china">
-                                            <label class="form-check-label" for="filter-country-china">China</label>
+                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="region" name="region[]" value="africa" id="filter-region-africa">
+                                            <label class="form-check-label" for="filter-region-africa">Africa</label>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="form-check projects-filter-check">
-                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="congo" id="filter-country-congo">
-                                            <label class="form-check-label" for="filter-country-congo">Congo</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check projects-filter-check">
-                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="kenya" id="filter-country-kenya">
-                                            <label class="form-check-label" for="filter-country-kenya">Kenya</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check projects-filter-check">
-                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="liberia" id="filter-country-liberia">
-                                            <label class="form-check-label" for="filter-country-liberia">Liberia</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check projects-filter-check">
-                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="senegal" id="filter-country-senegal">
-                                            <label class="form-check-label" for="filter-country-senegal">Senegal</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check projects-filter-check">
-                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="country" name="country[]" value="south-africa" id="filter-country-south-africa">
-                                            <label class="form-check-label" for="filter-country-south-africa">South Africa</label>
+                                            <input class="form-check-input projects-filter-input" type="checkbox" data-filter="region" name="region[]" value="china" id="filter-region-china">
+                                            <label class="form-check-label" for="filter-region-china">China</label>
                                         </div>
                                     </li>
                                 </ul>
@@ -129,10 +105,10 @@ include 'inc/header.php';
                     </form>
                 </div>
 
-                <div class="col-lg-10 top-padding px-5 text-white" style="background-color: #1a2e25;">
+                <div class="col-lg-10 top-padding px-5 text-white" style="background-color: #591c1c;">
                     <div class="projects-content">
                         <!-- Block 1 -->
-                        <div class="projects-block" id="pacific-house" data-country="australia" data-type="residential">
+                        <div class="projects-block" id="pacific-house" data-region="australia" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Pacific House</h2>
@@ -166,7 +142,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 2 -->
-                        <div class="projects-block" id="ballara-house" data-country="australia" data-type="residential">
+                        <div class="projects-block" id="ballara-house" data-region="australia" data-type="residential">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Ballara House</h2>
@@ -196,7 +172,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 3 -->
-                        <div class="projects-block" data-country="australia" data-type="commercial">
+                        <div class="projects-block" data-region="australia" data-type="commercial">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
                                     <img src="img/projects/australia/granny_flat_3.jpg" alt="Granny Flats" class="projects-feature-media-img">
@@ -226,7 +202,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 4 -->
-                        <div class="projects-block" id="eco-mining-cabins" data-country="australia" data-type="commercial">
+                        <div class="projects-block" id="eco-mining-cabins" data-region="australia" data-type="commercial">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Eco Mining Cabins</h2>
@@ -256,7 +232,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 5 -->
-                        <div class="projects-block" data-country="australia" data-type="commercial">
+                        <div class="projects-block" data-region="australia" data-type="commercial">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Site Office</h2>
@@ -286,7 +262,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 6 -->
-                        <div class="projects-block" data-country="australia" data-type="amenities">
+                        <div class="projects-block" data-region="australia" data-type="amenities">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Cafeteria Facility</h2>
@@ -314,7 +290,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 7 -->
-                        <div class="projects-block" data-country="australia" data-type="amenities">
+                        <div class="projects-block" data-region="australia" data-type="amenities">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
                                     <img src="img/projects/australia/club_canteen_1.jpg" alt="Canteen Facility" class="projects-feature-media-img">
@@ -344,7 +320,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 8 -->
-                        <div class="projects-block" data-country="australia" data-type="amenities">
+                        <div class="projects-block" data-region="australia" data-type="amenities">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Portable Washrooms</h2>
@@ -380,7 +356,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 9 -->
-                        <div class="projects-block" data-country="australia" data-type="amenities">
+                        <div class="projects-block" data-region="australia" data-type="amenities">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Laundry Facilities</h2>
@@ -409,7 +385,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 10 -->
-                        <div class="projects-block" data-country="australia" data-type="commercial">
+                        <div class="projects-block" data-region="australia" data-type="commercial">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Warwick Farm Structure</h2>
@@ -438,7 +414,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Coomera Project -->
-                        <div class="projects-block" data-country="australia" data-type="residential">
+                        <div class="projects-block" data-region="australia" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
                                     <img src="img/projects/australia/coomera_1.jpg" alt="Coomera Project" class="projects-feature-media-img">
@@ -470,7 +446,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Drift House -->
-                        <div class="projects-block" data-country="australia" data-type="residential">
+                        <div class="projects-block" data-region="australia" data-type="residential">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Drift House</h2>
@@ -499,7 +475,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Goonellabah Project -->
-                        <div class="projects-block" data-country="australia" data-type="residential">
+                        <div class="projects-block" data-region="australia" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Goonellabah Project</h2>
@@ -532,7 +508,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Granview House -->
-                        <div class="projects-block" data-country="australia" data-type="residential">
+                        <div class="projects-block" data-region="australia" data-type="residential">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Granview House</h2>
@@ -561,7 +537,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Helidon Project -->
-                        <div class="projects-block" data-country="australia" data-type="commercial">
+                        <div class="projects-block" data-region="australia" data-type="commercial">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
                                     <img src="img/projects/australia/helidon_1.jpg" alt="Helidon Project" class="projects-feature-media-img">
@@ -592,7 +568,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Heron House -->
-                        <div class="projects-block" data-country="australia" data-type="residential">
+                        <div class="projects-block" data-region="australia" data-type="residential">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Heron House</h2>
@@ -619,7 +595,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Kimberley College -->
-                        <div class="projects-block" data-country="australia" data-type="amenities">
+                        <div class="projects-block" data-region="australia" data-type="amenities">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Kimberley College</h2>
@@ -649,7 +625,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Nerang House -->
-                        <div class="projects-block" data-country="australia" data-type="residential">
+                        <div class="projects-block" data-region="australia" data-type="residential">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Nerang House</h2>
@@ -676,7 +652,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Sydney Project -->
-                        <div class="projects-block" data-country="australia" data-type="residential">
+                        <div class="projects-block" data-region="australia" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
                                     <img src="img/projects/australia/sydney_2.jpg" alt="Sydney Project" class="projects-feature-media-img">
@@ -708,7 +684,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 11 -->
-                        <!-- <div class="projects-block" data-country="china" data-type="residential">
+                        <!-- <div class="projects-block" data-region="china" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
                                     <img src="" alt="Zambia House" class="projects-feature-media-img">
@@ -734,7 +710,7 @@ include 'inc/header.php';
                         </div> -->
 
                         <!-- Block 12 -->
-                        <!-- <div class="projects-block" data-country="china" data-type="residential">
+                        <!-- <div class="projects-block" data-region="china" data-type="residential">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Beijing House</h2>
@@ -757,7 +733,7 @@ include 'inc/header.php';
                         </div> -->
 
                         <!-- Block 13 -->
-                        <div class="projects-block" data-country="south-africa" data-type="commercial">
+                        <div class="projects-block" data-region="africa" data-type="commercial">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Theodor Herzl School</h2>
@@ -787,7 +763,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 14 -->
-                        <div class="projects-block" data-country="south-africa" data-type="residential">
+                        <div class="projects-block" data-region="africa" data-type="residential">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Cornubia House</h2>
@@ -809,7 +785,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Congo Project -->
-                        <div class="projects-block" data-country="congo" data-type="residential">
+                        <div class="projects-block" data-region="africa" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
                                     <img src="img/projects/africa/congo_1.jpg" alt="Congo Project" class="projects-feature-media-img">
@@ -838,7 +814,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Kenya Project -->
-                        <div class="projects-block" data-country="kenya" data-type="commercial">
+                        <div class="projects-block" data-region="africa" data-type="commercial">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Kenya Project</h2>
@@ -865,7 +841,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Liberia Project -->
-                        <div class="projects-block" data-country="liberia" data-type="residential">
+                        <div class="projects-block" data-region="africa" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Liberia Project</h2>
@@ -896,7 +872,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Senegal Project -->
-                        <div class="projects-block" data-country="senegal" data-type="commercial">
+                        <div class="projects-block" data-region="africa" data-type="commercial">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Senegal Project</h2>
@@ -924,7 +900,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Accommodation Project -->
-                        <div class="projects-block" data-country="china" data-type="commercial">
+                        <div class="projects-block" data-region="china" data-type="commercial">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
                                     <img src="img/projects/china/accomodation_1.jpg" alt="Accommodation Project" class="projects-feature-media-img">
@@ -953,7 +929,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Commercial Building -->
-                        <div class="projects-block" data-country="china" data-type="commercial">
+                        <div class="projects-block" data-region="china" data-type="commercial">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Commercial Building</h2>
@@ -979,7 +955,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Luxury House -->
-                        <div class="projects-block" data-country="china" data-type="residential">
+                        <div class="projects-block" data-region="china" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-7">
                                     <h2 class="mb-4">Luxury House</h2>
@@ -1008,7 +984,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Tuscany House -->
-                        <div class="projects-block" data-country="china" data-type="residential">
+                        <div class="projects-block" data-region="china" data-type="residential">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Tuscany House</h2>
@@ -1030,7 +1006,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Public Facility -->
-                        <div class="projects-block" data-country="china" data-type="amenities">
+                        <div class="projects-block" data-region="china" data-type="amenities">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
                                     <img src="img/projects/china/public_1.jpg" alt="Public Facility" class="projects-feature-media-img">
@@ -1062,7 +1038,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Victim Relief Project -->
-                        <div class="projects-block" data-country="china" data-type="commercial">
+                        <div class="projects-block" data-region="china" data-type="commercial">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-2">
                                     <h2 class="mb-4">Victim Relief Project</h2>
@@ -1090,7 +1066,7 @@ include 'inc/header.php';
                         </div>
 
                         <!-- Block 15 -->
-                        <!-- <div class="projects-block" data-country="south-africa" data-type="residential">
+                        <!-- <div class="projects-block" data-region="africa" data-type="residential">
                             <div class="row mb-5 pb-5">
                                 <div class="col-lg-5 projects-feature-media-col">
                                     <img src="" alt="Britannia Bay Residence" class="projects-feature-media-img">
@@ -1123,35 +1099,33 @@ include 'inc/header.php';
     <!-- Global Impact Section -->
     <section class="global-impact-section section-padding">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="global-impact-content">
-                        <h2 class="global-impact-title" data-aos="fade-up" data-aos-duration="1000">A Proven Global Track Record</h2>
-                        <p class="global-impact-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">PHE Luxwood systems have been applied across diverse climates and construction environments, consistently delivering performance, efficiency, and reliability.</p>
-                    </div>
+            <div class="global-impact-header">
+                <div class="global-impact-eyebrow mb-3" data-aos="fade-up" data-aos-duration="1000">A Proven Global Track Record</div>
+                <!-- <h2 class="global-impact-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">A Proven Global Track Record</h2> -->
+                <h5 class="global-impact-body" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">PHE Luxwood systems have been applied across diverse climates and construction environments, consistently delivering performance, efficiency, and reliability.</h5>
+            </div>
+            <div class="global-impact-stats">
+                <div class="stat-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="stat-line"></div>
+                    <div class="stat-number">15+</div>
+                    <p>Years of Experience</p>
                 </div>
-                <div class="col-lg-6">
-                    <div class="global-impact-stats">
-                        <div class="stat-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Years of Experience</div>
-                        </div>
-                        <div class="stat-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                            <div class="stat-number">22</div>
-                            <div class="stat-label">Countries Served</div>
-                        </div>
-                        <div class="stat-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            <div class="stat-number">200+</div>
-                            <div class="stat-label">Completed Projects</div>
-                        </div>
-                    </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="stat-line"></div>
+                    <div class="stat-number">22</div>
+                    <p>Countries Served</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="stat-line"></div>
+                    <div class="stat-number">200+</div>
+                    <p>Completed Projects</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Project Value & Closing Section -->
-    <div class="value-closing-row">
+    <!-- <div class="value-closing-row">
         <section class="project-value-section">
             <div class="container">
                 <div class="row">
@@ -1163,7 +1137,6 @@ include 'inc/header.php';
             </div>
         </section>
 
-        <!-- Closing Section -->
         <section class="closing-section">
             <div class="container">
                 <div class="row">
@@ -1174,15 +1147,19 @@ include 'inc/header.php';
                 </div>
             </div>
         </section>
-    </div>
+    </div> -->
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="materials-cta">
         <div class="container text-center">
-            <h2 class="cta-title" data-aos="fade-up" data-aos-duration="1000">Start Your Project with PHE Luxwood</h2>
-            <div class="cta-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <a href="contact.php" class="cta-button cta-button-primary">Contact Us</a>
-                <a href="contact.php" class="cta-button cta-button-secondary">Discuss Your Project</a>
+            <h3 class="product-titles" data-aos="fade-up" data-aos-duration="1000">Start Your Project with PHE Luxwood</h3>
+            <div class="materials-cta-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <a href="contact.php" class="btn button-primary">
+                    Contact Us
+                </a>
+                <!-- <a href="contact.php" class="btn button-primary">
+                    Discuss Your Project
+                </a> -->
             </div>
         </div>
     </section>
@@ -1375,16 +1352,16 @@ include 'inc/header.php';
         }
 
         function applyFilters() {
-            const countries = getSelected('country');
+            const regions = getSelected('region');
             const types = getSelected('type');
             let visibleCount = 0;
 
             blocks.forEach(block => {
-                const country = block.dataset.country;
+                const region = block.dataset.region;
                 const type = block.dataset.type;
-                const matchCountry = countries.length === 0 || countries.includes(country);
+                const matchRegion = regions.length === 0 || regions.includes(region);
                 const matchType = types.length === 0 || types.includes(type);
-                const show = matchCountry && matchType;
+                const show = matchRegion && matchType;
 
                 block.classList.toggle('d-none', !show);
                 if (show) visibleCount++;

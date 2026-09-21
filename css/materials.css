@@ -60,11 +60,11 @@
     margin-bottom:30px;
 }
 
-.intro-text p{
+/* .intro-text p{
     font-size:18px;
     line-height:1.9;
     color:#666;
-}
+} */
 
 /* ==========================================
    INTRO ANIMATIONS
@@ -577,7 +577,7 @@
 
 @media (min-width: 768px) {
     .accessories-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
