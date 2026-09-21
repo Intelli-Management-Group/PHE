@@ -101,13 +101,13 @@ include 'inc/header.php';
                         <ul class="splide__list">
 
                             <li class="splide__slide">
-                                <blockquote class="about-quote">
+                                <h6 class="about-quote">
                                     “I had the privilege of working alongside
                                     this company and delivering housing solutions
                                     in Australia and overseas. I can highly
                                     recommend this product if you are looking for
                                     a sound alternative building solution.”
-                                </blockquote>
+                                </h6>
 
                                 <div class="quote-author">
                                     <strong>Jacques De Bedout</strong>
@@ -117,7 +117,7 @@ include 'inc/header.php';
                             </li>
 
                             <li class="splide__slide">
-                                <blockquote class="about-quote">
+                                <h6 class="about-quote">
                                     “I have had the pleasure of working with this
                                     company in Africa on a subsidized project for
                                     the Municipality. In trying circumstances and
@@ -130,7 +130,7 @@ include 'inc/header.php';
                                     to leave, no issue too big and willing to
                                     overcome any problem there and then. Highly
                                     recommended.”
-                                </blockquote>
+                                </h6>
 
                                 <div class="quote-author">
                                     <strong>Francois Bruyns</strong>

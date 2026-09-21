@@ -587,7 +587,7 @@ include 'inc/header.php';
                             <p>Galaxy 40 is a one-bedroom, one-bathroom modern space. The open-plan kitchen, lounge and dining area capture the beautiful natural lighting, with a convenient deck area.</p>
                             <p>Size: 40 m² (430.55 ft²)<br>Rooms: 1 bedroom, 1 bathroom</p>
                         </div>
-                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/galaxy_40.jpg,img/building-system/galaxy_40_floorplan.jpg">View Images</button>
+                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/galaxy_40.jpg,img/building-system/galaxy_40_floorplan.jpg">View Floorplan</button>
                     </div>
                 </div>
             </div>
@@ -603,7 +603,7 @@ include 'inc/header.php';
                             <p>Jungle Cabin 32 is a one-bedroom, one-bathroom modern space. The open-plan kitchen, lounge and dining area capture the beautiful natural lighting.</p>
                             <p>Size: 32 m² (344.44 ft²)<br>Rooms: 1 bedroom, 1 bathroom</p>
                         </div>
-                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/jungle_cabin_32.jpg,img/building-system/jungle_cabin_32_floorplan.jpg">View Images</button>
+                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/jungle_cabin_32.jpg,img/building-system/jungle_cabin_32_floorplan.jpg">View Floorplan</button>
                     </div>
                 </div>
             </div>
@@ -619,7 +619,7 @@ include 'inc/header.php';
                             <p>Mountain View 40 is a one-bedroom, one-bathroom modern space. The open-plan kitchen, lounge and dining area capture the beautiful natural lighting, with a convenient deck area.</p>
                             <p>Size: 40 m² (430.55 ft²)<br>Rooms: 1 bedroom, 1 bathroom</p>
                         </div>
-                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/mountain_view_40.jpg,img/building-system/mountain_view_40_floorplan.jpg">View Images</button>
+                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/mountain_view_40.jpg,img/building-system/mountain_view_40_floorplan.jpg">View Floorplan</button>
                     </div>
                 </div>
             </div>
@@ -635,7 +635,7 @@ include 'inc/header.php';
                             <p>River View 37 is a one-bedroom, one-bathroom modern space. The open-plan kitchen, lounge and dining area capture the beautiful natural lighting, with a convenient deck area.</p>
                             <p>Size: 37 m² (398.26 ft²)<br>Rooms: 1 bedroom, 1 bathroom</p>
                         </div>
-                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/river_view_37.jpg,img/building-system/river_view_37_floorplan.jpg">View Images</button>
+                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/river_view_37.jpg,img/building-system/river_view_37_floorplan.jpg">View Floorplan</button>
                     </div>
                 </div>
             </div>
@@ -651,7 +651,7 @@ include 'inc/header.php';
                             <p>Sea View 46 is a two-bedroom, one-bathroom modern home. The open-plan kitchen, lounge and dining area capture the beautiful natural lighting, with a convenient deck area.</p>
                             <p>Size: 46 m² (495.14 ft²)<br>Rooms: 2 bedrooms, 1 bathroom</p>
                         </div>
-                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/sea_view_46.jpg,img/building-system/sea_view_46_floorplan.jpg">View Images</button>
+                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/sea_view_46.jpg,img/building-system/sea_view_46_floorplan.jpg">View Floorplan</button>
                     </div>
                 </div>
             </div>

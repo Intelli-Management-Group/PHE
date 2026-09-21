@@ -41,6 +41,7 @@ $products = [
         // Section 4
         'door_window_title' => 'Doors & Windows',
         'door_window_image' => 'img/building-material/window_&_door/banner_main.jpg',
+        'door_window_description' => 'Built for lasting performance, our doors and windows combine durability, weather resistance, insulation, and reliable everyday functionality.',
 
         'door_section_title' => 'PANEL COMPOSITE DOORS',
 

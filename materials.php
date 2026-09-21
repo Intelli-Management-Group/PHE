@@ -211,11 +211,11 @@ include 'inc/header.php';
             </p>
             <div class="materials-cta-buttons">
                 <a href="contact.php"
-                    class="btn button-primary">
+                    class="button-primary">
                     Contact Us
                 </a>
                 <a href="building-system.php"
-                    class="btn button-primary">
+                    class="button-primary">
                     Explore Building System
                 </a>
             </div>

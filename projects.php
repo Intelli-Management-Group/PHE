@@ -105,7 +105,7 @@ include 'inc/header.php';
                     </form>
                 </div>
 
-                <div class="col-lg-10 top-padding px-5 text-white" style="background-color: #591c1c;">
+                <div class="col-lg-10 top-padding px-5 text-white" style="background-color: #282828;">
                     <div class="projects-content">
                         <!-- Block 1 -->
                         <div class="projects-block" id="pacific-house" data-region="australia" data-type="residential">
@@ -1106,19 +1106,16 @@ include 'inc/header.php';
             </div>
             <div class="global-impact-stats">
                 <div class="stat-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="stat-line"></div>
                     <div class="stat-number">15+</div>
-                    <p>Years of Experience</p>
+                    <p>YEARS OF EXPERIENCE</p>
                 </div>
                 <div class="stat-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="stat-line"></div>
                     <div class="stat-number">22</div>
-                    <p>Countries Served</p>
+                    <p>COUNTRIES SERVED</p>
                 </div>
                 <div class="stat-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="stat-line"></div>
                     <div class="stat-number">200+</div>
-                    <p>Completed Projects</p>
+                    <p>COMPLETED PROJECTS</p>
                 </div>
             </div>
         </div>
@@ -1154,10 +1151,10 @@ include 'inc/header.php';
         <div class="container text-center">
             <h3 class="product-titles" data-aos="fade-up" data-aos-duration="1000">Start Your Project with PHE Luxwood</h3>
             <div class="materials-cta-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <a href="contact.php" class="btn button-primary">
+                <a href="contact.php" class="button-primary">
                     Contact Us
                 </a>
-                <!-- <a href="contact.php" class="btn button-primary">
+                <!-- <a href="contact.php" class="button-primary">
                     Discuss Your Project
                 </a> -->
             </div>

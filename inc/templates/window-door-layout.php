@@ -61,9 +61,9 @@
 
                 <?php if (!empty($product['overview_applications_title'])): ?>
                     <div class="key-features mt-5">
-                        <h5 class="product-titles mb-3">
+                        <p class="fw-semibold">
                             <?= $product['overview_applications_title']; ?>
-                        </h5>
+                        </p>
                         <ul class="feature-list-custom">
                             <?php foreach ($product['overview_applications'] as $feature): ?>
                                 <li class="product-description"><?= $feature; ?></li>
@@ -141,9 +141,9 @@ if (
     <section class="product-intro product-accessories pb-5">
         <div class="container">
             <div class="headline-wrap">
-                <h3 class="product-titles reveal-line mb-4 mb-lg-5">
+                <p class="fw-semibold reveal-line mb-4 mb-lg-5">
                     <?= $product['accessories_title'] ?? 'Accessories'; ?>
-                </h3>
+                </p>
             </div>
 
             <div class="accessories-grid" style="--accessories-cols: <?= min(count($product['accessories']), 5); ?>">
