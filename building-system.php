@@ -575,6 +575,86 @@ include 'inc/header.php';
                     </div>
                 </div>
             </div>
+
+            <div class="modular-applications-wrapper">
+                <div class="row gx-3 gx-lg-5">
+                    <div class="col-lg-6">
+                        <img src="img/building-system/galaxy_40.jpg" alt="Galaxy 40 modular home exterior" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-between">
+                        <div data-aos="fade-up">
+                            <h4>Galaxy 40</h4>
+                            <p>Galaxy 40 is a one-bedroom, one-bathroom modern space. The open-plan kitchen, lounge and dining area capture the beautiful natural lighting, with a convenient deck area.</p>
+                            <p>Size: 40 m² (430.55 ft²)<br>Rooms: 1 bedroom, 1 bathroom</p>
+                        </div>
+                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/galaxy_40.jpg,img/building-system/galaxy_40_floorplan.jpg">View Images</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modular-applications-wrapper">
+                <div class="row gx-3 gx-lg-5">
+                    <div class="col-lg-6">
+                        <img src="img/building-system/jungle_cabin_32.jpg" alt="Jungle Cabin 32 modular cabin exterior" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-between">
+                        <div data-aos="fade-up">
+                            <h4>Jungle Cabin 32</h4>
+                            <p>Jungle Cabin 32 is a one-bedroom, one-bathroom modern space. The open-plan kitchen, lounge and dining area capture the beautiful natural lighting.</p>
+                            <p>Size: 32 m² (344.44 ft²)<br>Rooms: 1 bedroom, 1 bathroom</p>
+                        </div>
+                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/jungle_cabin_32.jpg,img/building-system/jungle_cabin_32_floorplan.jpg">View Images</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modular-applications-wrapper">
+                <div class="row gx-3 gx-lg-5">
+                    <div class="col-lg-6">
+                        <img src="img/building-system/mountain_view_40.jpg" alt="Mountain View 40 modular home exterior" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-between">
+                        <div data-aos="fade-up">
+                            <h4>Mountain View 40</h4>
+                            <p>Mountain View 40 is a one-bedroom, one-bathroom modern space. The open-plan kitchen, lounge and dining area capture the beautiful natural lighting, with a convenient deck area.</p>
+                            <p>Size: 40 m² (430.55 ft²)<br>Rooms: 1 bedroom, 1 bathroom</p>
+                        </div>
+                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/mountain_view_40.jpg,img/building-system/mountain_view_40_floorplan.jpg">View Images</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modular-applications-wrapper">
+                <div class="row gx-3 gx-lg-5">
+                    <div class="col-lg-6">
+                        <img src="img/building-system/river_view_37.jpg" alt="River View 37 modular home exterior" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-between">
+                        <div data-aos="fade-up">
+                            <h4>River View 37</h4>
+                            <p>River View 37 is a one-bedroom, one-bathroom modern space. The open-plan kitchen, lounge and dining area capture the beautiful natural lighting, with a convenient deck area.</p>
+                            <p>Size: 37 m² (398.26 ft²)<br>Rooms: 1 bedroom, 1 bathroom</p>
+                        </div>
+                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/river_view_37.jpg,img/building-system/river_view_37_floorplan.jpg">View Images</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modular-applications-wrapper">
+                <div class="row gx-3 gx-lg-5">
+                    <div class="col-lg-6">
+                        <img src="img/building-system/sea_view_46.jpg" alt="Sea View 46 modular home interior" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-between">
+                        <div data-aos="fade-up">
+                            <h4>Sea View 46</h4>
+                            <p>Sea View 46 is a two-bedroom, one-bathroom modern home. The open-plan kitchen, lounge and dining area capture the beautiful natural lighting, with a convenient deck area.</p>
+                            <p>Size: 46 m² (495.14 ft²)<br>Rooms: 2 bedrooms, 1 bathroom</p>
+                        </div>
+                        <button data-aos="fade-up" class="view-gallery-btn" data-gallery="img/building-system/sea_view_46.jpg,img/building-system/sea_view_46_floorplan.jpg">View Images</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
