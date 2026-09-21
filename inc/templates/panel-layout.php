@@ -251,8 +251,14 @@ $hotspots = [
                     </div>
                 <?php endif; ?>
 
+                <?php if (!empty($product['door_window_description'])): ?>
+                    <p class="product-description">
+                        <?= nl2br($product['door_window_description']); ?>
+                    </p>
+                <?php endif; ?>
+
                 <?php if (!empty($product['door_features'])): ?>
-                    <div class="key-features mb-4 mt-lg-5">
+                    <div class="key-features mb-4 mt-lg-4">
                         <p class="fw-semibold">
                             <?= $product['door_section_title']; ?>
                         </p>

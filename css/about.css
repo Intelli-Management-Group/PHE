@@ -187,8 +187,8 @@
     max-width: 1050px;
     margin: 0 auto;
 
-    font-family: "albra", serif;
-    font-size: clamp(22px, 1.8vw, 34px);
+    /* font-family: "albra", serif; */
+    /* font-size: clamp(22px, 1.8vw, 34px); */
     line-height: 1.35;
     font-weight: 500;
     color: #591c1c;
